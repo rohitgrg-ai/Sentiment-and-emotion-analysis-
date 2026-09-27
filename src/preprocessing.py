@@ -1,7 +1,7 @@
 import pandas as pd
 import re
 import emoji
-
+from sklearn.model_selection import train_test_split
 
 def clean_text(text):
     text = str(text)
@@ -27,10 +27,26 @@ df = pd.read_csv("data/text2.csv")
 # Remove unnecessary index column
 df = df.drop(columns=["Unnamed: 0"])
 df["clean_text"] = df["text"].apply(clean_text)
+train_df,test_df=train_test_split(df,random_state=42,stratify=df["sentiment"])
+
+print("\n===== DATASET SPLIT =====")
+
+print("Total samples :", len(df))
+print("Training      :", len(train_df))
+print("Testing       :", len(test_df))
 
 
-print("\n===== ORIGINAL vs CLEANED TEXT =====")
+print("\n===== TRAINING SENTIMENT =====")
+print(train_df["sentiment"].value_counts())
 
-for i in range(5):
-    print("\nOriginal:", df["text"].iloc[i])
-    print("Cleaned :", df["clean_text"].iloc[i])
+
+print("\n===== TESTING SENTIMENT =====")
+print(test_df["sentiment"].value_counts())
+
+
+print("\n===== TRAINING EMOTION =====")
+print(train_df["label"].value_counts().sort_index())
+
+
+print("\n===== TESTING EMOTION =====")
+print(test_df["label"].value_counts().sort_index())
