@@ -27,7 +27,14 @@ df = pd.read_csv("data/text2.csv")
 # Remove unnecessary index column
 df = df.drop(columns=["Unnamed: 0"])
 df["clean_text"] = df["text"].apply(clean_text)
-train_df,test_df=train_test_split(df,random_state=42,stratify=df["sentiment"])
+df.to_csv("data/processed_dataset.csv", index=False)
+
+train_df, test_df = train_test_split(
+    df,
+    test_size=0.20,
+    random_state=42,
+    stratify=df["sentiment"]
+)
 
 print("\n===== DATASET SPLIT =====")
 
