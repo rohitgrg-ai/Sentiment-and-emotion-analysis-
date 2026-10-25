@@ -1,59 +1,72 @@
 import pandas as pd
 import re
 import emoji
-from sklearn.model_selection import train_test_split
+from pathlib import Path
+
+
+# Project paths
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+DATA_PATH = PROJECT_ROOT / "data" / "final.csv"
+OUTPUT_PATH = PROJECT_ROOT / "data" / "processed_dataset.csv"
+
 
 def clean_text(text):
-    text = str(text)
+    """Clean text while preserving useful information."""
 
-    # Convert text to lowercase
-    text = text.lower()
+    if pd.isna(text):
+        return ""
 
-    # Convert emojis to text descriptions
+    text = str(text).lower()
+
+    # Convert emojis into readable text descriptions
     text = emoji.demojize(text, delimiters=(" ", " "))
 
     # Remove URLs
-    text = re.sub(r"http\S+|www\S+", "", text)
+    text = re.sub(r"https?://\S+|www\.\S+", "", text)
 
-    # Remove extra whitespace
+    # Normalize whitespace
     text = re.sub(r"\s+", " ", text).strip()
 
     return text
 
 
-# Load dataset
-df = pd.read_csv("data/text2.csv")
+def main():
+    # Load the balanced dataset
+    df = pd.read_csv(DATA_PATH)
 
-# Remove unnecessary index column
-df = df.drop(columns=["Unnamed: 0"])
-df["clean_text"] = df["text"].apply(clean_text)
-df.to_csv("data/processed_dataset.csv", index=False)
+    # Verify required columns
+    required_columns = {"text", "emotion", "sentiment"}
+    missing_columns = required_columns - set(df.columns)
 
-train_df, test_df = train_test_split(
-    df,
-    test_size=0.20,
-    random_state=42,
-    stratify=df["sentiment"]
-)
+    if missing_columns:
+        raise ValueError(
+            f"Dataset is missing required columns: {missing_columns}"
+        )
 
-print("\n===== DATASET SPLIT =====")
+    # Remove rows with missing text or targets
+    df = df.dropna(subset=["text", "emotion", "sentiment"]).copy()
 
-print("Total samples :", len(df))
-print("Training      :", len(train_df))
-print("Testing       :", len(test_df))
+    # Clean text
+    df["clean_text"] = df["text"].apply(clean_text)
+
+    # Remove empty text
+    df = df[df["clean_text"].str.len() > 0].copy()
+
+    # Save the processed dataset
+    df.to_csv(OUTPUT_PATH, index=False)
+
+    print("Preprocessing completed successfully!")
+    print(f"Original dataset: {DATA_PATH}")
+    print(f"Processed dataset: {OUTPUT_PATH}")
+    print(f"Rows retained: {len(df):,}")
+    print(f"Columns: {df.columns.tolist()}")
+
+    print("\nEmotion distribution:")
+    print(df["emotion"].value_counts())
+
+    print("\nSentiment distribution:")
+    print(df["sentiment"].value_counts())
 
 
-print("\n===== TRAINING SENTIMENT =====")
-print(train_df["sentiment"].value_counts())
-
-
-print("\n===== TESTING SENTIMENT =====")
-print(test_df["sentiment"].value_counts())
-
-
-print("\n===== TRAINING EMOTION =====")
-print(train_df["label"].value_counts().sort_index())
-
-
-print("\n===== TESTING EMOTION =====")
-print(test_df["label"].value_counts().sort_index())
+if __name__ == "__main__":
+    main()

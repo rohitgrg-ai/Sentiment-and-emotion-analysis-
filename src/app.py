@@ -1,47 +1,522 @@
+import re
+from pathlib import Path
+
+import emoji
+import joblib
 import streamlit as st
 
-st.title("My Invoice App")
 
-# Customer Details
-st.header("Customer Details")
+# ==================================================
+# PAGE CONFIGURATION
+# ==================================================
 
-customer_name = st.text_input("Customer Name")
-customer_email = st.text_input("Customer Email")
-customer_phone = st.text_input("Customer Phone")
+st.set_page_config(
+    page_title="Social Media Sentiment & Emotion Analysis",
+    page_icon="💬",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
 
-# Product Details
-st.header("Product Details")
 
-product_name = st.text_input("Product Name")
-quantity = st.number_input("Quantity", min_value=1, step=1)
-price = st.number_input("Price per Item", min_value=0.0, step=0.01)
+# ==================================================
+# PROJECT PATHS
+# ==================================================
 
-# Calculate total
-total = quantity * price
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+MODEL_DIR = PROJECT_ROOT / "models"
 
-st.write("Total Amount: ₹", total)
 
-# Generate Invoice
-if st.button("Generate Invoice"):
+# ==================================================
+# CUSTOM CSS
+# ==================================================
 
-    if customer_name and product_name:
-        st.subheader("Invoice")
+st.markdown(
+    """
+    <style>
+        .block-container {
+            padding-top: 2rem;
+            padding-bottom: 3rem;
+            max-width: 1150px;
+        }
 
-        st.write("**Customer Name:**", customer_name)
-        st.write("**Email:**", customer_email)
-        st.write("**Phone:**", customer_phone)
+        .hero {
+            padding: 2rem;
+            border-radius: 18px;
+            background: linear-gradient(
+                120deg,
+                #172554 0%,
+                #312e81 55%,
+                #4c1d95 100%
+            );
+            margin-bottom: 1.5rem;
+        }
 
-        st.write("---")
+        .hero h1 {
+            color: #ffffff;
+            font-size: 2.2rem;
+            margin-bottom: 0.6rem;
+        }
 
-        st.write("**Product:**", product_name)
-        st.write("**Quantity:**", quantity)
-        st.write("**Price per Item:** ₹", price)
+        .hero p {
+            color: #e0e7ff;
+            font-size: 1.05rem;
+            margin-bottom: 0;
+        }
 
-        st.write("---")
+        .result-card {
+            padding: 1.4rem;
+            border: 1px solid rgba(128, 128, 128, 0.35);
+            border-radius: 16px;
+            min-height: 155px;
+            margin-bottom: 1rem;
+        }
 
-        st.subheader(f"Total Amount: ₹{total:.2f}")
+        .result-label {
+            font-size: 0.95rem;
+            opacity: 0.8;
+            margin-bottom: 0.6rem;
+        }
 
-        st.success("Invoice generated successfully!")
+        .result-value {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 0.4rem;
+        }
+
+        .result-confidence {
+            font-size: 0.95rem;
+            opacity: 0.85;
+        }
+
+        div.stButton > button {
+            border-radius: 10px;
+            font-weight: 600;
+            min-height: 3rem;
+        }
+
+        .footer-note {
+            font-size: 0.85rem;
+            opacity: 0.75;
+        }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+# ==================================================
+# LOAD SAVED MODELS
+# ==================================================
+
+@st.cache_resource
+def load_models():
+    vectorizer = joblib.load(
+        MODEL_DIR / "tfidf_vectorizer.joblib"
+    )
+
+    sentiment_model = joblib.load(
+        MODEL_DIR / "sentiment_model.joblib"
+    )
+
+    emotion_model = joblib.load(
+        MODEL_DIR / "emotion_model.joblib"
+    )
+
+    return vectorizer, sentiment_model, emotion_model
+
+
+# ==================================================
+# TEXT PREPROCESSING
+# Must match training preprocessing
+# ==================================================
+
+def clean_text(text):
+    text = str(text).lower()
+
+    text = emoji.demojize(
+        text,
+        delimiters=(" ", " "),
+    )
+
+    text = re.sub(
+        r"https?://\S+|www\.\S+",
+        "",
+        text,
+    )
+
+    text = re.sub(
+        r"\s+",
+        " ",
+        text,
+    ).strip()
+
+    return text
+
+
+# ==================================================
+# EXAMPLE SENTENCES
+# ==================================================
+
+EXAMPLES = {
+    "Choose an example...": "",
+    "Happiness": "I am feeling so happy today!",
+    "Sadness": "I feel really sad and lonely today.",
+    "Anger": "I am furious about what happened.",
+    "Fear": "I am scared about what might happen tomorrow.",
+    "Love": "I feel so much love for my family.",
+    "Surprise": "I cannot believe this amazing news!",
+    "Neutral": "I went to the store to buy groceries.",
+}
+
+
+# ==================================================
+# HEADER
+# ==================================================
+
+st.markdown(
+    """
+    <div class="hero">
+        <h1>💬 Social Media Sentiment & Emotion Analysis</h1>
+        <p>
+            Explore the sentiment and emotional tone of your text
+            using machine learning.
+        </p>
+    </div>
+    """,
+    unsafe_allow_html=True,
+)
+
+
+# ==================================================
+# SIDEBAR
+# ==================================================
+
+with st.sidebar:
+    st.title("📌 About the Project")
+
+    st.write(
+        """
+        This application uses machine learning to analyze text
+        and predict two things:
+        """
+    )
+
+    st.markdown(
+        """
+        **🎯 Sentiment**
+        - Positive
+        - Negative
+        - Neutral
+
+        **💭 Emotion**
+        - Joy
+        - Sadness
+        - Love
+        - Anger
+        - Fear
+        - Surprise
+        """
+    )
+
+    st.divider()
+
+    st.subheader("⚙️ Technology")
+
+    st.write("• Python")
+    st.write("• TF-IDF")
+    st.write("• Logistic Regression")
+    st.write("• Scikit-learn")
+    st.write("• Streamlit")
+
+    st.divider()
+
+    st.caption(
+        "Predictions are generated by trained machine-learning "
+        "models and may not always reflect the intended meaning."
+    )
+
+
+# ==================================================
+# TEXT INPUT
+# ==================================================
+
+st.subheader("✍️ Enter Your Text")
+
+st.write(
+    "Enter a sentence, social media post, or short message "
+    "to analyze its sentiment and emotion."
+)
+
+selected_example = st.selectbox(
+    "Try an example",
+    options=list(EXAMPLES.keys()),
+)
+
+if selected_example != st.session_state.get(
+    "previous_example",
+    "Choose an example...",
+):
+    st.session_state["input_text"] = EXAMPLES[selected_example]
+
+st.session_state["previous_example"] = selected_example
+
+user_text = st.text_area(
+    "Your text",
+    key="input_text",
+    height=150,
+    placeholder=(
+        "Example: I am feeling wonderful today "
+        "because everything is going well!"
+    ),
+)
+
+st.caption(f"Characters: {len(user_text)}")
+
+analyze_button = st.button(
+    "🔍 Analyze Text",
+    type="primary",
+    use_container_width=True,
+)
+
+
+# ==================================================
+# PREDICTION
+# ==================================================
+
+if analyze_button:
+
+    if not user_text.strip():
+        st.warning("Please enter some text before analyzing.")
 
     else:
-        st.error("Please enter customer name and product name.")
+        try:
+            with st.spinner("Analyzing your text..."):
+
+                vectorizer, sentiment_model, emotion_model = (
+                    load_models()
+                )
+
+                cleaned_text = clean_text(user_text)
+
+                if not cleaned_text:
+                    st.warning(
+                        "No usable text remains after preprocessing."
+                    )
+
+                else:
+                    features = vectorizer.transform(
+                        [cleaned_text]
+                    )
+
+                    # Sentiment probabilities
+                    sentiment_probabilities = (
+                        sentiment_model.predict_proba(features)[0]
+                    )
+
+                    sentiment_classes = (
+                        sentiment_model.classes_
+                    )
+
+                    sentiment_index = (
+                        sentiment_probabilities.argmax()
+                    )
+
+                    predicted_sentiment = str(
+                        sentiment_classes[sentiment_index]
+                    )
+
+                    sentiment_confidence = float(
+                        sentiment_probabilities[sentiment_index]
+                    )
+
+                    # Emotion probabilities
+                    emotion_probabilities = (
+                        emotion_model.predict_proba(features)[0]
+                    )
+
+                    emotion_classes = emotion_model.classes_
+
+                    emotion_index = (
+                        emotion_probabilities.argmax()
+                    )
+
+                    predicted_emotion = str(
+                        emotion_classes[emotion_index]
+                    )
+
+                    emotion_confidence = float(
+                        emotion_probabilities[emotion_index]
+                    )
+
+                    # Save results so they remain visible
+                    # during subsequent Streamlit reruns.
+                    st.session_state["analysis_results"] = {
+                        "sentiment": predicted_sentiment,
+                        "sentiment_confidence": sentiment_confidence,
+                        "sentiment_classes": [
+                            str(x) for x in sentiment_classes
+                        ],
+                        "sentiment_probabilities": [
+                            float(x)
+                            for x in sentiment_probabilities
+                        ],
+                        "emotion": predicted_emotion,
+                        "emotion_confidence": emotion_confidence,
+                        "emotion_classes": [
+                            str(x) for x in emotion_classes
+                        ],
+                        "emotion_probabilities": [
+                            float(x)
+                            for x in emotion_probabilities
+                        ],
+                        "input_text": user_text,
+                    }
+
+        except FileNotFoundError:
+            st.error(
+                "Model files were not found. Please run "
+                "`python src/train_sentiment.py` first."
+            )
+
+        except Exception as error:
+            st.error(f"Analysis failed: {error}")
+
+
+# ==================================================
+# DISPLAY RESULTS
+# ==================================================
+
+results = st.session_state.get("analysis_results")
+
+if results:
+
+    st.divider()
+
+    st.subheader("📊 Analysis Results")
+
+    st.write(
+        "Here are the predictions generated by your trained models."
+    )
+
+    col1, col2 = st.columns(2)
+
+    with col1:
+        st.markdown(
+            f"""
+            <div class="result-card">
+                <div class="result-label">
+                    🎯 Predicted Sentiment
+                </div>
+                <div class="result-value">
+                    {results["sentiment"].title()}
+                </div>
+                <div class="result-confidence">
+                    Model confidence:
+                    {results["sentiment_confidence"]:.1%}
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.progress(
+            results["sentiment_confidence"],
+            text="Sentiment confidence",
+        )
+
+    with col2:
+        st.markdown(
+            f"""
+            <div class="result-card">
+                <div class="result-label">
+                    💭 Predicted Emotion
+                </div>
+                <div class="result-value">
+                    {results["emotion"].title()}
+                </div>
+                <div class="result-confidence">
+                    Model confidence:
+                    {results["emotion_confidence"]:.1%}
+                </div>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
+
+        st.progress(
+            results["emotion_confidence"],
+            text="Emotion confidence",
+        )
+
+    st.divider()
+
+    # --------------------------------------------------
+    # SENTIMENT PROBABILITIES
+    # --------------------------------------------------
+
+    st.subheader("🎯 Sentiment Probability Breakdown")
+
+    sentiment_data = {
+        "Class": results["sentiment_classes"],
+        "Probability": results["sentiment_probabilities"],
+    }
+
+    sentiment_data = sorted(
+        zip(
+            sentiment_data["Class"],
+            sentiment_data["Probability"],
+        ),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+
+    for label, probability in sentiment_data:
+        st.write(f"**{label.title()}** — {probability:.1%}")
+
+        st.progress(probability)
+
+    # --------------------------------------------------
+    # EMOTION PROBABILITIES
+    # --------------------------------------------------
+
+    st.subheader("💭 Emotion Probability Breakdown")
+
+    emotion_data = sorted(
+        zip(
+            results["emotion_classes"],
+            results["emotion_probabilities"],
+        ),
+        key=lambda item: item[1],
+        reverse=True,
+    )
+
+    for label, probability in emotion_data:
+        st.write(f"**{label.title()}** — {probability:.1%}")
+
+        st.progress(probability)
+
+    st.divider()
+
+    st.caption(
+        "Confidence values are probabilities produced by the models. "
+        "They are not guarantees of correctness and may not be "
+        "well calibrated. The models can misinterpret sarcasm, "
+        "context, slang, and mixed emotions."
+    )
+
+
+# ==================================================
+# FOOTER
+# ==================================================
+
+st.divider()
+
+st.markdown(
+    """
+    <p class="footer-note">
+        Social Media Sentiment & Emotion Analysis |
+        Built with Python, Scikit-learn and Streamlit
+    </p>
+    """,
+    unsafe_allow_html=True,
+)
