@@ -1,0 +1,16 @@
+Zero-shot transformer vs TF-IDF systems on the ambiguous set (labels: AI-suggested, not human-verified)
+Sentiment model: cardiffnlp/twitter-roberta-base-sentiment-latest
+Emotion model:   j-hartmann/emotion-english-distilroberta-base
+Mapping: disgust->anger. 'neutral' predictions are counted wrong (no neutral class in the gold labels).
+System T = pretrained transformer used as-is; A = text SVM; D = SVM + emoji voting.
+
+          subset    n  sentiment_acc  emotion_acc_strict  emotion_acc_lenient
+system                                                                       
+A       all rows  500          0.292               0.240                0.316
+D       all rows  500          0.394               0.350                0.430
+T       all rows  500          0.542               0.226                0.288
+
+Share of rows the transformer called 'neutral' emotion: 33.8%
+Gold 'love' rows (transformer has no love class): 26
+
+Caveats: one test set, AI-suggested labels, no confidence intervals here. Differences of a few points on 500 rows may be noise; run the McNemar test in evaluate_ambiguity.py before claiming a win.

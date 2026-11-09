@@ -1,0 +1,176 @@
+{
+  "augmentation": {
+    "share_of_rows": 0.5,
+    "p_consistent": 0.6,
+    "p_ambiguous": 0.25,
+    "p_contradicting": 0.15,
+    "n_emojis": {
+      "1": 0.7,
+      "2": 0.2,
+      "3": 0.1
+    },
+    "p_at_start": 0.2,
+    "rows_with_emojis": 23498,
+    "seed": 42
+  },
+  "models": {
+    "B_orig": {
+      "emotion_original_test": {
+        "accuracy": 0.9632,
+        "macro_precision": 0.963,
+        "macro_recall": 0.9632,
+        "macro_f1": 0.963,
+        "weighted_f1": 0.963
+      },
+      "emotion_synthetic_emoji_test": {
+        "accuracy": 0.9611,
+        "macro_precision": 0.9609,
+        "macro_recall": 0.9611,
+        "macro_f1": 0.9608,
+        "weighted_f1": 0.9608
+      },
+      "emotion_calibrated_vs_svm_label_disagreement": 0.0047,
+      "sentiment_original_test": {
+        "accuracy": 0.9458,
+        "macro_precision": 0.9458,
+        "macro_recall": 0.9458,
+        "macro_f1": 0.9458,
+        "weighted_f1": 0.9458
+      },
+      "sentiment_synthetic_emoji_test": {
+        "accuracy": 0.9198,
+        "macro_precision": 0.9204,
+        "macro_recall": 0.9198,
+        "macro_f1": 0.92,
+        "weighted_f1": 0.92
+      },
+      "sentiment_calibrated_vs_svm_label_disagreement": 0.0034
+    },
+    "C_orig": {
+      "emotion_original_test": {
+        "accuracy": 0.9632,
+        "macro_precision": 0.963,
+        "macro_recall": 0.9632,
+        "macro_f1": 0.963,
+        "weighted_f1": 0.963
+      },
+      "emotion_synthetic_emoji_test": {
+        "accuracy": 0.9632,
+        "macro_precision": 0.963,
+        "macro_recall": 0.9632,
+        "macro_f1": 0.963,
+        "weighted_f1": 0.963
+      },
+      "emotion_calibrated_vs_svm_label_disagreement": 0.0047,
+      "sentiment_original_test": {
+        "accuracy": 0.9458,
+        "macro_precision": 0.9458,
+        "macro_recall": 0.9458,
+        "macro_f1": 0.9458,
+        "weighted_f1": 0.9458
+      },
+      "sentiment_synthetic_emoji_test": {
+        "accuracy": 0.9458,
+        "macro_precision": 0.9458,
+        "macro_recall": 0.9458,
+        "macro_f1": 0.9458,
+        "weighted_f1": 0.9458
+      },
+      "sentiment_calibrated_vs_svm_label_disagreement": 0.0034
+    },
+    "B_aug": {
+      "emotion_original_test": {
+        "accuracy": 0.961,
+        "macro_precision": 0.9608,
+        "macro_recall": 0.961,
+        "macro_f1": 0.9608,
+        "weighted_f1": 0.9608
+      },
+      "emotion_synthetic_emoji_test": {
+        "accuracy": 0.9647,
+        "macro_precision": 0.9646,
+        "macro_recall": 0.9647,
+        "macro_f1": 0.9646,
+        "weighted_f1": 0.9646
+      },
+      "emotion_calibrated_vs_svm_label_disagreement": 0.0041,
+      "sentiment_original_test": {
+        "accuracy": 0.9452,
+        "macro_precision": 0.9451,
+        "macro_recall": 0.9452,
+        "macro_f1": 0.9451,
+        "weighted_f1": 0.9451
+      },
+      "sentiment_synthetic_emoji_test": {
+        "accuracy": 0.9429,
+        "macro_precision": 0.9429,
+        "macro_recall": 0.9429,
+        "macro_f1": 0.9428,
+        "weighted_f1": 0.9428
+      },
+      "sentiment_calibrated_vs_svm_label_disagreement": 0.0036
+    },
+    "C_aug": {
+      "emotion_original_test": {
+        "accuracy": 0.9604,
+        "macro_precision": 0.9602,
+        "macro_recall": 0.9604,
+        "macro_f1": 0.9602,
+        "weighted_f1": 0.9602
+      },
+      "emotion_synthetic_emoji_test": {
+        "accuracy": 0.9635,
+        "macro_precision": 0.9634,
+        "macro_recall": 0.9635,
+        "macro_f1": 0.9634,
+        "weighted_f1": 0.9634
+      },
+      "emotion_calibrated_vs_svm_label_disagreement": 0.004,
+      "sentiment_original_test": {
+        "accuracy": 0.946,
+        "macro_precision": 0.9459,
+        "macro_recall": 0.946,
+        "macro_f1": 0.9459,
+        "weighted_f1": 0.9459
+      },
+      "sentiment_synthetic_emoji_test": {
+        "accuracy": 0.9436,
+        "macro_precision": 0.9435,
+        "macro_recall": 0.9436,
+        "macro_f1": 0.9435,
+        "weighted_f1": 0.9435
+      },
+      "sentiment_calibrated_vs_svm_label_disagreement": 0.004
+    },
+    "A_existing": {
+      "emotion_original_test": {
+        "accuracy": 0.9632,
+        "macro_precision": 0.963,
+        "macro_recall": 0.9632,
+        "macro_f1": 0.963,
+        "weighted_f1": 0.963
+      },
+      "sentiment_original_test": {
+        "accuracy": 0.9458,
+        "macro_precision": 0.9458,
+        "macro_recall": 0.9458,
+        "macro_f1": 0.9458,
+        "weighted_f1": 0.9458
+      },
+      "emotion_synthetic_emoji_test": {
+        "accuracy": 0.9632,
+        "macro_precision": 0.963,
+        "macro_recall": 0.9632,
+        "macro_f1": 0.963,
+        "weighted_f1": 0.963
+      },
+      "sentiment_synthetic_emoji_test": {
+        "accuracy": 0.9458,
+        "macro_precision": 0.9458,
+        "macro_recall": 0.9458,
+        "macro_f1": 0.9458,
+        "weighted_f1": 0.9458
+      }
+    }
+  }
+}

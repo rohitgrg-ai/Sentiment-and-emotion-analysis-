@@ -1,0 +1,60 @@
+EMOJI ROBUSTNESS TEST (expected = human judgement)
+==============================================================================
+test                                emotion correct    sentiment correct
+1_emoji_at_end                     100.0% (180/180)      96.7% (174/180)
+2_emoji_at_start                   100.0% (180/180)      96.7% (174/180)
+3_repeated_emoji                     100.0% (60/60)        96.7% (58/60)
+4_two_same_emotion_emojis            100.0% (60/60)        96.7% (58/60)
+5_emoji_only                         100.0% (18/18)       100.0% (18/18)
+6_emotional_text_no_emoji              100.0% (6/6)          83.3% (5/6)
+7_text_and_emoji_agree                 100.0% (6/6)         100.0% (6/6)
+8_text_and_emoji_conflict             90.0% (27/30)        86.7% (26/30)
+
+Same sentence + one emoji, by emoji emotion:
+  anger     emotion 100.0% (60/60)  sentiment 100.0% (60/60)  wrong sentiment -> {}
+  fear      emotion 100.0% (60/60)  sentiment 100.0% (60/60)  wrong sentiment -> {}
+  joy       emotion 100.0% (60/60)  sentiment  90.0% (54/60)  wrong sentiment -> {'neutral': 6}
+  love      emotion 100.0% (60/60)  sentiment  90.0% (54/60)  wrong sentiment -> {'neutral': 6}
+  sadness   emotion 100.0% (60/60)  sentiment 100.0% (60/60)  wrong sentiment -> {}
+  surprise  emotion 100.0% (60/60)  sentiment 100.0% (60/60)  wrong sentiment -> {}
+
+Without an emoji, neutral sentences get an arbitrary emotion (no 'neutral' emotion class):
+  my brother came over today             -> anger / neutral
+  the bus was late again                 -> anger / neutral
+  we are going to the beach on sunday    -> joy / neutral
+  she replied to my message              -> anger / positive
+  got my phone back from repair          -> anger / neutral
+  the teacher announced the results      -> anger / neutral
+  dinner is ready                        -> joy / positive
+  that is what he said                   -> joy / neutral
+  first day at the new office            -> joy / neutral
+  watched the match last night           -> anger / neutral
+
+Failures (text + emoji conflicts and others):
+  [1_emoji_at_end] the bus was late again 😁                           -> joy/neutral  (expected joy/positive)
+  [2_emoji_at_start] 😁 the bus was late again                           -> joy/neutral  (expected joy/positive)
+  [1_emoji_at_end] the bus was late again 🤣                           -> joy/neutral  (expected joy/positive)
+  [2_emoji_at_start] 🤣 the bus was late again                           -> joy/neutral  (expected joy/positive)
+  [1_emoji_at_end] the bus was late again 🎉                           -> joy/neutral  (expected joy/positive)
+  [2_emoji_at_start] 🎉 the bus was late again                           -> joy/neutral  (expected joy/positive)
+  [3_repeated_emoji] the bus was late again 😁😁😁                         -> joy/neutral  (expected joy/positive)
+  [4_two_same_emotion_emojis] the bus was late again 😁🤣                          -> joy/neutral  (expected joy/positive)
+  [1_emoji_at_end] the bus was late again 😍                           -> love/neutral  (expected love/positive)
+  [2_emoji_at_start] 😍 the bus was late again                           -> love/neutral  (expected love/positive)
+  [1_emoji_at_end] the bus was late again 🥰                           -> love/neutral  (expected love/positive)
+  [2_emoji_at_start] 🥰 the bus was late again                           -> love/neutral  (expected love/positive)
+  [1_emoji_at_end] the bus was late again 💕                           -> love/neutral  (expected love/positive)
+  [2_emoji_at_start] 💕 the bus was late again                           -> love/neutral  (expected love/positive)
+  [3_repeated_emoji] the bus was late again 😍😍😍                         -> love/neutral  (expected love/positive)
+  [4_two_same_emotion_emojis] the bus was late again 😍🥰                          -> love/neutral  (expected love/positive)
+  [8_text_and_emoji_conflict] i am so delighted and grateful for everything 😍    -> love/positive  (expected joy/positive)
+  [8_text_and_emoji_conflict] i am so delighted and grateful for everything 😱    -> fear/positive  (expected joy/positive)
+  [8_text_and_emoji_conflict] i am so delighted and grateful for everything 😭    -> sadness/positive  (expected joy/positive)
+  [6_emotional_text_no_emoji] i feel heartbroken and alone tonight               -> sadness/positive  (expected sadness/negative)
+  [8_text_and_emoji_conflict] i feel heartbroken and alone tonight 😁             -> sadness/positive  (expected sadness/negative)
+  [8_text_and_emoji_conflict] i feel heartbroken and alone tonight 😍             -> sadness/positive  (expected sadness/negative)
+  [8_text_and_emoji_conflict] i feel heartbroken and alone tonight 😮             -> sadness/neutral  (expected sadness/negative)
+  [8_text_and_emoji_conflict] i adore my little sister she is so sweet and caring 😮 -> love/neutral  (expected love/positive)
+
+Emojis not in the table (ambiguous ones like 🥲 🙃 😅 🤔 😐 💀) are ignored:
+  prediction identical to the sentence without emoji: 100% of 30 cases

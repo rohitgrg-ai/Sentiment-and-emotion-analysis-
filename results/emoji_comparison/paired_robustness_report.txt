@@ -1,0 +1,50 @@
+PAIRED EMOJI ROBUSTNESS — labels: ai_suggested_all; 33 groups, 161 sentences
+Values: rate (number of comparisons). Higher is better except text_overrides_emoji and harmful_emoji_flip (lower is better) and emoji_dominance (lower is better).
+
+A  text-only SVM (existing)
+  sentiment variant_accuracy 0.27 (105) | sensitivity 0.00 (57) | stability 1.00 (48) | correct_when_changed 0.14 (57) | text_overrides_emoji 1.00 (57) | harmful_emoji_flip 0.00 (20) | text_sensitivity 0.60 (30) | emoji_dominance 0.00 (8)
+  emotion   variant_accuracy 0.23 (65) | sensitivity 0.00 (36) | stability 1.00 (29) | correct_when_changed 0.14 (36) | text_overrides_emoji 1.00 (36) | harmful_emoji_flip 0.00 (10) | text_sensitivity 0.72 (36) | emoji_dominance 0.00 (8)
+
+B  demojized TF-IDF SVM, original training data
+  sentiment variant_accuracy 0.49 (105) | sensitivity 0.39 (57) | stability 0.65 (48) | correct_when_changed 0.44 (57) | text_overrides_emoji 0.61 (57) | harmful_emoji_flip 0.15 (20) | text_sensitivity 0.33 (30) | emoji_dominance 0.38 (8)
+  emotion   variant_accuracy 0.40 (65) | sensitivity 0.44 (36) | stability 0.62 (29) | correct_when_changed 0.42 (36) | text_overrides_emoji 0.56 (36) | harmful_emoji_flip 0.30 (10) | text_sensitivity 0.64 (36) | emoji_dominance 0.12 (8)
+
+C  hybrid text+emoji SVM, original training data
+  sentiment variant_accuracy 0.27 (105) | sensitivity 0.00 (57) | stability 1.00 (48) | correct_when_changed 0.14 (57) | text_overrides_emoji 1.00 (57) | harmful_emoji_flip 0.00 (20) | text_sensitivity 0.60 (30) | emoji_dominance 0.00 (8)
+  emotion   variant_accuracy 0.23 (65) | sensitivity 0.00 (36) | stability 1.00 (29) | correct_when_changed 0.14 (36) | text_overrides_emoji 1.00 (36) | harmful_emoji_flip 0.00 (10) | text_sensitivity 0.72 (36) | emoji_dominance 0.00 (8)
+
+B' demojized TF-IDF SVM, synthetic emoji-augmented training
+  sentiment variant_accuracy 0.36 (105) | sensitivity 0.26 (57) | stability 0.73 (48) | correct_when_changed 0.23 (57) | text_overrides_emoji 0.74 (57) | harmful_emoji_flip 0.10 (20) | text_sensitivity 0.60 (30) | emoji_dominance 0.12 (8)
+  emotion   variant_accuracy 0.68 (65) | sensitivity 0.72 (36) | stability 0.41 (29) | correct_when_changed 0.75 (36) | text_overrides_emoji 0.28 (36) | harmful_emoji_flip 0.25 (8) | text_sensitivity 0.47 (36) | emoji_dominance 0.38 (8)
+
+C' hybrid text+emoji SVM, synthetic emoji-augmented training
+  sentiment variant_accuracy 0.25 (105) | sensitivity 0.10 (57) | stability 0.94 (48) | correct_when_changed 0.12 (57) | text_overrides_emoji 0.90 (57) | harmful_emoji_flip 0.10 (20) | text_sensitivity 0.70 (30) | emoji_dominance 0.00 (8)
+  emotion   variant_accuracy 0.60 (65) | sensitivity 0.61 (36) | stability 0.52 (29) | correct_when_changed 0.61 (36) | text_overrides_emoji 0.39 (36) | harmful_emoji_flip 0.12 (8) | text_sensitivity 0.58 (36) | emoji_dominance 0.12 (8)
+
+D  existing predictor.py (text SVM + emoji voting)
+  sentiment variant_accuracy 0.70 (105) | sensitivity 0.67 (57) | stability 0.46 (48) | correct_when_changed 0.75 (57) | text_overrides_emoji 0.33 (57) | harmful_emoji_flip 0.20 (20) | text_sensitivity 0.17 (30) | emoji_dominance 0.62 (8)
+  emotion   variant_accuracy 0.74 (65) | sensitivity 0.75 (36) | stability 0.52 (29) | correct_when_changed 0.81 (36) | text_overrides_emoji 0.25 (36) | harmful_emoji_flip 0.10 (10) | text_sensitivity 0.39 (36) | emoji_dominance 0.50 (8)
+
+EXAMPLES (expected emotion/sentiment -> each system's emotion/sentiment)
+  [P01] I'm fine                           exp -/neutral         A:joy/neu  B_orig:joy/neu  C_orig:joy/neu  B_aug:joy/neu  C_aug:joy/neu  D:joy/neu
+  [P01] I'm fine 😊                         exp joy/positive      A:joy/neu  B_orig:joy/pos  C_orig:joy/neu  B_aug:joy/neg  C_aug:joy/neu  D:joy/pos
+  [P01] I'm fine 🙂                         exp -/neutral         A:joy/neu  B_orig:joy/pos  C_orig:joy/neu  B_aug:joy/neu  C_aug:joy/neu  D:joy/pos
+  [P01] I'm fine 🙂🔪                        exp anger/negative    A:joy/neu  B_orig:joy/pos  C_orig:joy/neu  B_aug:joy/neu  C_aug:joy/neu  D:joy/pos
+  [P01] I'm fine 😭                         exp sadness/negative  A:joy/neu  B_orig:joy/neg  C_orig:joy/neu  B_aug:sadness/neg  C_aug:joy/neu  D:joy/neg
+  [P01] I'm fine 😤                         exp anger/negative    A:joy/neu  B_orig:joy/neu  C_orig:joy/neu  B_aug:anger/neu  C_aug:joy/neu  D:joy/neg
+  [P03] I got the job                      exp joy/positive      A:fear/neu  B_orig:fear/neu  C_orig:fear/neu  B_aug:sadness/neu  C_aug:sadness/neu  D:fear/neu
+  [P03] I got the job 🎉                    exp joy/positive      A:fear/neu  B_orig:joy/neg  C_orig:fear/neu  B_aug:joy/neg  C_aug:joy/neu  D:joy/pos
+  [P03] I got the job 😭                    exp joy/positive      A:fear/neu  B_orig:sadness/neg  C_orig:fear/neu  B_aug:sadness/pos  C_aug:sadness/pos  D:sadness/neg
+  [P03] I got the job 😱                    exp surprise/positive A:fear/neu  B_orig:fear/neg  C_orig:fear/neu  B_aug:fear/neg  C_aug:fear/neu  D:fear/neg
+  [P03] I got the job 😐                    exp -/neutral         A:fear/neu  B_orig:sadness/neu  C_orig:fear/neu  B_aug:fear/neu  C_aug:anger/neu  D:fear/neu
+  [P05] Great job                          exp joy/positive      A:sadness/pos  B_orig:sadness/pos  C_orig:sadness/pos  B_aug:sadness/pos  C_aug:sadness/pos  D:sadness/pos
+  [P05] Great job 👍                        exp joy/positive      A:sadness/pos  B_orig:fear/pos  C_orig:sadness/pos  B_aug:joy/pos  C_aug:joy/pos  D:joy/pos
+  [P05] Great job 👍🙄                       exp anger/negative    A:sadness/pos  B_orig:sadness/pos  C_orig:sadness/pos  B_aug:joy/pos  C_aug:joy/pos  D:joy/pos
+  [P05] Great job 🙄                        exp anger/negative    A:sadness/pos  B_orig:sadness/pos  C_orig:sadness/pos  B_aug:anger/pos  C_aug:sadness/pos  D:anger/pos
+  [P05] Great job 👏👏                       exp joy/positive      A:sadness/pos  B_orig:joy/pos  C_orig:sadness/pos  B_aug:sadness/pos  C_aug:sadness/pos  D:sadness/pos
+  [P05] Great job 😒                        exp anger/negative    A:sadness/pos  B_orig:sadness/pos  C_orig:sadness/pos  B_aug:anger/pos  C_aug:anger/pos  D:anger/pos
+  [S01] My dog passed away 😭               exp sadness/negative  A:anger/neu  B_orig:anger/neg  C_orig:anger/neu  B_aug:sadness/neu  C_aug:sadness/neu  D:sadness/neg
+  [S01] This puppy video is too cute 😭     exp love/positive     A:joy/neg  B_orig:joy/neg  C_orig:joy/neg  B_aug:joy/neg  C_aug:joy/neg  D:joy/neg
+  [S01] This song is too good 😭            exp joy/positive      A:joy/pos  B_orig:sadness/pos  C_orig:joy/pos  B_aug:sadness/pos  C_aug:sadness/pos  D:sadness/pos
+  [S01] Laughing so hard right now 😭       exp joy/positive      A:sadness/neu  B_orig:sadness/neg  C_orig:sadness/neu  B_aug:sadness/pos  C_aug:sadness/pos  D:sadness/neg
+  [S01] Missed the bus again 😭             exp sadness/negative  A:sadness/neu  B_orig:sadness/neu  C_orig:sadness/neu  B_aug:sadness/pos  C_aug:sadness/neu  D:sadness/neg

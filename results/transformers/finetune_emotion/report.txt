@@ -1,0 +1,47 @@
+NATURAL TEST (7 classes, evaluated once)
+n=3799
+              precision    recall  f1-score   support
+
+       anger      0.573     0.664     0.615       596
+        fear      0.588     0.779     0.670        77
+         joy      0.682     0.770     0.723       348
+        love      0.798     0.858     0.827       851
+     neutral      0.833     0.663     0.738      1604
+     sadness      0.540     0.636     0.584       236
+    surprise      0.430     0.701     0.533        87
+
+    accuracy                          0.718      3799
+   macro avg      0.635     0.725     0.670      3799
+weighted avg      0.738     0.718     0.722      3799
+
+Confusion matrix (rows gold, cols predicted; order: anger, fear, joy, love, neutral, sadness, surprise)
+[[ 396    8   16   19  102   38   17]
+ [  10   60    1    1    0    4    1]
+ [   5    1  268   39   26    3    6]
+ [  18    4   37  730   47    7    8]
+ [ 225   21   63  113 1064   73   45]
+ [  30    7    6    9   30  150    4]
+ [   7    1    2    4    9    3   61]]
+
+NATURAL TEST, non-neutral rows only (same rows, six emotions; transformer's neutral class masked)
+{
+ "n": 2195,
+ "svm_A_macro_f1": 0.2840470061213009,
+ "svm_A_accuracy": 0.30250569476082007,
+ "transformer_macro_f1": 0.7672480684805723,
+ "transformer_accuracy": 0.8195899772209567
+}
+Note: the old SVM was trained on a different (keyword-style) dataset, so this shows how well it transfers, not a like-for-like training comparison.
+
+AMBIGUOUS SET (labels are AI-suggested, NOT human-verified; evaluated once, never tuned on)
+{
+ "n_with_gold_emotion": 436,
+ "strict_acc_7class_neutral_counts_wrong": 0.19954128440366972,
+ "strict_acc_neutral_masked": 0.29357798165137616,
+ "lenient_acc_neutral_masked": 0.3967889908256881,
+ "share_predicted_neutral_7class": 0.33715596330275227
+}
+Compare with earlier systems on the same 436 rows: A strict 0.275, D strict 0.401 (results/ambiguity/ai_suggested_all/report.txt).
+
+  emoji rows: n=146 strict (neutral masked) = 0.336
+  no-emoji rows: n=290 strict (neutral masked) = 0.272

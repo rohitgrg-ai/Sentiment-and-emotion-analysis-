@@ -1,0 +1,92 @@
+{
+ "natural_test": {
+  "accuracy_7class": 0.7394051066070019,
+  "macro_f1_7class": 0.6953365703595654,
+  "accuracy_six_emotions": 0.833257403189066
+ },
+ "tweet_emotion_test": {
+  "accuracy": 0.8013698630136986,
+  "macro_f1": 0.5752098161232213
+ },
+ "sarcasm_test": {
+  "isarcasm": {
+   "n": 1394,
+   "precision": 0.41935483870967744,
+   "recall": 0.585,
+   "f1": 0.48851774530271397
+  },
+  "semeval2018_irony": {
+   "n": 784,
+   "precision": 0.5384615384615384,
+   "recall": 0.7877813504823151,
+   "f1": 0.639686684073107
+  }
+ },
+ "ambiguous": {
+  "n": 436,
+  "labels": "AI-suggested, not human-verified",
+  "text_only": {
+   "strict": 0.3830275229357798,
+   "emoji_rows": 0.4452054794520548,
+   "no_emoji_rows": 0.35172413793103446,
+   "by_category": {
+    "context_dependent_emotion": 0.421,
+    "contradictory_text_emoji": 0.318,
+    "emoji_dependent_sentiment": 0.53,
+    "internet_slang": 0.526,
+    "irony": 0.351,
+    "mixed_emotions": 0.528,
+    "negative_words_positive_meaning": 0.4,
+    "neutral_ambiguous": 0.333,
+    "positive_words_negative_meaning": 0.1,
+    "sarcasm": 0.025
+   }
+  },
+  "with_emojis": {
+   "strict": 0.4036697247706422,
+   "emoji_rows": 0.5068493150684932,
+   "no_emoji_rows": 0.35172413793103446,
+   "by_category": {
+    "context_dependent_emotion": 0.421,
+    "contradictory_text_emoji": 0.364,
+    "emoji_dependent_sentiment": 0.59,
+    "internet_slang": 0.526,
+    "irony": 0.351,
+    "mixed_emotions": 0.528,
+    "negative_words_positive_meaning": 0.4,
+    "neutral_ambiguous": 0.333,
+    "positive_words_negative_meaning": 0.1,
+    "sarcasm": 0.025
+   }
+  },
+  "with_emojis_and_sarcasm_rule": {
+   "strict": 0.4541284403669725,
+   "emoji_rows": 0.541095890410959,
+   "no_emoji_rows": 0.4103448275862069,
+   "by_category": {
+    "context_dependent_emotion": 0.421,
+    "contradictory_text_emoji": 0.5,
+    "emoji_dependent_sentiment": 0.573,
+    "internet_slang": 0.553,
+    "irony": 0.351,
+    "mixed_emotions": 0.5,
+    "negative_words_positive_meaning": 0.375,
+    "neutral_ambiguous": 0.333,
+    "positive_words_negative_meaning": 0.325,
+    "sarcasm": 0.275
+   }
+  },
+  "sarcasm_flag_rate_by_category": {
+   "context_dependent_emotion": 0.053,
+   "contradictory_text_emoji": 0.409,
+   "emoji_dependent_sentiment": 0.214,
+   "internet_slang": 0.053,
+   "irony": 0.216,
+   "mixed_emotions": 0.111,
+   "negative_words_positive_meaning": 0.025,
+   "neutral_ambiguous": 0.0,
+   "positive_words_negative_meaning": 0.7,
+   "sarcasm": 0.5
+  }
+ }
+}

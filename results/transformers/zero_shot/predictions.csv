@@ -1,0 +1,501 @@
+id,text,category,gold_emotion,gold_sentiment,secondary_emotion,emoji_flag,A_emotion,A_sentiment,D_emotion,D_sentiment,T_sentiment,T_sentiment_conf,T_emotion,T_emotion_raw,T_emotion_conf
+AMB0001,"Oh great, another meeting that could have been an email",sarcasm,anger,negative,,False,sadness,positive,sadness,positive,negative,0.4646112322807312,surprise,surprise,0.8240522742271423
+AMB0002,"Wow, thanks for waiting until the last minute to tell me",sarcasm,anger,negative,,False,joy,neutral,joy,neutral,positive,0.8048731088638306,surprise,surprise,0.9642150402069092
+AMB0003,I just love it when my phone dies at 2%,sarcasm,anger,negative,,False,joy,positive,joy,positive,positive,0.8392401933670044,joy,joy,0.6353617310523987
+AMB0004,Yeah because I totally have time for this right now,sarcasm,anger,negative,fear,False,anger,neutral,anger,neutral,positive,0.7313738465309143,neutral,neutral,0.864517092704773
+AMB0005,"Brilliant idea, let's schedule the exam on a holiday",sarcasm,anger,negative,,False,anger,positive,anger,positive,positive,0.9265114665031433,joy,joy,0.7740328907966614
+AMB0006,So glad my neighbour decided to start drilling at 6am,sarcasm,anger,negative,,False,joy,positive,joy,positive,positive,0.5907555222511292,joy,joy,0.9456667900085449
+AMB0007,Nothing says weekend like doing my taxes,sarcasm,sadness,negative,anger,False,anger,neutral,anger,neutral,neutral,0.4552893042564392,sadness,sadness,0.534639298915863
+AMB0008,"Can't believe how fast customer service was, only 3 hours on hold",sarcasm,anger,negative,,False,anger,neutral,anger,neutral,positive,0.8550088405609131,surprise,surprise,0.9822810888290405
+AMB0009,Amazing how the wifi always works perfectly during online exams,sarcasm,anger,negative,,False,joy,positive,joy,positive,positive,0.9475829601287842,surprise,surprise,0.936556875705719
+AMB0010,"Oh sure, blame me for the weather too",sarcasm,anger,negative,,False,anger,neutral,anger,neutral,negative,0.8726032972335815,anger,anger,0.3935885429382324
+AMB0011,"Perfect, I spilled coffee on my only clean shirt",sarcasm,anger,negative,sadness,False,joy,positive,joy,positive,positive,0.7231118679046631,anger,disgust,0.6152538657188416
+AMB0012,"What a lovely surprise, my rent went up again",sarcasm,anger,negative,sadness,False,love,positive,love,positive,positive,0.9865108132362366,joy,joy,0.5865037441253662
+AMB0013,I'm thrilled to be working another double shift,sarcasm,sadness,negative,anger,False,joy,positive,joy,positive,positive,0.9897346496582031,joy,joy,0.9841648936271667
+AMB0014,Love how nobody replied to my message in the group chat,sarcasm,sadness,negative,anger,False,sadness,positive,sadness,positive,negative,0.4475228488445282,surprise,surprise,0.5840639472007751
+AMB0015,"Wow, you finally remembered my birthday, only two weeks late",sarcasm,anger,negative,sadness,False,joy,neutral,joy,neutral,positive,0.9416638612747192,surprise,surprise,0.9640100002288818
+AMB0016,"Best day ever, my bike got stolen",sarcasm,anger,negative,sadness,False,sadness,positive,sadness,positive,positive,0.9518806338310242,anger,anger,0.5399872660636902
+AMB0017,Really appreciate you eating my leftovers without asking,sarcasm,anger,negative,,False,anger,neutral,anger,neutral,positive,0.8698977828025818,surprise,surprise,0.49717646837234497
+AMB0018,"Fantastic customer service, they hung up on me twice",sarcasm,anger,negative,,False,joy,positive,joy,positive,positive,0.9787946939468384,joy,joy,0.962583601474762
+AMB0019,"Yay, more homework, exactly what I wanted",sarcasm,anger,negative,sadness,False,sadness,neutral,sadness,neutral,positive,0.9656575322151184,joy,joy,0.34323394298553467
+AMB0020,Of course the printer jams when I'm already late,sarcasm,anger,negative,,False,anger,neutral,anger,neutral,negative,0.8045459389686584,sadness,sadness,0.49181389808654785
+AMB0021,"Thanks for the spoilers, really made my night",sarcasm,anger,negative,,False,joy,neutral,joy,neutral,positive,0.9214216470718384,joy,joy,0.8240446448326111
+AMB0022,"Sure, I'd love to hear your opinion on my life choices again",sarcasm,anger,negative,,False,joy,positive,joy,positive,positive,0.8152468204498291,joy,joy,0.4449370801448822
+AMB0023,"Great, now the app wants another update",sarcasm,anger,negative,,False,sadness,positive,sadness,positive,positive,0.4239441454410553,joy,joy,0.7334825992584229
+AMB0024,So happy my flight is delayed for the fourth time,sarcasm,anger,negative,sadness,False,joy,positive,joy,positive,negative,0.6965387463569641,joy,joy,0.43593987822532654
+AMB0025,"Oh good, it's raining on the one day I left my umbrella",sarcasm,anger,negative,,False,sadness,positive,sadness,positive,positive,0.6526795029640198,joy,joy,0.8866751194000244
+AMB0026,"Wonderful, my laptop restarted in the middle of my presentation",sarcasm,anger,negative,fear,False,joy,positive,joy,positive,positive,0.9779044389724731,surprise,surprise,0.9688073992729187
+AMB0027,Totally not stressed about the deadline tomorrow,sarcasm,fear,negative,,False,joy,negative,joy,negative,positive,0.4412229359149933,neutral,neutral,0.5811489820480347
+AMB0028,"I'm so calm right now, everything is under control",sarcasm,fear,negative,,False,joy,positive,joy,positive,positive,0.9163430333137512,neutral,neutral,0.4993082880973816
+AMB0029,Love being the only one who does any work in the group project,sarcasm,anger,negative,,False,sadness,positive,sadness,positive,positive,0.8368874192237854,joy,joy,0.4744746685028076
+AMB0030,Clearly the best decision I've ever made was buying this phone,sarcasm,anger,negative,,False,sadness,positive,sadness,positive,positive,0.9781041741371155,joy,joy,0.6547735333442688
+AMB0031,"Wow, such a quick response, only took them a month",sarcasm,anger,negative,,False,sadness,neutral,sadness,neutral,positive,0.951033890247345,surprise,surprise,0.9737820029258728
+AMB0032,Nice of the bus driver to leave right as I got there,sarcasm,anger,negative,,False,joy,positive,joy,positive,positive,0.8042320013046265,neutral,neutral,0.569191038608551
+AMB0033,"Yeah, sleeping 3 hours before an exam is a great plan",sarcasm,fear,negative,sadness,False,sadness,positive,sadness,positive,positive,0.9182895421981812,neutral,neutral,0.7991612553596497
+AMB0034,"Thanks autocorrect, that's exactly what I meant",sarcasm,anger,negative,,False,joy,neutral,joy,neutral,neutral,0.4055882692337036,neutral,neutral,0.8623408079147339
+AMB0035,Thrilled to report I lost my keys again,sarcasm,anger,negative,,False,joy,negative,joy,negative,negative,0.6899542212486267,anger,anger,0.5707351565361023
+AMB0036,Clearly my opinion matters a lot here,sarcasm,sadness,negative,anger,False,sadness,neutral,sadness,neutral,neutral,0.6478042602539062,neutral,neutral,0.8444623947143555
+AMB0037,Can't wait to spend my whole Sunday cleaning,sarcasm,anger,negative,sadness,False,anger,neutral,anger,neutral,positive,0.9177229404449463,joy,joy,0.8979977965354919
+AMB0038,What a great time to run out of gas,sarcasm,anger,negative,,False,sadness,positive,sadness,positive,positive,0.423952579498291,surprise,surprise,0.465034157037735
+AMB0039,Love that my landlord ignores every email I send,sarcasm,anger,negative,,False,sadness,positive,sadness,positive,negative,0.3444800078868866,anger,anger,0.7681328058242798
+AMB0040,"Wow I'm so lucky, both my exams are on the same day",sarcasm,fear,negative,anger,False,joy,positive,joy,positive,positive,0.9826555252075195,surprise,surprise,0.9612194299697876
+AMB0041,The fire station burned down last night,irony,surprise,negative,sadness,False,love,neutral,love,neutral,negative,0.8327440619468689,sadness,sadness,0.7263607382774353
+AMB0042,I got a parking ticket while I was paying for parking,irony,anger,negative,,False,anger,neutral,anger,neutral,negative,0.7184575796127319,anger,anger,0.5097866654396057
+AMB0043,My fitness tracker broke while I was sitting on the couch,irony,joy,neutral,,False,sadness,neutral,sadness,neutral,negative,0.7495250701904297,sadness,sadness,0.5914814472198486
+AMB0044,The anti-stress workshop was the most stressful part of my week,irony,anger,negative,fear,False,joy,negative,joy,negative,negative,0.8405994772911072,fear,fear,0.8334559798240662
+AMB0045,Ordered a book on time management and it arrived three weeks late,irony,anger,negative,joy,False,anger,neutral,anger,neutral,negative,0.7923542261123657,sadness,sadness,0.8028898239135742
+AMB0046,The motivational speaker cancelled because he didn't feel like coming,irony,anger,negative,surprise,False,anger,neutral,anger,neutral,negative,0.7543489336967468,sadness,sadness,0.9627604484558105
+AMB0047,I studied all night for the wrong exam,irony,sadness,negative,fear,False,anger,neutral,anger,neutral,negative,0.7484197616577148,fear,fear,0.7347773313522339
+AMB0048,Finally saved enough for the concert and then it got cancelled,irony,sadness,negative,,False,joy,neutral,joy,neutral,negative,0.6502041816711426,sadness,sadness,0.7995038628578186
+AMB0049,The marriage counsellor is getting divorced,irony,surprise,neutral,,False,anger,negative,anger,negative,neutral,0.504800021648407,sadness,sadness,0.9756534695625305
+AMB0050,My umbrella broke the first time it actually rained,irony,anger,negative,,False,sadness,positive,sadness,positive,negative,0.7557380199432373,fear,fear,0.45695066452026367
+AMB0051,The spelling bee champion misspelled his own name on the form,irony,surprise,neutral,joy,False,anger,neutral,anger,neutral,negative,0.6142660975456238,neutral,neutral,0.7896468043327332
+AMB0052,I bought a plant to reduce stress and now I'm stressed about keeping it alive,irony,fear,negative,joy,False,joy,negative,joy,negative,negative,0.7031586170196533,anger,anger,0.8246539235115051
+AMB0053,The gym is closed because the staff are too tired,irony,surprise,neutral,joy,False,joy,negative,joy,negative,negative,0.7404236793518066,sadness,sadness,0.9201714992523193
+AMB0054,I was late to my own punctuality award ceremony,irony,,negative,joy,False,anger,neutral,anger,neutral,negative,0.7028221487998962,sadness,sadness,0.7239827513694763
+AMB0055,Got food poisoning from the healthy salad place,irony,anger,negative,sadness,False,joy,positive,joy,positive,negative,0.8050647377967834,anger,disgust,0.439864844083786
+AMB0056,The noise complaint letter was delivered by a guy blasting music,irony,surprise,neutral,anger,False,anger,neutral,anger,neutral,negative,0.5097876191139221,anger,anger,0.5273653268814087
+AMB0057,I cleaned the whole house and then the dog rolled in mud and ran inside,irony,anger,negative,sadness,False,joy,neutral,joy,neutral,negative,0.609354555606842,anger,disgust,0.8374360799789429
+AMB0058,Bought noise cancelling headphones and now I can't hear my alarm,irony,anger,negative,,False,joy,neutral,joy,neutral,negative,0.7163557410240173,fear,fear,0.3560374081134796
+AMB0059,Finally got a day off and I'm sick,irony,sadness,negative,,False,joy,neutral,joy,neutral,negative,0.773870587348938,sadness,sadness,0.9506064057350159
+AMB0060,I trained for months and twisted my ankle walking to the race,irony,sadness,negative,,False,joy,neutral,joy,neutral,negative,0.6545644402503967,fear,fear,0.6569666266441345
+AMB0061,The fire alarm went off during the fire safety talk,irony,surprise,neutral,joy,False,anger,neutral,anger,neutral,neutral,0.8037000298500061,fear,fear,0.839475691318512
+AMB0062,Our pilot just announced he's afraid of flying,irony,fear,negative,surprise,False,fear,negative,fear,negative,negative,0.8256081342697144,fear,fear,0.9854642748832703
+AMB0063,The weather app said sunny right as hail hit my car,irony,anger,negative,,False,anger,neutral,anger,neutral,neutral,0.583961546421051,neutral,neutral,0.4802168905735016
+AMB0064,I won free coffee for a year right after I quit coffee,irony,sadness,negative,joy,False,joy,positive,joy,positive,positive,0.5885922908782959,joy,joy,0.9347562193870544
+AMB0065,My password manager forgot my password,irony,anger,negative,surprise,False,anger,neutral,anger,neutral,negative,0.5789344310760498,sadness,sadness,0.439130038022995
+AMB0066,The road to the safe driving conference was closed for repairs,irony,surprise,neutral,joy,False,joy,positive,joy,positive,neutral,0.6461865305900574,sadness,sadness,0.8102206587791443
+AMB0067,I finally learned to cook and then my stove broke,irony,sadness,negative,anger,False,sadness,neutral,sadness,neutral,negative,0.7583910226821899,surprise,surprise,0.4820261299610138
+AMB0068,I left my phone at home on the one day I actually needed it,irony,anger,negative,,False,anger,neutral,anger,neutral,negative,0.5080367922782898,neutral,neutral,0.7737566828727722
+AMB0069,My therapist cancelled and now I'm anxious about it,irony,fear,negative,,False,fear,negative,fear,negative,negative,0.8525475859642029,fear,fear,0.9827187061309814
+AMB0070,"The one time I dress up, the event turns out to be casual",irony,,negative,,False,joy,negative,joy,negative,neutral,0.6575629711151123,joy,joy,0.5099084377288818
+AMB0071,I quit social media to focus and spent the whole day thinking about social media,irony,,neutral,,False,anger,neutral,anger,neutral,neutral,0.6371590495109558,neutral,neutral,0.5680482983589172
+AMB0072,We drove two hours for a beach day and it snowed,irony,sadness,negative,surprise,False,joy,neutral,joy,neutral,neutral,0.5178685784339905,sadness,sadness,0.5987533926963806
+AMB0073,The library is too noisy to study in,irony,anger,negative,,False,anger,negative,anger,negative,negative,0.836810290813446,anger,disgust,0.4788428246974945
+AMB0074,My new unbreakable phone case broke in a week,irony,anger,negative,,False,sadness,positive,sadness,positive,negative,0.7865720391273499,surprise,surprise,0.522864580154419
+AMB0075,I got a raise the same day my rent doubled,irony,sadness,negative,joy,False,joy,neutral,joy,neutral,positive,0.6152551770210266,joy,joy,0.9838097095489502
+AMB0076,Spent all day baking for the party and everyone wanted pizza,irony,sadness,negative,,False,anger,neutral,anger,neutral,positive,0.45207569003105164,neutral,neutral,0.4821520745754242
+AMB0077,The diet app sent me a pizza coupon,irony,joy,neutral,,False,joy,neutral,joy,neutral,neutral,0.6486021280288696,neutral,neutral,0.7627712488174438
+AMB0078,I swore I'd never sound like my parents and today I said because I said so,irony,joy,neutral,,False,anger,negative,anger,negative,negative,0.5377622246742249,anger,anger,0.34029024839401245
+AMB0079,My lucky socks are the reason I slipped,irony,anger,negative,joy,False,joy,positive,joy,positive,neutral,0.40630200505256653,neutral,neutral,0.47480425238609314
+AMB0080,Saved my battery all day and the phone died anyway,irony,anger,negative,,False,sadness,neutral,sadness,neutral,negative,0.6682548522949219,sadness,sadness,0.7640414834022522
+AMB0081,I absolutely love being left on read,positive_words_negative_meaning,sadness,negative,anger,False,sadness,positive,sadness,positive,positive,0.6471640467643738,joy,joy,0.9829913377761841
+AMB0082,It's great being the last one picked every single time,positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,positive,0.9300605058670044,joy,joy,0.7821187973022461
+AMB0083,Fantastic! My laptop froze right before I hit submit,positive_words_negative_meaning,anger,negative,fear,False,joy,positive,joy,positive,positive,0.9527959227561951,surprise,surprise,0.6450222134590149
+AMB0084,I couldn't be happier with how badly that went,positive_words_negative_meaning,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.8919245004653931,sadness,sadness,0.9775430560112
+AMB0085,"What a wonderful way to start the week, my car won't start",positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,positive,0.9131060242652893,joy,joy,0.9548858404159546
+AMB0086,I'm so blessed to have a manager who never listens,positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,positive,0.9473480582237244,neutral,neutral,0.5251808762550354
+AMB0087,"Lovely, the train is cancelled again",positive_words_negative_meaning,anger,negative,,False,love,positive,love,positive,positive,0.8841763138771057,sadness,sadness,0.9688211679458618
+AMB0088,So excited to pay another hospital bill,positive_words_negative_meaning,sadness,negative,anger,False,joy,positive,joy,positive,positive,0.9487999677658081,joy,joy,0.955602765083313
+AMB0089,It's amazing how I can fail at everything I try,positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,negative,0.8493489027023315,surprise,surprise,0.9478299617767334
+AMB0090,"Best friends don't forget your birthday, but apparently mine do",positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,neutral,0.47860851883888245,neutral,neutral,0.47486719489097595
+AMB0091,Nice to know my opinion means nothing,positive_words_negative_meaning,sadness,negative,anger,False,sadness,positive,sadness,positive,positive,0.42492252588272095,joy,joy,0.7646578550338745
+AMB0092,Happy to report I failed again,positive_words_negative_meaning,sadness,negative,,False,joy,positive,joy,positive,negative,0.8309357762336731,sadness,sadness,0.9793187975883484
+AMB0093,I just adore people who chew loudly,positive_words_negative_meaning,anger,negative,,False,anger,neutral,anger,neutral,positive,0.9633423686027527,joy,joy,0.5219427347183228
+AMB0094,Perfect weather for my car to break down,positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,positive,0.47205111384391785,fear,fear,0.375497043132782
+AMB0095,I'm totally fine with everyone forgetting about me,positive_words_negative_meaning,sadness,negative,,False,joy,neutral,joy,neutral,neutral,0.49605995416641235,neutral,neutral,0.7249206900596619
+AMB0096,How sweet of them not to invite me,positive_words_negative_meaning,sadness,negative,anger,False,joy,positive,joy,positive,positive,0.5872222185134888,surprise,surprise,0.4948429763317108
+AMB0097,Congratulations to me for locking myself out again,positive_words_negative_meaning,anger,negative,,False,sadness,neutral,sadness,neutral,positive,0.8269359469413757,neutral,neutral,0.4613490402698517
+AMB0098,Glad to see my hard work went straight in the bin,positive_words_negative_meaning,sadness,negative,anger,False,joy,positive,joy,positive,negative,0.7365521788597107,joy,joy,0.9352794289588928
+AMB0099,"Yay, another rejection email",positive_words_negative_meaning,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.9068831205368042,surprise,surprise,0.5799780488014221
+AMB0100,My favourite thing is being ignored in meetings,positive_words_negative_meaning,sadness,negative,anger,False,sadness,positive,sadness,positive,negative,0.6475164890289307,joy,joy,0.4532313942909241
+AMB0101,"What a brilliant performance, everyone left halfway through",positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,positive,0.9754391312599182,joy,joy,0.7077741622924805
+AMB0102,Love how my plans always fall apart,positive_words_negative_meaning,sadness,negative,,False,joy,positive,joy,positive,negative,0.8077784776687622,sadness,sadness,0.8339274525642395
+AMB0103,"Wonderful news, the landlord is selling the flat",positive_words_negative_meaning,fear,negative,sadness,False,joy,positive,joy,positive,positive,0.9228574633598328,surprise,surprise,0.8325687646865845
+AMB0104,I'm so proud of myself for oversleeping again,positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,positive,0.9748468399047852,joy,joy,0.908335268497467
+AMB0105,Super fun spending my birthday alone,positive_words_negative_meaning,sadness,negative,,False,joy,neutral,joy,neutral,positive,0.9750415086746216,joy,joy,0.9849141240119934
+AMB0106,The best part of my day was the 2 hour traffic jam,positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,positive,0.9078349471092224,joy,joy,0.7479079365730286
+AMB0107,"Excellent, my ex is at the same party",positive_words_negative_meaning,fear,negative,anger,False,fear,positive,fear,positive,positive,0.8272223472595215,joy,joy,0.45404335856437683
+AMB0108,Great to be reminded I'm replaceable,positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,negative,0.5553605556488037,joy,joy,0.9568135142326355
+AMB0109,It's a beautiful day to be stuck inside studying,positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,positive,0.6692541241645813,joy,joy,0.9865012764930725
+AMB0110,"Thanks for the amazing advice, it ruined everything",positive_words_negative_meaning,anger,negative,,False,sadness,positive,sadness,positive,negative,0.6221162676811218,neutral,neutral,0.43636763095855713
+AMB0111,I'm thrilled my phone screen cracked again,positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,negative,0.8015891313552856,joy,joy,0.80837082862854
+AMB0112,So nice of my body to get sick on vacation,positive_words_negative_meaning,sadness,negative,anger,False,sadness,positive,sadness,positive,positive,0.4661392271518707,sadness,sadness,0.5090781450271606
+AMB0113,Living the dream: cold noodles and overdue bills,positive_words_negative_meaning,sadness,negative,,False,anger,positive,anger,positive,positive,0.6146835684776306,neutral,neutral,0.5534488558769226
+AMB0114,"I enjoy crying in the shower, it's my favourite hobby",positive_words_negative_meaning,sadness,negative,,False,sadness,positive,sadness,positive,positive,0.9272143244743347,joy,joy,0.9913637638092041
+AMB0115,Can't wait to hear more of your excuses,positive_words_negative_meaning,anger,negative,,False,joy,neutral,joy,neutral,negative,0.6426210403442383,joy,joy,0.6641585230827332
+AMB0116,"What a gift, a surprise extra shift",positive_words_negative_meaning,anger,negative,,False,love,neutral,love,neutral,positive,0.9776493906974792,surprise,surprise,0.8317275643348694
+AMB0117,Delighted to learn my exam results were lost,positive_words_negative_meaning,anger,negative,,False,joy,negative,joy,negative,positive,0.4210205078125,sadness,sadness,0.9138773083686829
+AMB0118,"Lucky me, the only seat left is next to the crying baby",positive_words_negative_meaning,anger,negative,,False,joy,positive,joy,positive,positive,0.4322664141654968,neutral,neutral,0.4474114179611206
+AMB0119,So cool how nobody noticed my haircut,positive_words_negative_meaning,sadness,negative,,False,joy,neutral,joy,neutral,positive,0.882580578327179,joy,joy,0.3679305613040924
+AMB0120,"Love that for me, another 8am lecture",positive_words_negative_meaning,sadness,negative,anger,False,sadness,positive,sadness,positive,positive,0.9391082525253296,joy,joy,0.6881520748138428
+AMB0121,This song is so sick,negative_words_positive_meaning,joy,positive,,False,anger,neutral,anger,neutral,negative,0.5730502605438232,anger,disgust,0.794506311416626
+AMB0122,"I'm dying, this video is too funny",negative_words_positive_meaning,joy,positive,,False,surprise,neutral,surprise,neutral,positive,0.922866702079773,joy,joy,0.4626721143722534
+AMB0123,"That concert was insane, best night ever",negative_words_positive_meaning,joy,positive,,False,sadness,positive,sadness,positive,positive,0.9775906801223755,surprise,surprise,0.7222154140472412
+AMB0124,You killed it on stage tonight,negative_words_positive_meaning,joy,positive,,False,anger,neutral,anger,neutral,positive,0.981143593788147,anger,anger,0.6129881739616394
+AMB0125,Her new album is ridiculously good,negative_words_positive_meaning,joy,positive,,False,joy,positive,joy,positive,positive,0.9826890230178833,joy,joy,0.7142654657363892
+AMB0126,"I'm obsessed with this recipe, it's dangerously good",negative_words_positive_meaning,joy,positive,,False,sadness,positive,sadness,positive,positive,0.9750226140022278,neutral,neutral,0.8028177618980408
+AMB0127,This cake is criminally delicious,negative_words_positive_meaning,joy,positive,,False,joy,positive,joy,positive,positive,0.9725649356842041,joy,joy,0.7949497103691101
+AMB0128,"Damn, you look good",negative_words_positive_meaning,love,positive,joy,False,joy,positive,joy,positive,positive,0.9398593902587891,anger,disgust,0.40576401352882385
+AMB0129,The ending of that movie destroyed me in the best way,negative_words_positive_meaning,joy,positive,sadness,False,sadness,positive,sadness,positive,negative,0.8987542986869812,anger,anger,0.35766494274139404
+AMB0130,"I'm crying, my little brother just said his first full sentence",negative_words_positive_meaning,joy,positive,love,False,anger,neutral,anger,neutral,positive,0.5310463905334473,sadness,sadness,0.5819886326789856
+AMB0131,That goal was absolutely filthy,negative_words_positive_meaning,joy,positive,,False,joy,negative,joy,negative,negative,0.883252739906311,anger,disgust,0.9779695272445679
+AMB0132,This game is so addictive I hate it,negative_words_positive_meaning,joy,positive,anger,False,joy,negative,joy,negative,negative,0.8728338479995728,anger,disgust,0.5269744396209717
+AMB0133,That workout murdered me but I feel amazing,negative_words_positive_meaning,joy,positive,,False,sadness,positive,sadness,positive,positive,0.6150503754615784,surprise,surprise,0.9332885146141052
+AMB0134,I can't stand how cute my puppy is,negative_words_positive_meaning,love,positive,,False,joy,positive,joy,positive,positive,0.7063882350921631,joy,joy,0.8968542814254761
+AMB0135,"My heart hurts, this proposal video is so beautiful",negative_words_positive_meaning,love,positive,joy,False,sadness,positive,sadness,positive,positive,0.9585207104682922,sadness,sadness,0.9670715928077698
+AMB0136,"Those fries were evil, I ate the whole bag",negative_words_positive_meaning,joy,positive,,False,anger,neutral,anger,neutral,negative,0.9371459484100342,anger,disgust,0.8592993021011353
+AMB0137,"The plot twist was brutal, I loved it",negative_words_positive_meaning,surprise,positive,joy,False,love,positive,love,positive,positive,0.8808681964874268,anger,disgust,0.6479812860488892
+AMB0138,He's terrifyingly talented,negative_words_positive_meaning,surprise,positive,joy,False,joy,negative,joy,negative,positive,0.883721113204956,fear,fear,0.9526486992835999
+AMB0139,"I'm screaming, we won the finals",negative_words_positive_meaning,joy,positive,,False,joy,neutral,joy,neutral,positive,0.9659333825111389,joy,joy,0.5299442410469055
+AMB0140,That was wicked fun,negative_words_positive_meaning,joy,positive,,False,anger,neutral,anger,neutral,positive,0.941942572593689,joy,joy,0.9734860062599182
+AMB0141,I hate how much I love this show,negative_words_positive_meaning,love,positive,anger,False,joy,positive,joy,positive,negative,0.5797446966171265,anger,anger,0.7859073281288147
+AMB0142,The view from the summit was stupidly beautiful,negative_words_positive_meaning,joy,positive,,False,sadness,positive,sadness,positive,positive,0.911934494972229,joy,joy,0.7523770332336426
+AMB0143,That joke was so bad it was good,negative_words_positive_meaning,joy,positive,,False,sadness,positive,sadness,positive,negative,0.8598988056182861,anger,disgust,0.6695550084114075
+AMB0144,"I'm dead, my cat just fell off the sofa again",negative_words_positive_meaning,joy,positive,,False,anger,neutral,anger,neutral,negative,0.8593635559082031,surprise,surprise,0.4218171536922455
+AMB0145,"My sister is a beast at chess, she crushed everyone",negative_words_positive_meaning,joy,positive,,False,anger,neutral,anger,neutral,positive,0.9543946385383606,anger,anger,0.6171630024909973
+AMB0146,This coffee is dangerously strong and I love it,negative_words_positive_meaning,joy,positive,,False,joy,positive,joy,positive,positive,0.9806546568870544,joy,joy,0.8787927031517029
+AMB0147,"You're the worst, you remembered my favourite snack",negative_words_positive_meaning,love,positive,,False,sadness,neutral,sadness,neutral,negative,0.9522766470909119,anger,disgust,0.9754368662834167
+AMB0148,I'm so mad at how good this pizza is,negative_words_positive_meaning,joy,positive,,False,anger,positive,anger,positive,negative,0.7123867869377136,anger,anger,0.8596523404121399
+AMB0149,"The new update is a monster, everything is so much faster",negative_words_positive_meaning,joy,positive,,False,sadness,neutral,sadness,neutral,positive,0.8114829659461975,neutral,neutral,0.4750794470310211
+AMB0150,"Ugh, you're too nice to me",negative_words_positive_meaning,love,positive,,False,sadness,positive,sadness,positive,positive,0.9521061182022095,anger,disgust,0.6748389601707458
+AMB0151,"That card trick was nasty, how did you do that",negative_words_positive_meaning,surprise,positive,joy,False,joy,neutral,joy,neutral,negative,0.9398404359817505,anger,disgust,0.8960115313529968
+AMB0152,This puzzle is torture and I can't stop playing,negative_words_positive_meaning,joy,positive,anger,False,anger,neutral,anger,neutral,negative,0.9136322736740112,fear,fear,0.41605111956596375
+AMB0153,"My jaw dropped, the drawing is unreal",negative_words_positive_meaning,surprise,positive,joy,False,joy,neutral,joy,neutral,positive,0.7681902050971985,surprise,surprise,0.933777928352356
+AMB0154,"Stop it, I'm blushing",negative_words_positive_meaning,joy,positive,love,False,anger,neutral,anger,neutral,positive,0.40793415904045105,anger,anger,0.8590481877326965
+AMB0155,"Shut up, you got tickets?!",negative_words_positive_meaning,surprise,positive,joy,False,anger,neutral,anger,neutral,negative,0.5372668504714966,anger,anger,0.8694579005241394
+AMB0156,"I'm going to cry, this is the nicest gift ever",negative_words_positive_meaning,joy,positive,love,False,anger,neutral,anger,neutral,positive,0.9536250829696655,joy,joy,0.8095828890800476
+AMB0157,"The heat in this curry is violent, so good",negative_words_positive_meaning,joy,positive,,False,anger,positive,anger,positive,positive,0.9096468091011047,anger,anger,0.9408861398696899
+AMB0158,Her voice gives me chills every time,negative_words_positive_meaning,joy,positive,surprise,False,anger,neutral,anger,neutral,positive,0.9387308955192566,joy,joy,0.9777472615242004
+AMB0159,"You're a menace, that prank was hilarious",negative_words_positive_meaning,joy,positive,,False,joy,neutral,joy,neutral,negative,0.8460730910301208,neutral,neutral,0.3850461542606354
+AMB0160,This drama is so toxic and I'm hooked,negative_words_positive_meaning,joy,positive,,False,joy,neutral,joy,neutral,negative,0.9187422394752502,anger,disgust,0.8887608051300049
+AMB0161,The doctor called and asked me to come in tomorrow,context_dependent_emotion,fear,negative,,False,anger,neutral,anger,neutral,neutral,0.7966722249984741,neutral,neutral,0.3672288954257965
+AMB0162,He left his keys on the table and walked out without a word,context_dependent_emotion,sadness,negative,anger,False,anger,neutral,anger,neutral,neutral,0.5514552593231201,anger,anger,0.6494829654693604
+AMB0163,I opened the envelope and saw my name on the list,context_dependent_emotion,joy,positive,surprise,False,anger,neutral,anger,neutral,neutral,0.8412805795669556,neutral,neutral,0.5134425759315491
+AMB0164,They played our song at the wedding,context_dependent_emotion,love,positive,joy,False,anger,neutral,anger,neutral,neutral,0.5037804245948792,joy,joy,0.577854335308075
+AMB0165,Her side of the bed is still empty,context_dependent_emotion,sadness,negative,,False,sadness,neutral,sadness,neutral,neutral,0.7616961002349854,sadness,sadness,0.4218641221523285
+AMB0166,The police are at my door,context_dependent_emotion,fear,negative,,False,anger,negative,anger,negative,negative,0.5856781005859375,fear,fear,0.8925099968910217
+AMB0167,My manager just booked a quick chat for Friday at 5pm,context_dependent_emotion,fear,negative,,False,anger,neutral,anger,neutral,neutral,0.7950124740600586,neutral,neutral,0.840955376625061
+AMB0168,The house is so quiet now that the kids moved out,context_dependent_emotion,sadness,negative,love,False,joy,positive,joy,positive,neutral,0.6372533440589905,sadness,sadness,0.5676435232162476
+AMB0169,I checked my bank account after the weekend,context_dependent_emotion,fear,negative,sadness,False,anger,neutral,anger,neutral,neutral,0.8500471711158752,neutral,neutral,0.5529683828353882
+AMB0170,He remembered exactly how I take my coffee,context_dependent_emotion,love,positive,joy,False,anger,neutral,anger,neutral,neutral,0.7306034564971924,neutral,neutral,0.9112882614135742
+AMB0171,The results show my name in first place,context_dependent_emotion,joy,positive,surprise,False,joy,neutral,joy,neutral,neutral,0.8409261703491211,joy,joy,0.7253304719924927
+AMB0172,My phone has 47 missed calls from my mom,context_dependent_emotion,fear,negative,,False,sadness,positive,sadness,positive,negative,0.8041360378265381,sadness,sadness,0.8838465809822083
+AMB0173,The teacher held my test up in front of the class,context_dependent_emotion,,neutral,,False,anger,neutral,anger,neutral,negative,0.49157461524009705,anger,disgust,0.889164388179779
+AMB0174,Found an old voicemail from my grandpa today,context_dependent_emotion,sadness,negative,love,False,anger,neutral,anger,neutral,neutral,0.800324022769928,surprise,surprise,0.4895232915878296
+AMB0175,"The dog still waits at the door, two years after she left",context_dependent_emotion,sadness,negative,,False,sadness,neutral,sadness,neutral,neutral,0.6777767539024353,neutral,neutral,0.9259598255157471
+AMB0176,They changed the locks while I was away,context_dependent_emotion,anger,negative,fear,False,anger,neutral,anger,neutral,neutral,0.7566240429878235,neutral,neutral,0.7407903075218201
+AMB0177,The plane started shaking and the seatbelt sign came on,context_dependent_emotion,fear,negative,,False,anger,neutral,anger,neutral,neutral,0.5989407896995544,fear,fear,0.9852786064147949
+AMB0178,Everyone stood up and clapped when I walked in,context_dependent_emotion,joy,positive,surprise,False,anger,neutral,anger,neutral,positive,0.7703352570533752,neutral,neutral,0.6161090135574341
+AMB0179,My best friend moved across the world today,context_dependent_emotion,sadness,negative,,False,sadness,positive,sadness,positive,positive,0.9323964715003967,joy,joy,0.5810015201568604
+AMB0180,He finally said the three words,context_dependent_emotion,love,positive,joy,False,anger,neutral,anger,neutral,neutral,0.5615911483764648,neutral,neutral,0.8242332339286804
+AMB0181,They gave my promotion to the new guy,context_dependent_emotion,anger,negative,sadness,False,anger,neutral,anger,neutral,neutral,0.7145010828971863,neutral,neutral,0.5928071141242981
+AMB0182,A strange car has been parked outside my house for three days,context_dependent_emotion,fear,negative,,False,anger,neutral,anger,neutral,neutral,0.49387964606285095,fear,fear,0.6645526885986328
+AMB0183,The biopsy came back negative,context_dependent_emotion,joy,positive,,False,anger,neutral,anger,neutral,neutral,0.7850500345230103,neutral,neutral,0.2488761693239212
+AMB0184,The test came back positive,context_dependent_emotion,,neutral,,False,joy,positive,joy,positive,positive,0.5244503021240234,neutral,neutral,0.5768979787826538
+AMB0185,She returned the ring,context_dependent_emotion,sadness,negative,,False,joy,neutral,joy,neutral,neutral,0.8129625916481018,neutral,neutral,0.8130877017974854
+AMB0186,I saw my ex holding hands with my best friend,context_dependent_emotion,anger,negative,sadness,False,sadness,positive,sadness,positive,neutral,0.7863555550575256,anger,disgust,0.8334786295890808
+AMB0187,They called my ticket number at the raffle,context_dependent_emotion,surprise,positive,joy,False,anger,neutral,anger,neutral,neutral,0.8688193559646606,neutral,neutral,0.8545939326286316
+AMB0188,My hands won't stop shaking before the interview,context_dependent_emotion,fear,negative,,False,anger,neutral,anger,neutral,negative,0.5683997869491577,fear,fear,0.9941603541374207
+AMB0189,We're having a baby,context_dependent_emotion,joy,positive,love,False,anger,neutral,anger,neutral,neutral,0.7470956444740295,joy,joy,0.8259850144386292
+AMB0190,He didn't show up to my graduation,context_dependent_emotion,sadness,negative,anger,False,anger,neutral,anger,neutral,negative,0.5437891483306885,anger,anger,0.4371255040168762
+AMB0191,The kids made me breakfast in bed today,context_dependent_emotion,love,positive,joy,False,anger,neutral,anger,neutral,positive,0.6867408752441406,neutral,neutral,0.7490940093994141
+AMB0192,The hospital hallway smells the same as when my dad was here,context_dependent_emotion,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.6422588229179382,anger,disgust,0.599044144153595
+AMB0193,I heard footsteps upstairs and I live alone,context_dependent_emotion,fear,negative,,False,sadness,positive,sadness,positive,negative,0.6600862145423889,fear,fear,0.9145572185516357
+AMB0194,Somebody scratched my car and drove off,context_dependent_emotion,anger,negative,,False,anger,neutral,anger,neutral,negative,0.8395408987998962,anger,anger,0.8412565588951111
+AMB0195,My grandma still keeps every letter I ever sent her,context_dependent_emotion,love,positive,,False,anger,neutral,anger,neutral,neutral,0.6762979626655579,neutral,neutral,0.9211471676826477
+AMB0196,Five years sober today,context_dependent_emotion,joy,positive,,False,anger,neutral,anger,neutral,positive,0.6909294128417969,sadness,sadness,0.6494122743606567
+AMB0197,The ice under my feet just cracked,context_dependent_emotion,fear,negative,,False,sadness,neutral,sadness,neutral,negative,0.8249977231025696,anger,anger,0.34047797322273254
+AMB0198,They spelled my name wrong on my own birthday cake,context_dependent_emotion,anger,negative,joy,False,anger,neutral,anger,neutral,negative,0.8691454529762268,neutral,neutral,0.468388170003891
+AMB0199,Packing my childhood bedroom into boxes,context_dependent_emotion,sadness,negative,love,False,anger,neutral,anger,neutral,neutral,0.7323963046073914,neutral,neutral,0.5411683320999146
+AMB0200,I woke up and the whole street was covered in snow,context_dependent_emotion,surprise,positive,joy,False,fear,neutral,fear,neutral,negative,0.4564606249332428,surprise,surprise,0.7406814694404602
+AMB0201,I got everything I prayed for and I still feel empty,mixed_emotions,sadness,negative,joy,False,sadness,neutral,sadness,neutral,negative,0.8737927675247192,sadness,sadness,0.9849181771278381
+AMB0202,I'm laughing so I don't start crying,mixed_emotions,sadness,negative,joy,False,sadness,negative,sadness,negative,neutral,0.4098227620124817,neutral,neutral,0.4265764057636261
+AMB0203,Proud of my sister for moving abroad but I miss her already,mixed_emotions,sadness,negative,love,False,joy,positive,joy,positive,positive,0.8839517831802368,joy,joy,0.8853839039802551
+AMB0204,"Graduating today, excited and terrified at the same time",mixed_emotions,joy,positive,fear,False,fear,positive,fear,positive,positive,0.7872806787490845,fear,fear,0.9921018481254578
+AMB0205,The joke was funny until I realised it was about me,mixed_emotions,sadness,negative,anger,False,surprise,neutral,surprise,neutral,neutral,0.43140438199043274,surprise,surprise,0.4904642403125763
+AMB0206,"Happy for them, sad for me",mixed_emotions,sadness,negative,joy,False,sadness,negative,sadness,negative,positive,0.6404985189437866,sadness,sadness,0.8839484453201294
+AMB0207,Moving out feels like freedom and loss at the same time,mixed_emotions,,neutral,,False,joy,negative,joy,negative,negative,0.5146611928939819,joy,joy,0.87298583984375
+AMB0208,I love my job but it's slowly draining me,mixed_emotions,sadness,negative,love,False,sadness,positive,sadness,positive,positive,0.644281268119812,sadness,sadness,0.9755313992500305
+AMB0209,"Relieved it's over, but I wish it had ended differently",mixed_emotions,sadness,negative,joy,False,joy,positive,joy,positive,negative,0.47887060046195984,surprise,surprise,0.4744186997413635
+AMB0210,My dog is old and slow now and I treasure every walk,mixed_emotions,love,positive,sadness,False,joy,neutral,joy,neutral,positive,0.5990719199180603,sadness,sadness,0.5888265371322632
+AMB0211,I hate how much I miss you,mixed_emotions,sadness,negative,anger,False,joy,negative,joy,negative,negative,0.8947352170944214,sadness,sadness,0.6813884377479553
+AMB0212,Nervous and excited for my first day,mixed_emotions,joy,positive,fear,False,fear,positive,fear,positive,positive,0.8576940298080444,fear,fear,0.9903674125671387
+AMB0213,"Finally quit that job, scared but free",mixed_emotions,joy,positive,fear,False,fear,positive,fear,positive,negative,0.474915474653244,fear,fear,0.9911646246910095
+AMB0214,Watching old videos of us makes me smile and hurt,mixed_emotions,sadness,negative,joy,False,sadness,positive,sadness,positive,positive,0.4585457742214203,joy,joy,0.9349424839019775
+AMB0215,Won the award on the day my grandma passed away,mixed_emotions,sadness,negative,joy,False,sadness,neutral,sadness,neutral,neutral,0.5721996426582336,sadness,sadness,0.9695890545845032
+AMB0216,Can't decide if I'm angry or just disappointed,mixed_emotions,anger,negative,sadness,False,anger,negative,anger,negative,negative,0.7716737389564514,anger,anger,0.971805214881897
+AMB0217,Bittersweet last day of school,mixed_emotions,sadness,neutral,joy,False,sadness,neutral,sadness,neutral,negative,0.5141476988792419,sadness,sadness,0.6431688070297241
+AMB0218,"I'm glad he's happy, even if it's not with me",mixed_emotions,sadness,negative,love,False,joy,positive,joy,positive,positive,0.9408589601516724,joy,joy,0.9836822152137756
+AMB0219,Our team lost but I've never been prouder,mixed_emotions,joy,positive,sadness,False,sadness,negative,sadness,negative,positive,0.5833202600479126,sadness,sadness,0.9883897304534912
+AMB0220,I'm angry at him and worried about him at the same time,mixed_emotions,anger,negative,fear,False,anger,negative,anger,negative,negative,0.8491907715797424,anger,anger,0.9829055070877075
+AMB0221,This movie made me laugh and cry,mixed_emotions,joy,positive,sadness,False,sadness,positive,sadness,positive,positive,0.9097049832344055,joy,joy,0.9553978443145752
+AMB0222,I want to celebrate but I feel guilty,mixed_emotions,,negative,joy,False,sadness,positive,sadness,positive,negative,0.7378382086753845,sadness,sadness,0.9848846197128296
+AMB0223,"Half of me wants to go, half of me is terrified",mixed_emotions,fear,negative,joy,False,fear,neutral,fear,neutral,negative,0.5992504954338074,fear,fear,0.9826828241348267
+AMB0224,"Selling my first car, so many memories",mixed_emotions,sadness,negative,love,False,anger,neutral,anger,neutral,positive,0.8097569942474365,sadness,sadness,0.3775961399078369
+AMB0225,Surprised and a little hurt that nobody told me,mixed_emotions,sadness,negative,surprise,False,surprise,negative,surprise,negative,negative,0.8950626850128174,surprise,surprise,0.9695045351982117
+AMB0226,"I'm happy, I think, mostly",mixed_emotions,joy,positive,,False,joy,positive,joy,positive,positive,0.9762795567512512,joy,joy,0.9603106379508972
+AMB0227,It's a relief and a heartbreak to finally let go,mixed_emotions,sadness,negative,joy,False,anger,neutral,anger,neutral,positive,0.8564042448997498,sadness,sadness,0.6991896629333496
+AMB0228,I love this city but it's too expensive to stay,mixed_emotions,sadness,negative,love,False,sadness,positive,sadness,positive,positive,0.7358016967773438,sadness,sadness,0.9537177085876465
+AMB0229,"Thrilled about the new baby, dreading the sleepless nights",mixed_emotions,joy,positive,fear,False,joy,negative,joy,negative,positive,0.5859866142272949,fear,fear,0.9880213141441345
+AMB0230,I miss the old me but I like who I'm becoming,mixed_emotions,joy,positive,sadness,False,love,negative,love,negative,positive,0.5158915519714355,sadness,sadness,0.49027785658836365
+AMB0231,The surgery went well but the recovery is scary,mixed_emotions,fear,neutral,joy,False,joy,neutral,joy,neutral,neutral,0.4977158308029175,fear,fear,0.9885956645011902
+AMB0232,"Angry at myself, grateful to my friends for helping",mixed_emotions,anger,neutral,love,False,anger,negative,anger,negative,negative,0.509434700012207,anger,anger,0.9932958483695984
+AMB0233,"Laughed all through the wedding, cried at the airport after",mixed_emotions,,neutral,,False,joy,neutral,joy,neutral,positive,0.8827216625213623,joy,joy,0.9272644519805908
+AMB0234,"Got promoted, but my best friend didn't",mixed_emotions,joy,positive,sadness,False,sadness,positive,sadness,positive,neutral,0.5498058199882507,sadness,sadness,0.875295877456665
+AMB0235,"Excited to travel, sad to leave my cat",mixed_emotions,joy,positive,sadness,False,joy,negative,joy,negative,positive,0.826106071472168,sadness,sadness,0.982511579990387
+AMB0236,"Scared of the result, hopeful anyway",mixed_emotions,fear,neutral,joy,False,fear,negative,fear,negative,negative,0.4860115051269531,fear,fear,0.9714078307151794
+AMB0237,"Getting older is weird, I feel wiser and more tired",mixed_emotions,,neutral,,False,joy,negative,joy,negative,negative,0.6509227156639099,anger,disgust,0.3516647219657898
+AMB0238,I'm smiling but my heart is breaking,mixed_emotions,sadness,negative,joy,False,sadness,positive,sadness,positive,negative,0.5835229158401489,sadness,sadness,0.5297757387161255
+AMB0239,"Loved every second, hate that it's over",mixed_emotions,sadness,negative,love,False,love,negative,love,negative,positive,0.7915128469467163,anger,anger,0.4427597224712372
+AMB0240,Finally home after a year abroad and it feels strange,mixed_emotions,surprise,neutral,joy,False,joy,positive,joy,positive,neutral,0.49332913756370544,fear,fear,0.6095181703567505
+AMB0241,ngl this song slaps,internet_slang,joy,positive,,False,anger,neutral,anger,neutral,positive,0.9589408040046692,neutral,neutral,0.6775555610656738
+AMB0242,lowkey sad that the series ended,internet_slang,sadness,negative,,False,sadness,negative,sadness,negative,negative,0.851671576499939,sadness,sadness,0.9731648564338684
+AMB0243,bruh why is the wifi down again,internet_slang,anger,negative,,False,anger,neutral,anger,neutral,negative,0.9094107747077942,surprise,surprise,0.904082179069519
+AMB0244,no cap best burger in town,internet_slang,joy,positive,,False,sadness,positive,sadness,positive,positive,0.9011212587356567,surprise,surprise,0.5394086241722107
+AMB0245,im deceased 😂😂,internet_slang,joy,positive,,True,anger,positive,joy,positive,neutral,0.35532909631729126,sadness,sadness,0.7693758606910706
+AMB0246,smh people really don't read anymore,internet_slang,anger,negative,,False,anger,neutral,anger,neutral,negative,0.891362190246582,surprise,surprise,0.6152508854866028
+AMB0247,fr fr this exam was brutal,internet_slang,sadness,negative,anger,False,anger,neutral,anger,neutral,negative,0.8662563562393188,anger,anger,0.7175623774528503
+AMB0248,its giving main character energy,internet_slang,joy,positive,,False,anger,neutral,anger,neutral,positive,0.5003135204315186,joy,joy,0.5625025033950806
+AMB0249,lmaooo my mom just discovered memes,internet_slang,joy,positive,,False,anger,neutral,anger,neutral,positive,0.6895559430122375,surprise,surprise,0.6751359105110168
+AMB0250,tbh i'm kinda over it,internet_slang,sadness,negative,anger,False,anger,neutral,anger,neutral,negative,0.7576195597648621,sadness,sadness,0.5357512831687927
+AMB0251,ong that ending had me shook,internet_slang,surprise,neutral,,False,anger,neutral,anger,neutral,negative,0.7243887782096863,fear,fear,0.9831933975219727
+AMB0252,this ain't it chief,internet_slang,anger,negative,,False,anger,neutral,anger,neutral,negative,0.8607031106948853,neutral,neutral,0.7005108594894409
+AMB0253,"big yikes, he said that out loud",internet_slang,,negative,surprise,False,anger,neutral,anger,neutral,negative,0.8482527136802673,surprise,surprise,0.723941445350647
+AMB0254,the vibes are immaculate,internet_slang,joy,positive,,False,anger,neutral,anger,neutral,positive,0.9561535120010376,joy,joy,0.976173996925354
+AMB0255,idk man im just tired,internet_slang,sadness,negative,,False,joy,negative,joy,negative,negative,0.7791123986244202,neutral,neutral,0.47768938541412354
+AMB0256,she ate and left no crumbs,internet_slang,joy,positive,,False,anger,negative,anger,negative,neutral,0.6672448515892029,anger,disgust,0.8887950778007507
+AMB0257,rip my sleep schedule,internet_slang,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.8116275072097778,neutral,neutral,0.8494483232498169
+AMB0258,im so done with this semester,internet_slang,anger,negative,sadness,False,sadness,neutral,sadness,neutral,negative,0.8660115599632263,sadness,sadness,0.6991820335388184
+AMB0259,"W outfit, W energy",internet_slang,joy,positive,,False,anger,positive,anger,positive,neutral,0.8343129754066467,neutral,neutral,0.9021949768066406
+AMB0260,that's an L for sure,internet_slang,sadness,negative,,False,joy,neutral,joy,neutral,negative,0.8781878352165222,neutral,neutral,0.8452299237251282
+AMB0261,he's so mid honestly,internet_slang,anger,negative,,False,anger,neutral,anger,neutral,negative,0.8268724083900452,neutral,neutral,0.6185132265090942
+AMB0262,omg omg omg TICKETS ARE OUT,internet_slang,joy,positive,surprise,False,anger,neutral,anger,neutral,positive,0.9690418839454651,surprise,surprise,0.9721469283103943
+AMB0263,ugh mondays fr,internet_slang,anger,negative,sadness,False,anger,neutral,anger,neutral,negative,0.7407689094543457,neutral,neutral,0.41375234723091125
+AMB0264,not me crying over a dog food commercial,internet_slang,sadness,neutral,love,False,anger,neutral,anger,neutral,negative,0.633861243724823,anger,disgust,0.3215599060058594
+AMB0265,"wym the shop closed early, im fuming",internet_slang,anger,negative,,False,anger,neutral,anger,neutral,negative,0.923022449016571,anger,anger,0.9885331392288208
+AMB0266,this is lowkey terrifying ngl,internet_slang,fear,negative,,False,anger,neutral,anger,neutral,negative,0.8603202700614929,fear,fear,0.9947795867919922
+AMB0267,yall im so proud of us,internet_slang,joy,positive,,False,joy,positive,joy,positive,positive,0.983124852180481,joy,joy,0.9417765140533447
+AMB0268,kinda sus how he left early,internet_slang,,neutral,,False,anger,neutral,anger,neutral,negative,0.6898817420005798,neutral,neutral,0.7959355711936951
+AMB0269,"periodt, nobody does it better",internet_slang,joy,positive,,False,sadness,positive,sadness,positive,positive,0.5219578146934509,neutral,neutral,0.6984308958053589
+AMB0270,ok but why is this so relatable 💀,internet_slang,joy,positive,,True,joy,negative,joy,negative,negative,0.6052268743515015,surprise,surprise,0.7894717454910278
+AMB0271,i cant with this guy,internet_slang,joy,positive,,False,anger,neutral,anger,neutral,negative,0.8895840048789978,sadness,sadness,0.8864035606384277
+AMB0272,"brb crying, they got engaged",internet_slang,joy,positive,love,False,sadness,neutral,sadness,neutral,neutral,0.4945979118347168,joy,joy,0.49636927247047424
+AMB0273,hbd bestie love u sm,internet_slang,love,positive,,False,sadness,positive,sadness,positive,positive,0.9740434288978577,joy,joy,0.5459625720977783
+AMB0274,lol i failed again,internet_slang,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.7881794571876526,sadness,sadness,0.4908898174762726
+AMB0275,the audacity of this man,internet_slang,anger,negative,,False,anger,neutral,anger,neutral,negative,0.8822190165519714,surprise,surprise,0.799858570098877
+AMB0276,"gonna be real, i'm scared for tomorrow",internet_slang,fear,negative,,False,fear,negative,fear,negative,negative,0.839591920375824,fear,fear,0.9926782846450806
+AMB0277,he really said k and left,internet_slang,anger,negative,sadness,False,anger,neutral,anger,neutral,neutral,0.6074976325035095,neutral,neutral,0.8121968507766724
+AMB0278,this hits different at 3am,internet_slang,sadness,neutral,,False,anger,neutral,anger,neutral,neutral,0.43349823355674744,neutral,neutral,0.7056134939193726
+AMB0279,we're so back,internet_slang,joy,positive,,False,anger,neutral,anger,neutral,positive,0.5857242345809937,neutral,neutral,0.5228155851364136
+AMB0280,it's so over,internet_slang,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.7400862574577332,sadness,sadness,0.5019394755363464
+AMB0281,Okay,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,positive,0.5178824663162231,neutral,neutral,0.6484054327011108
+AMB0282,Interesting,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,positive,0.6838066577911377,surprise,surprise,0.4601220190525055
+AMB0283,"Well, that happened",neutral_ambiguous,,neutral,,False,sadness,neutral,sadness,neutral,neutral,0.6139087677001953,neutral,neutral,0.8576920032501221
+AMB0284,We'll see,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.5421832799911499,neutral,neutral,0.9123732447624207
+AMB0285,Noted,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.6362072229385376,neutral,neutral,0.5182361006736755
+AMB0286,The meeting is at 3pm,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.9388141632080078,neutral,neutral,0.8567566275596619
+AMB0287,It is what it is,neutral_ambiguous,sadness,neutral,,False,joy,neutral,joy,neutral,neutral,0.582461953163147,neutral,neutral,0.9379922151565552
+AMB0288,Sure,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.5661097168922424,neutral,neutral,0.8899701833724976
+AMB0289,That's one way to do it,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.6792742609977722,neutral,neutral,0.9501423239707947
+AMB0290,I have thoughts about this,neutral_ambiguous,,neutral,,False,fear,neutral,fear,neutral,neutral,0.8350595235824585,neutral,neutral,0.8985403180122375
+AMB0291,Cool cool cool,neutral_ambiguous,,neutral,,False,joy,positive,joy,positive,positive,0.7034111022949219,joy,joy,0.7202128171920776
+AMB0292,He said he'd call later,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.8983608484268188,neutral,neutral,0.9371741414070129
+AMB0293,I read your message,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.8528589606285095,neutral,neutral,0.9326545000076294
+AMB0294,The package arrived today,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,positive,0.7583000659942627,neutral,neutral,0.5057903528213501
+AMB0295,Can't complain,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,positive,0.49150100350379944,anger,anger,0.7459597587585449
+AMB0296,Hmm,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.5810091495513916,neutral,neutral,0.7493664622306824
+AMB0297,So that's the plan then,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.7913572192192078,neutral,neutral,0.9511265754699707
+AMB0298,Whatever you think is best,neutral_ambiguous,,neutral,,False,sadness,positive,sadness,positive,neutral,0.5368955731391907,neutral,neutral,0.8955926299095154
+AMB0299,I guess it could be worse,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,negative,0.5101313591003418,anger,disgust,0.8915022015571594
+AMB0300,Just another day,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.47453829646110535,neutral,neutral,0.8842570781707764
+AMB0301,Didn't expect that,neutral_ambiguous,surprise,neutral,,False,anger,neutral,anger,neutral,negative,0.5905236005783081,surprise,surprise,0.9681302905082703
+AMB0302,It's been a long week,neutral_ambiguous,sadness,negative,,False,anger,neutral,anger,neutral,negative,0.7723478078842163,sadness,sadness,0.5139803290367126
+AMB0303,Something feels different today,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,positive,0.46370357275009155,neutral,neutral,0.49326345324516296
+AMB0304,I'll think about it,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.8087045550346375,neutral,neutral,0.917514979839325
+AMB0305,Fair enough,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.6387419104576111,neutral,neutral,0.8611928224563599
+AMB0306,She's moving to Berlin next month,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.906965970993042,neutral,neutral,0.4911746680736542
+AMB0307,Not bad,neutral_ambiguous,joy,positive,,False,sadness,negative,sadness,negative,positive,0.5043632388114929,anger,disgust,0.851257860660553
+AMB0308,That's a choice,neutral_ambiguous,,negative,,False,joy,negative,joy,negative,neutral,0.7096684575080872,neutral,neutral,0.8666195869445801
+AMB0309,Thanks for letting me know,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,positive,0.7083006501197815,neutral,neutral,0.4583108425140381
+AMB0310,It is raining again,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.5809215307235718,sadness,sadness,0.7886754274368286
+AMB0311,You do you,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.6585068702697754,anger,anger,0.5660348534584045
+AMB0312,I'm here,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.6042205095291138,neutral,neutral,0.5687403678894043
+AMB0313,He changed his profile picture,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.8761512041091919,neutral,neutral,0.9080851078033447
+AMB0314,Today was a day,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,positive,0.8832107782363892,sadness,sadness,0.4147237539291382
+AMB0315,Let's see how it goes,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,neutral,0.779829740524292,neutral,neutral,0.9314925074577332
+AMB0316,So we meet again,neutral_ambiguous,surprise,neutral,,False,anger,neutral,anger,neutral,neutral,0.6473811268806458,neutral,neutral,0.8254266381263733
+AMB0317,I have no words,neutral_ambiguous,surprise,neutral,,False,anger,negative,anger,negative,negative,0.56289142370224,sadness,sadness,0.8911150693893433
+AMB0318,Back to normal tomorrow,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,positive,0.5342153906822205,neutral,neutral,0.8954509496688843
+AMB0319,Same as always,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.5972811579704285,neutral,neutral,0.927263081073761
+AMB0320,I'm so happy today 😭,contradictory_text_emoji,joy,positive,sadness,True,joy,positive,joy,positive,positive,0.9785459637641907,joy,joy,0.9797719717025757
+AMB0321,Worst day of my life 😂,contradictory_text_emoji,sadness,negative,joy,True,sadness,neutral,joy,positive,negative,0.9281064867973328,anger,disgust,0.776999831199646
+AMB0322,I hate you 😘,contradictory_text_emoji,love,positive,,True,joy,negative,love,negative,negative,0.8845428228378296,anger,anger,0.7717443108558655
+AMB0323,Best birthday ever 😢,contradictory_text_emoji,sadness,negative,,True,sadness,positive,sadness,positive,positive,0.9814964532852173,joy,joy,0.6596277952194214
+AMB0324,I'm totally calm 😱,contradictory_text_emoji,fear,negative,,True,joy,positive,joy,positive,positive,0.8746460676193237,neutral,neutral,0.6510147452354431
+AMB0325,Can't stop smiling 😡,contradictory_text_emoji,,neutral,,True,sadness,positive,anger,positive,positive,0.9290997982025146,joy,joy,0.9094803929328918
+AMB0326,I failed my driving test 🥳,contradictory_text_emoji,sadness,negative,joy,True,anger,neutral,joy,positive,positive,0.8794925808906555,sadness,sadness,0.8238189220428467
+AMB0327,Everything is perfect 🙃,contradictory_text_emoji,sadness,negative,anger,True,joy,positive,joy,positive,positive,0.7425187230110168,neutral,neutral,0.7895765900611877
+AMB0328,My dog died 😂,contradictory_text_emoji,sadness,negative,,True,anger,neutral,joy,positive,negative,0.7716511487960815,sadness,sadness,0.9675259590148926
+AMB0329,I passed all my exams 😭,contradictory_text_emoji,joy,positive,,True,anger,neutral,sadness,negative,positive,0.9730928540229797,joy,joy,0.964210033416748
+AMB0330,What a terrible movie 😍,contradictory_text_emoji,,neutral,,True,sadness,negative,sadness,negative,negative,0.9370633363723755,fear,fear,0.9715564846992493
+AMB0331,I'm not mad 😡,contradictory_text_emoji,anger,negative,,True,anger,neutral,anger,neutral,negative,0.6522746682167053,anger,anger,0.8532472252845764
+AMB0332,Thanks for coming to my party 🙄,contradictory_text_emoji,anger,negative,,True,joy,positive,anger,negative,positive,0.49779510498046875,joy,joy,0.7466773986816406
+AMB0333,I miss you so much 😂,contradictory_text_emoji,sadness,negative,,True,sadness,neutral,joy,positive,positive,0.6027960181236267,sadness,sadness,0.9811206459999084
+AMB0334,Lovely day at the beach ⛈️,contradictory_text_emoji,sadness,negative,,True,love,positive,love,positive,positive,0.9862399697303772,joy,joy,0.973118782043457
+AMB0335,I'm scared of spiders 😂,contradictory_text_emoji,fear,neutral,joy,True,fear,negative,fear,negative,negative,0.6351023316383362,fear,fear,0.9884017109870911
+AMB0336,We broke up 🎉,contradictory_text_emoji,joy,positive,sadness,True,sadness,positive,sadness,positive,positive,0.6522819399833679,sadness,sadness,0.810852587223053
+AMB0337,"Great, more work 😊",contradictory_text_emoji,,neutral,,True,sadness,positive,joy,positive,positive,0.9819537401199341,joy,joy,0.9177296757698059
+AMB0338,This is fine 🔥,contradictory_text_emoji,fear,negative,,True,joy,neutral,joy,positive,positive,0.9042215347290039,neutral,neutral,0.5871374011039734
+AMB0339,He cheated on me 🙂,contradictory_text_emoji,anger,negative,sadness,True,anger,neutral,joy,positive,negative,0.6946008801460266,anger,anger,0.4707775413990021
+AMB0340,I'm fine,neutral_ambiguous,,neutral,,False,joy,neutral,joy,neutral,positive,0.6209744811058044,neutral,neutral,0.4079219400882721
+AMB0341,I'm fine 😊,emoji_dependent_sentiment,joy,positive,,True,joy,neutral,joy,positive,positive,0.9057444334030151,neutral,neutral,0.5712572932243347
+AMB0342,I'm fine 🙂,emoji_dependent_sentiment,,neutral,,True,joy,neutral,joy,positive,positive,0.8299560546875,neutral,neutral,0.5448887348175049
+AMB0343,I'm fine 🙂🔪,contradictory_text_emoji,anger,negative,,True,joy,neutral,joy,positive,positive,0.8275671601295471,neutral,neutral,0.6207168102264404
+AMB0344,I'm fine 😭,contradictory_text_emoji,sadness,negative,,True,joy,neutral,joy,negative,positive,0.8157624006271362,neutral,neutral,0.4454866945743561
+AMB0345,I'm fine 😤,contradictory_text_emoji,anger,negative,,True,joy,neutral,joy,negative,positive,0.5671486854553223,neutral,neutral,0.5307333469390869
+AMB0346,That's hilarious,emoji_dependent_sentiment,joy,positive,,False,joy,neutral,joy,neutral,positive,0.6606841683387756,joy,joy,0.9564974308013916
+AMB0347,That's hilarious 😂,emoji_dependent_sentiment,joy,positive,,True,joy,neutral,joy,positive,positive,0.7176807522773743,joy,joy,0.9340903759002686
+AMB0348,That's hilarious 💀,emoji_dependent_sentiment,joy,positive,,True,joy,neutral,joy,neutral,negative,0.390137255191803,joy,joy,0.948273241519928
+AMB0349,That's hilarious 🙄,contradictory_text_emoji,anger,negative,,True,joy,neutral,anger,negative,negative,0.512424111366272,joy,joy,0.9268507361412048
+AMB0350,That's hilarious 😐,contradictory_text_emoji,anger,negative,,True,joy,neutral,joy,neutral,negative,0.7044521570205688,joy,joy,0.9451294541358948
+AMB0351,I got the job,emoji_dependent_sentiment,joy,positive,,False,fear,neutral,fear,neutral,positive,0.549695611000061,joy,joy,0.9393829703330994
+AMB0352,I got the job 🎉,emoji_dependent_sentiment,joy,positive,,True,fear,neutral,joy,positive,positive,0.979260265827179,joy,joy,0.9150329232215881
+AMB0353,I got the job 😭,contradictory_text_emoji,joy,positive,,True,fear,neutral,sadness,negative,positive,0.8413620591163635,joy,joy,0.9590739011764526
+AMB0354,I got the job 😱,emoji_dependent_sentiment,surprise,positive,joy,True,fear,neutral,fear,negative,positive,0.8446593880653381,joy,joy,0.947608232498169
+AMB0355,I got the job 😐,contradictory_text_emoji,,neutral,,True,fear,neutral,fear,neutral,neutral,0.5168493390083313,joy,joy,0.9500542879104614
+AMB0356,I lost everything,emoji_dependent_sentiment,sadness,negative,,False,sadness,negative,sadness,negative,negative,0.7511751055717468,sadness,sadness,0.7357040643692017
+AMB0357,I lost everything 😭,emoji_dependent_sentiment,sadness,negative,,True,sadness,negative,sadness,negative,negative,0.8681111931800842,sadness,sadness,0.8513393998146057
+AMB0358,I lost everything 😂,contradictory_text_emoji,sadness,negative,joy,True,sadness,negative,sadness,negative,negative,0.7486876845359802,sadness,sadness,0.7693566679954529
+AMB0359,I lost everything 💀,contradictory_text_emoji,sadness,negative,,True,sadness,negative,sadness,negative,negative,0.8657846450805664,sadness,sadness,0.8954357504844666
+AMB0360,I lost everything 😡,emoji_dependent_sentiment,anger,negative,sadness,True,sadness,negative,sadness,negative,negative,0.9133949279785156,sadness,sadness,0.8965228199958801
+AMB0361,Great job,emoji_dependent_sentiment,joy,positive,,False,sadness,positive,sadness,positive,positive,0.9174461960792542,joy,joy,0.9066647291183472
+AMB0362,Great job 👍,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,joy,positive,positive,0.9669409394264221,joy,joy,0.8018324971199036
+AMB0363,Great job 👍🙄,contradictory_text_emoji,anger,negative,,True,sadness,positive,joy,positive,positive,0.9290590286254883,joy,joy,0.6790252923965454
+AMB0364,Great job 🙄,contradictory_text_emoji,anger,negative,,True,sadness,positive,anger,positive,negative,0.40802785754203796,joy,joy,0.6144159436225891
+AMB0365,Great job 👏👏,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,sadness,positive,positive,0.9722168445587158,joy,joy,0.5097753405570984
+AMB0366,Great job 😒,contradictory_text_emoji,anger,negative,,True,sadness,positive,anger,positive,negative,0.801730751991272,joy,joy,0.8342281579971313
+AMB0367,Thanks a lot,emoji_dependent_sentiment,joy,positive,,False,joy,positive,joy,positive,positive,0.9432196617126465,neutral,neutral,0.5154958367347717
+AMB0368,Thanks a lot 😊,emoji_dependent_sentiment,joy,positive,,True,joy,positive,joy,positive,positive,0.9718464016914368,joy,joy,0.49778398871421814
+AMB0369,Thanks a lot ❤️,emoji_dependent_sentiment,love,positive,,True,joy,positive,love,positive,positive,0.9710751175880432,joy,joy,0.691917896270752
+AMB0370,Thanks a lot 🙄,contradictory_text_emoji,anger,negative,,True,joy,positive,anger,negative,positive,0.7899885773658752,neutral,neutral,0.49838191270828247
+AMB0371,Thanks a lot 🙃,contradictory_text_emoji,anger,negative,,True,joy,positive,joy,positive,positive,0.9696915745735168,neutral,neutral,0.4740017354488373
+AMB0372,Monday again,emoji_dependent_sentiment,sadness,negative,anger,False,anger,neutral,anger,neutral,neutral,0.6058924794197083,neutral,neutral,0.7353420257568359
+AMB0373,Monday again 😩,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,sadness,negative,negative,0.7297089099884033,neutral,neutral,0.761064350605011
+AMB0374,Monday again 😡,emoji_dependent_sentiment,anger,negative,,True,anger,neutral,anger,negative,negative,0.9178164005279541,neutral,neutral,0.7116625905036926
+AMB0375,Monday again 🥳,contradictory_text_emoji,joy,positive,,True,anger,neutral,joy,positive,positive,0.9816098213195801,neutral,neutral,0.6494209170341492
+AMB0376,Monday again ☕,emoji_dependent_sentiment,,neutral,,True,anger,neutral,anger,neutral,positive,0.7069283723831177,neutral,neutral,0.8229742646217346
+AMB0377,He texted me back,emoji_dependent_sentiment,joy,positive,,False,anger,neutral,anger,neutral,neutral,0.6490367650985718,neutral,neutral,0.8784675002098083
+AMB0378,He texted me back 😍,emoji_dependent_sentiment,love,positive,,True,anger,neutral,love,positive,positive,0.9645280838012695,neutral,neutral,0.8348841667175293
+AMB0379,He texted me back 🥰,emoji_dependent_sentiment,love,positive,,True,anger,neutral,love,positive,positive,0.973267138004303,neutral,neutral,0.7997531890869141
+AMB0380,He texted me back 🙄,contradictory_text_emoji,anger,negative,,True,anger,neutral,anger,negative,neutral,0.6580541133880615,neutral,neutral,0.8615586757659912
+AMB0381,He texted me back 😱,emoji_dependent_sentiment,surprise,positive,joy,True,anger,neutral,fear,negative,positive,0.6330302357673645,neutral,neutral,0.8398288488388062
+AMB0382,He texted me back 😭,contradictory_text_emoji,joy,positive,,True,anger,neutral,sadness,negative,positive,0.5737987160682678,neutral,neutral,0.8105377554893494
+AMB0383,Exam results are out,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.838398277759552,neutral,neutral,0.902879536151886
+AMB0384,Exam results are out 🎉,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,positive,0.9511118531227112,neutral,neutral,0.934626042842865
+AMB0385,Exam results are out 😰,emoji_dependent_sentiment,fear,negative,,True,anger,neutral,fear,negative,negative,0.6313977837562561,neutral,neutral,0.9177056550979614
+AMB0386,Exam results are out 😭,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,sadness,negative,neutral,0.5028893351554871,neutral,neutral,0.9134253263473511
+AMB0387,Exam results are out 😲,emoji_dependent_sentiment,surprise,neutral,,True,anger,neutral,surprise,neutral,neutral,0.7355448007583618,neutral,neutral,0.9133664965629578
+AMB0388,Exam results are out 💀,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,anger,neutral,negative,0.661907970905304,neutral,neutral,0.9219081997871399
+AMB0389,Can't wait for tomorrow,emoji_dependent_sentiment,joy,positive,,False,sadness,neutral,sadness,neutral,positive,0.9827643036842346,joy,joy,0.845988392829895
+AMB0390,Can't wait for tomorrow 🥳,emoji_dependent_sentiment,joy,positive,,True,sadness,neutral,joy,positive,positive,0.9913305044174194,joy,joy,0.8092554211616516
+AMB0391,Can't wait for tomorrow 😬,contradictory_text_emoji,fear,negative,,True,sadness,neutral,fear,negative,positive,0.9832417964935303,joy,joy,0.9087169766426086
+AMB0392,Can't wait for tomorrow 😰,contradictory_text_emoji,fear,negative,,True,sadness,neutral,fear,negative,positive,0.9670317769050598,joy,joy,0.8821172714233398
+AMB0393,Can't wait for tomorrow 🙄,contradictory_text_emoji,anger,negative,,True,sadness,neutral,anger,negative,negative,0.45334041118621826,joy,joy,0.7668388485908508
+AMB0394,My flight got cancelled,emoji_dependent_sentiment,anger,negative,sadness,False,anger,neutral,anger,neutral,negative,0.8028659820556641,sadness,sadness,0.9533398747444153
+AMB0395,My flight got cancelled 😡,emoji_dependent_sentiment,anger,negative,,True,anger,neutral,anger,negative,negative,0.932641863822937,sadness,sadness,0.9444636702537537
+AMB0396,My flight got cancelled 😭,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,sadness,negative,negative,0.908406674861908,sadness,sadness,0.9299954175949097
+AMB0397,My flight got cancelled 🙃,emoji_dependent_sentiment,anger,negative,,True,anger,neutral,anger,neutral,negative,0.9052491188049316,sadness,sadness,0.8902125358581543
+AMB0398,My flight got cancelled 🥳,contradictory_text_emoji,joy,positive,,True,anger,neutral,joy,positive,positive,0.7569032907485962,sadness,sadness,0.8600112199783325
+AMB0399,My flight got cancelled 😂,contradictory_text_emoji,,negative,,True,anger,neutral,joy,positive,negative,0.8158531188964844,sadness,sadness,0.9118335843086243
+AMB0400,We need to talk,emoji_dependent_sentiment,fear,negative,,False,anger,neutral,anger,neutral,neutral,0.7583802938461304,neutral,neutral,0.8925906419754028
+AMB0401,We need to talk 😨,emoji_dependent_sentiment,fear,negative,,True,anger,neutral,fear,negative,neutral,0.8274182081222534,neutral,neutral,0.8310927152633667
+AMB0402,We need to talk 😡,emoji_dependent_sentiment,anger,negative,,True,anger,neutral,anger,negative,negative,0.6243622303009033,neutral,neutral,0.7403514385223389
+AMB0403,We need to talk ❤️,emoji_dependent_sentiment,love,positive,,True,anger,neutral,love,positive,positive,0.575194776058197,neutral,neutral,0.8754261136054993
+AMB0404,We need to talk 😊,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,positive,0.6814057230949402,neutral,neutral,0.8581163287162781
+AMB0405,She said yes,emoji_dependent_sentiment,joy,positive,,False,sadness,positive,sadness,positive,neutral,0.5240317583084106,neutral,neutral,0.9236095547676086
+AMB0406,She said yes 🥰,emoji_dependent_sentiment,love,positive,,True,sadness,positive,love,positive,positive,0.9743865728378296,neutral,neutral,0.7692144513130188
+AMB0407,She said yes 😭,contradictory_text_emoji,joy,positive,,True,sadness,positive,sadness,positive,positive,0.8105898499488831,neutral,neutral,0.8047246336936951
+AMB0408,She said yes 😱,emoji_dependent_sentiment,surprise,positive,joy,True,sadness,positive,fear,positive,positive,0.8276492357254028,neutral,neutral,0.8522663712501526
+AMB0409,She said yes 🎉,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,joy,positive,positive,0.9666653871536255,neutral,neutral,0.9219314455986023
+AMB0410,"Sure, I'll do it",neutral_ambiguous,,neutral,,False,joy,negative,joy,negative,positive,0.7590945363044739,neutral,neutral,0.6755064129829407
+AMB0411,"Sure, I'll do it 👍",emoji_dependent_sentiment,,neutral,,True,joy,negative,joy,positive,positive,0.9008949995040894,neutral,neutral,0.5619253516197205
+AMB0412,"Sure, I'll do it 😊",emoji_dependent_sentiment,joy,positive,,True,joy,negative,joy,positive,positive,0.9322241544723511,neutral,neutral,0.5671258568763733
+AMB0413,"Sure, I'll do it 🙄",emoji_dependent_sentiment,anger,negative,,True,joy,negative,anger,negative,neutral,0.44324642419815063,neutral,neutral,0.5730087161064148
+AMB0414,"Sure, I'll do it 😩",emoji_dependent_sentiment,sadness,negative,,True,joy,negative,sadness,negative,positive,0.781193733215332,neutral,neutral,0.5215142965316772
+AMB0415,Just me and my cat tonight,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.8165096640586853,neutral,neutral,0.8853030800819397
+AMB0416,Just me and my cat tonight 🥰,emoji_dependent_sentiment,love,positive,,True,anger,neutral,love,positive,positive,0.9726894497871399,neutral,neutral,0.5913982391357422
+AMB0417,Just me and my cat tonight 😌,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,positive,0.7596202492713928,neutral,neutral,0.8419051170349121
+AMB0418,Just me and my cat tonight 😢,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,sadness,negative,negative,0.71697598695755,neutral,neutral,0.8357888460159302
+AMB0419,Just me and my cat tonight 🙃,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,anger,neutral,neutral,0.6918991804122925,neutral,neutral,0.7476515769958496
+AMB0420,Nice weather today,emoji_dependent_sentiment,joy,positive,,False,sadness,positive,sadness,positive,positive,0.966156005859375,joy,joy,0.627595067024231
+AMB0421,Nice weather today ☀️,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,sadness,positive,positive,0.9805333614349365,joy,joy,0.6100550293922424
+AMB0422,Nice weather today 😊,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,joy,positive,positive,0.9795178174972534,joy,joy,0.5341787338256836
+AMB0423,Nice weather today 🙄,contradictory_text_emoji,anger,negative,,True,sadness,positive,anger,positive,positive,0.9474068880081177,joy,joy,0.47099724411964417
+AMB0424,Nice weather today 🥶,contradictory_text_emoji,,negative,,True,sadness,positive,sadness,positive,positive,0.9780266284942627,joy,joy,0.698133647441864
+AMB0425,Another all-nighter,emoji_dependent_sentiment,sadness,negative,,False,anger,neutral,anger,neutral,neutral,0.7515817284584045,neutral,neutral,0.6293997168540955
+AMB0426,Another all-nighter 😭,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,sadness,negative,negative,0.6458231806755066,joy,joy,0.5441979169845581
+AMB0427,Another all-nighter 💀,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,anger,neutral,negative,0.7611536979675293,joy,joy,0.5100046992301941
+AMB0428,Another all-nighter 😎,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,positive,0.7318608164787292,neutral,neutral,0.50069659948349
+AMB0429,Another all-nighter 🔥,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,neutral,0.5685334801673889,neutral,neutral,0.4942891001701355
+AMB0430,My code finally works,emoji_dependent_sentiment,joy,positive,,False,joy,positive,joy,positive,positive,0.8863951563835144,neutral,neutral,0.5102510452270508
+AMB0431,My code finally works 🎉,emoji_dependent_sentiment,joy,positive,,True,joy,positive,joy,positive,positive,0.9770409464836121,neutral,neutral,0.604756772518158
+AMB0432,My code finally works 😭,contradictory_text_emoji,joy,positive,,True,joy,positive,sadness,negative,positive,0.9613494873046875,neutral,neutral,0.5093443989753723
+AMB0433,My code finally works 🤯,emoji_dependent_sentiment,surprise,positive,joy,True,joy,positive,surprise,neutral,positive,0.9680674076080322,joy,joy,0.4783647358417511
+AMB0434,My code finally works 😐,contradictory_text_emoji,,neutral,,True,joy,positive,joy,positive,positive,0.8869592547416687,neutral,neutral,0.5024392008781433
+AMB0435,Love that for me,neutral_ambiguous,,neutral,,False,sadness,positive,sadness,positive,positive,0.9756584763526917,joy,joy,0.7262288928031921
+AMB0436,Love that for me 😊,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,joy,positive,positive,0.9849387407302856,joy,joy,0.7552823424339294
+AMB0437,Love that for me 🥰,emoji_dependent_sentiment,love,positive,,True,sadness,positive,love,positive,positive,0.9860625863075256,joy,joy,0.8299010992050171
+AMB0438,Love that for me 🙃,emoji_dependent_sentiment,anger,negative,,True,sadness,positive,sadness,positive,positive,0.9831854701042175,joy,joy,0.72173672914505
+AMB0439,Love that for me 💀,emoji_dependent_sentiment,sadness,negative,,True,sadness,positive,sadness,positive,positive,0.9725227952003479,joy,joy,0.7715757489204407
+AMB0440,We're moving to a new city,neutral_ambiguous,,neutral,,False,fear,neutral,fear,neutral,neutral,0.7341030240058899,neutral,neutral,0.801965057849884
+AMB0441,We're moving to a new city 🥳,emoji_dependent_sentiment,joy,positive,,True,fear,neutral,joy,positive,positive,0.9806358218193054,neutral,neutral,0.738315761089325
+AMB0442,We're moving to a new city 😢,emoji_dependent_sentiment,sadness,negative,,True,fear,neutral,sadness,negative,negative,0.4841195046901703,neutral,neutral,0.7686601877212524
+AMB0443,We're moving to a new city 😨,emoji_dependent_sentiment,fear,negative,,True,fear,neutral,fear,negative,neutral,0.7323625683784485,neutral,neutral,0.8071609139442444
+AMB0444,We're moving to a new city 😬,emoji_dependent_sentiment,fear,negative,,True,fear,neutral,fear,negative,neutral,0.6473274230957031,neutral,neutral,0.7180083394050598
+AMB0445,My mom is coming to visit,neutral_ambiguous,,neutral,,False,fear,neutral,fear,neutral,neutral,0.6701267957687378,joy,joy,0.6934115886688232
+AMB0446,My mom is coming to visit 🥰,emoji_dependent_sentiment,love,positive,,True,fear,neutral,love,positive,positive,0.986395001411438,joy,joy,0.8586295247077942
+AMB0447,My mom is coming to visit 🎉,emoji_dependent_sentiment,joy,positive,,True,fear,neutral,joy,positive,positive,0.9816486835479736,joy,joy,0.8258789777755737
+AMB0448,My mom is coming to visit 😬,emoji_dependent_sentiment,fear,negative,,True,fear,neutral,fear,negative,neutral,0.5619210600852966,joy,joy,0.8925091624259949
+AMB0449,My mom is coming to visit 😩,emoji_dependent_sentiment,sadness,negative,,True,fear,neutral,sadness,negative,positive,0.7541731595993042,joy,joy,0.8567425012588501
+AMB0450,I saw a spider in my room,emoji_dependent_sentiment,fear,negative,,False,anger,neutral,anger,neutral,neutral,0.7348638772964478,anger,disgust,0.7359291911125183
+AMB0451,I saw a spider in my room 😱,emoji_dependent_sentiment,fear,negative,,True,anger,neutral,fear,negative,neutral,0.5920993685722351,anger,disgust,0.7913728356361389
+AMB0452,I saw a spider in my room 😂,emoji_dependent_sentiment,joy,neutral,fear,True,anger,neutral,joy,positive,neutral,0.6677917838096619,anger,disgust,0.856238067150116
+AMB0453,I saw a spider in my room 🥰,contradictory_text_emoji,love,positive,,True,anger,neutral,love,positive,positive,0.9567703008651733,anger,disgust,0.8014951944351196
+AMB0454,I saw a spider in my room 😡,emoji_dependent_sentiment,anger,negative,,True,anger,neutral,anger,negative,negative,0.8782443404197693,anger,disgust,0.8659402132034302
+AMB0455,Guess who's back,neutral_ambiguous,,neutral,,False,anger,neutral,anger,neutral,neutral,0.6906586289405823,neutral,neutral,0.49116483330726624
+AMB0456,Guess who's back 😎,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,positive,0.8535100817680359,neutral,neutral,0.7403942942619324
+AMB0457,Guess who's back 😱,emoji_dependent_sentiment,surprise,neutral,,True,anger,neutral,fear,negative,neutral,0.5743339657783508,neutral,neutral,0.6777976155281067
+AMB0458,Guess who's back 🙄,emoji_dependent_sentiment,anger,negative,,True,anger,neutral,anger,negative,negative,0.5774371027946472,neutral,neutral,0.7128998041152954
+AMB0459,Guess who's back 🥰,emoji_dependent_sentiment,love,positive,,True,anger,neutral,love,positive,positive,0.9704737067222595,neutral,neutral,0.705959141254425
+AMB0460,The test is tomorrow,emoji_dependent_sentiment,fear,negative,,False,joy,neutral,joy,neutral,neutral,0.8569697737693787,neutral,neutral,0.7380621433258057
+AMB0461,The test is tomorrow 😰,emoji_dependent_sentiment,fear,negative,,True,joy,neutral,fear,negative,negative,0.7006996273994446,neutral,neutral,0.5874616503715515
+AMB0462,The test is tomorrow 😎,contradictory_text_emoji,joy,positive,,True,joy,neutral,joy,positive,positive,0.8702101111412048,neutral,neutral,0.7842111587524414
+AMB0463,The test is tomorrow 💀,emoji_dependent_sentiment,fear,negative,,True,joy,neutral,joy,neutral,negative,0.6668956875801086,neutral,neutral,0.5591096878051758
+AMB0464,The test is tomorrow 🙏,emoji_dependent_sentiment,,neutral,,True,joy,neutral,joy,neutral,positive,0.5776561498641968,neutral,neutral,0.6048087477684021
+AMB0465,He proposed,emoji_dependent_sentiment,joy,positive,surprise,False,anger,neutral,anger,neutral,neutral,0.6754465103149414,neutral,neutral,0.6925970315933228
+AMB0466,He proposed 💍,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,anger,neutral,positive,0.8885001540184021,neutral,neutral,0.407577246427536
+AMB0467,He proposed 😭,contradictory_text_emoji,joy,positive,,True,anger,neutral,sadness,negative,positive,0.614900529384613,neutral,neutral,0.6024124026298523
+AMB0468,He proposed 😲,emoji_dependent_sentiment,surprise,positive,joy,True,anger,neutral,surprise,neutral,positive,0.5753368735313416,neutral,neutral,0.5023563504219055
+AMB0469,He proposed 😬,contradictory_text_emoji,fear,negative,,True,anger,neutral,fear,negative,neutral,0.7533995509147644,neutral,neutral,0.4412308633327484
+AMB0470,My dog passed away 😭,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,sadness,negative,negative,0.8721770644187927,sadness,sadness,0.9774290323257446
+AMB0471,This puppy video is too cute 😭,emoji_dependent_sentiment,love,positive,,True,joy,negative,joy,negative,positive,0.9807513952255249,joy,joy,0.8794692158699036
+AMB0472,This song is too good 😭,emoji_dependent_sentiment,joy,positive,,True,joy,positive,sadness,positive,positive,0.9831242561340332,joy,joy,0.6894140243530273
+AMB0473,Laughing so hard right now 😭,emoji_dependent_sentiment,joy,positive,,True,sadness,neutral,sadness,negative,positive,0.8696668148040771,joy,joy,0.9177687168121338
+AMB0474,Missed the bus again 😭,emoji_dependent_sentiment,sadness,negative,anger,True,sadness,neutral,sadness,negative,negative,0.886422872543335,sadness,sadness,0.9495939016342163
+AMB0475,That meme 💀,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,anger,neutral,negative,0.7174352407455444,neutral,neutral,0.6808144450187683
+AMB0476,I have three exams tomorrow 💀,emoji_dependent_sentiment,fear,negative,,True,joy,neutral,joy,neutral,negative,0.7502050399780273,joy,joy,0.5550187826156616
+AMB0477,Failed my driving test again 💀,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,anger,neutral,negative,0.9098772406578064,anger,anger,0.8276042938232422
+AMB0478,He tripped in front of the whole class 💀,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,anger,neutral,negative,0.6322771310806274,fear,fear,0.4544961452484131
+AMB0479,I'm so tired I could sleep for a week 💀,emoji_dependent_sentiment,sadness,negative,,True,joy,negative,joy,negative,negative,0.7693546414375305,sadness,sadness,0.8556420803070068
+AMB0480,Have a nice day 🙂,emoji_dependent_sentiment,joy,positive,,True,sadness,positive,joy,positive,positive,0.957241415977478,joy,joy,0.8205736875534058
+AMB0481,As I said in my previous email 🙂,emoji_dependent_sentiment,anger,negative,,True,anger,negative,joy,positive,positive,0.6827572584152222,neutral,neutral,0.536033034324646
+AMB0482,Totally okay with being left out 🙂,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,joy,positive,neutral,0.4607313871383667,neutral,neutral,0.42081400752067566
+AMB0483,Coffee and a good book this morning 🙂,emoji_dependent_sentiment,joy,positive,,True,joy,positive,joy,positive,positive,0.9748064279556274,joy,joy,0.9093219041824341
+AMB0484,My brother's prank on our dad 😂,emoji_dependent_sentiment,joy,positive,,True,anger,neutral,joy,positive,neutral,0.6365845203399658,anger,anger,0.45878276228904724
+AMB0485,My life is falling apart 😂,emoji_dependent_sentiment,sadness,negative,,True,anger,neutral,joy,positive,negative,0.836028516292572,sadness,sadness,0.9653046131134033
+AMB0486,Got rejected again 😂,emoji_dependent_sentiment,sadness,negative,,True,sadness,positive,sadness,positive,negative,0.7642551064491272,sadness,sadness,0.8880632519721985
+AMB0487,Did you really think you'd win 😂,emoji_dependent_sentiment,joy,negative,,True,anger,neutral,joy,positive,neutral,0.5503721237182617,surprise,surprise,0.9374027252197266
+AMB0488,Love waking up to 30 unread emails 🙃,emoji_dependent_sentiment,anger,negative,,True,sadness,positive,sadness,positive,positive,0.8036355972290039,joy,joy,0.6101062297821045
+AMB0489,Everything is fine 🙃,emoji_dependent_sentiment,sadness,negative,,True,joy,neutral,joy,neutral,positive,0.8751640319824219,neutral,neutral,0.7638992667198181
+AMB0490,"Upside down day at school, we wore our shirts backwards 🙃",emoji_dependent_sentiment,joy,positive,,True,anger,neutral,anger,neutral,negative,0.7152738571166992,anger,disgust,0.607046902179718
+AMB0491,This beat is 🔥,emoji_dependent_sentiment,joy,positive,,True,anger,negative,joy,positive,positive,0.9601762890815735,neutral,neutral,0.8692681193351746
+AMB0492,My kitchen is literally on fire 🔥,emoji_dependent_sentiment,fear,negative,,True,anger,neutral,joy,positive,positive,0.9179355502128601,anger,anger,0.8921451568603516
+AMB0493,Her outfit is 🔥🔥,emoji_dependent_sentiment,joy,positive,,True,joy,neutral,joy,positive,positive,0.9732334017753601,neutral,neutral,0.8503430485725403
+AMB0494,The servers are 🔥 and everything is down,emoji_dependent_sentiment,fear,negative,,True,sadness,positive,joy,positive,negative,0.8842224478721619,sadness,sadness,0.6590341925621033
+AMB0495,I love you ❤️,emoji_dependent_sentiment,love,positive,,True,sadness,positive,love,positive,positive,0.9707159399986267,joy,joy,0.9655770659446716
+AMB0496,Rest in peace grandma ❤️,emoji_dependent_sentiment,sadness,negative,love,True,anger,neutral,love,positive,positive,0.794844388961792,neutral,neutral,0.5245990753173828
+AMB0497,Thanks for nothing ❤️,emoji_dependent_sentiment,anger,negative,,True,sadness,positive,love,positive,positive,0.7681812047958374,neutral,neutral,0.6214743852615356
+AMB0498,Got it 👍,emoji_dependent_sentiment,,neutral,,True,joy,neutral,joy,positive,positive,0.8457971811294556,neutral,neutral,0.9246643781661987
+AMB0499,"Great, now I have to redo everything 👍",emoji_dependent_sentiment,anger,negative,,True,sadness,positive,joy,positive,positive,0.7503125071525574,joy,joy,0.7647871971130371
+AMB0500,Well done team 👍,emoji_dependent_sentiment,joy,positive,,True,joy,neutral,joy,positive,positive,0.9562668204307556,joy,joy,0.49416524171829224

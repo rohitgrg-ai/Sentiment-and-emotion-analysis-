@@ -1,59 +1,48 @@
-import pandas as pd
+"""Clean final.csv and create a stratified train/test split.
+
+Reads  data/final.csv  (leak-free, balanced; see balance_dataset.py)
+Writes data/train.csv and data/test.csv (with a clean_text column).
+"""
 import re
-import emoji
+from pathlib import Path
+
+import pandas as pd
 from sklearn.model_selection import train_test_split
 
-def clean_text(text):
-    text = str(text)
+try:
+    import emoji
+except ImportError:  # emoji is optional
+    emoji = None
 
-    # Convert text to lowercase
-    text = text.lower()
+ROOT = Path(__file__).resolve().parents[1]
+DATA = ROOT / "data"
 
-    # Convert emojis to text descriptions
-    text = emoji.demojize(text, delimiters=(" ", " "))
 
-    # Remove URLs
+def clean_text(text: str) -> str:
+    text = str(text).lower()
+    if emoji is not None:
+        text = emoji.demojize(text, delimiters=(" ", " "))
     text = re.sub(r"http\S+|www\S+", "", text)
-
-    # Remove extra whitespace
     text = re.sub(r"\s+", " ", text).strip()
-
     return text
 
 
-# Load dataset
-df = pd.read_csv("data/text2.csv")
+def main() -> None:
+    df = pd.read_csv(DATA / "final.csv")
+    df["clean_text"] = df["text"].apply(clean_text)
 
-# Remove unnecessary index column
-df = df.drop(columns=["Unnamed: 0"])
-df["clean_text"] = df["text"].apply(clean_text)
-df.to_csv("data/processed_dataset.csv", index=False)
+    # Stratify on emotion x sentiment so both targets stay balanced in each split.
+    strata = df["label"].astype(str) + "_" + df["sentiment"]
+    train_df, test_df = train_test_split(
+        df, test_size=0.20, random_state=42, stratify=strata
+    )
+    train_df.to_csv(DATA / "train.csv", index=False)
+    test_df.to_csv(DATA / "test.csv", index=False)
 
-train_df, test_df = train_test_split(
-    df,
-    test_size=0.20,
-    random_state=42,
-    stratify=df["sentiment"]
-)
-
-print("\n===== DATASET SPLIT =====")
-
-print("Total samples :", len(df))
-print("Training      :", len(train_df))
-print("Testing       :", len(test_df))
+    print(f"Total {len(df):,} | train {len(train_df):,} | test {len(test_df):,}")
+    print("\nTrain emotion:\n", train_df["emotion"].value_counts().sort_index().to_string())
+    print("\nTrain sentiment:\n", train_df["sentiment"].value_counts().sort_index().to_string())
 
 
-print("\n===== TRAINING SENTIMENT =====")
-print(train_df["sentiment"].value_counts())
-
-
-print("\n===== TESTING SENTIMENT =====")
-print(test_df["sentiment"].value_counts())
-
-
-print("\n===== TRAINING EMOTION =====")
-print(train_df["label"].value_counts().sort_index())
-
-
-print("\n===== TESTING EMOTION =====")
-print(test_df["label"].value_counts().sort_index())
+if __name__ == "__main__":
+    main()

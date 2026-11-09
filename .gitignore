@@ -15,6 +15,9 @@ models/*.joblib
 
 # Dataset
 data/*.csv
+# Small hand-made evaluation set: keep it in git
+!data/ambiguous_*.csv
 
 # macOS
 .DS_Store
+models/sarcasm_emotion*/

@@ -1,0 +1,40 @@
+{
+  "emotion": {
+    "majority_baseline": {
+      "accuracy": 0.1667,
+      "macro_f1": 0.0476
+    },
+    "logistic_regression": {
+      "accuracy": 0.9565,
+      "macro_f1": 0.9564
+    },
+    "linear_svm": {
+      "accuracy": 0.9632,
+      "macro_f1": 0.963
+    },
+    "naive_bayes": {
+      "accuracy": 0.8858,
+      "macro_f1": 0.8853
+    },
+    "best_model": "linear_svm"
+  },
+  "sentiment": {
+    "majority_baseline": {
+      "accuracy": 0.3333,
+      "macro_f1": 0.1667
+    },
+    "logistic_regression": {
+      "accuracy": 0.9395,
+      "macro_f1": 0.9394
+    },
+    "linear_svm": {
+      "accuracy": 0.9458,
+      "macro_f1": 0.9458
+    },
+    "naive_bayes": {
+      "accuracy": 0.8771,
+      "macro_f1": 0.8771
+    },
+    "best_model": "linear_svm"
+  }
+}

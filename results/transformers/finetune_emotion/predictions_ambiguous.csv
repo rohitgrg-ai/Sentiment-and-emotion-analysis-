@@ -1,0 +1,437 @@
+id,text,gold,pred_7class,pred_neutral_masked
+AMB0001,"Oh great, another meeting that could have been an email",anger,love,love
+AMB0002,"Wow, thanks for waiting until the last minute to tell me",anger,love,love
+AMB0003,I just love it when my phone dies at 2%,anger,love,love
+AMB0004,Yeah because I totally have time for this right now,anger,joy,joy
+AMB0005,"Brilliant idea, let's schedule the exam on a holiday",anger,love,love
+AMB0006,So glad my neighbour decided to start drilling at 6am,anger,joy,joy
+AMB0007,Nothing says weekend like doing my taxes,sadness,neutral,anger
+AMB0008,"Can't believe how fast customer service was, only 3 hours on hold",anger,surprise,surprise
+AMB0009,Amazing how the wifi always works perfectly during online exams,anger,love,love
+AMB0010,"Oh sure, blame me for the weather too",anger,anger,anger
+AMB0011,"Perfect, I spilled coffee on my only clean shirt",anger,love,love
+AMB0012,"What a lovely surprise, my rent went up again",anger,surprise,surprise
+AMB0013,I'm thrilled to be working another double shift,sadness,joy,joy
+AMB0014,Love how nobody replied to my message in the group chat,sadness,love,love
+AMB0015,"Wow, you finally remembered my birthday, only two weeks late",anger,surprise,surprise
+AMB0016,"Best day ever, my bike got stolen",anger,love,love
+AMB0017,Really appreciate you eating my leftovers without asking,anger,love,love
+AMB0018,"Fantastic customer service, they hung up on me twice",anger,love,love
+AMB0019,"Yay, more homework, exactly what I wanted",anger,joy,joy
+AMB0020,Of course the printer jams when I'm already late,anger,neutral,sadness
+AMB0021,"Thanks for the spoilers, really made my night",anger,love,love
+AMB0022,"Sure, I'd love to hear your opinion on my life choices again",anger,love,love
+AMB0023,"Great, now the app wants another update",anger,love,love
+AMB0024,So happy my flight is delayed for the fourth time,anger,joy,joy
+AMB0025,"Oh good, it's raining on the one day I left my umbrella",anger,joy,joy
+AMB0026,"Wonderful, my laptop restarted in the middle of my presentation",anger,love,love
+AMB0027,Totally not stressed about the deadline tomorrow,fear,neutral,anger
+AMB0028,"I'm so calm right now, everything is under control",fear,joy,joy
+AMB0029,Love being the only one who does any work in the group project,anger,love,love
+AMB0030,Clearly the best decision I've ever made was buying this phone,anger,love,love
+AMB0031,"Wow, such a quick response, only took them a month",anger,surprise,surprise
+AMB0032,Nice of the bus driver to leave right as I got there,anger,love,love
+AMB0033,"Yeah, sleeping 3 hours before an exam is a great plan",fear,love,love
+AMB0034,"Thanks autocorrect, that's exactly what I meant",anger,love,love
+AMB0035,Thrilled to report I lost my keys again,anger,sadness,sadness
+AMB0036,Clearly my opinion matters a lot here,sadness,neutral,anger
+AMB0037,Can't wait to spend my whole Sunday cleaning,anger,joy,joy
+AMB0038,What a great time to run out of gas,anger,love,love
+AMB0039,Love that my landlord ignores every email I send,anger,love,love
+AMB0040,"Wow I'm so lucky, both my exams are on the same day",fear,surprise,surprise
+AMB0041,The fire station burned down last night,surprise,sadness,sadness
+AMB0042,I got a parking ticket while I was paying for parking,anger,neutral,sadness
+AMB0043,My fitness tracker broke while I was sitting on the couch,joy,sadness,sadness
+AMB0044,The anti-stress workshop was the most stressful part of my week,anger,sadness,sadness
+AMB0045,Ordered a book on time management and it arrived three weeks late,anger,neutral,sadness
+AMB0046,The motivational speaker cancelled because he didn't feel like coming,anger,sadness,sadness
+AMB0047,I studied all night for the wrong exam,sadness,anger,anger
+AMB0048,Finally saved enough for the concert and then it got cancelled,sadness,neutral,sadness
+AMB0049,The marriage counsellor is getting divorced,surprise,neutral,sadness
+AMB0050,My umbrella broke the first time it actually rained,anger,sadness,sadness
+AMB0051,The spelling bee champion misspelled his own name on the form,surprise,neutral,sadness
+AMB0052,I bought a plant to reduce stress and now I'm stressed about keeping it alive,fear,sadness,sadness
+AMB0053,The gym is closed because the staff are too tired,surprise,sadness,sadness
+AMB0055,Got food poisoning from the healthy salad place,anger,neutral,sadness
+AMB0056,The noise complaint letter was delivered by a guy blasting music,surprise,neutral,anger
+AMB0057,I cleaned the whole house and then the dog rolled in mud and ran inside,anger,neutral,anger
+AMB0058,Bought noise cancelling headphones and now I can't hear my alarm,anger,sadness,sadness
+AMB0059,Finally got a day off and I'm sick,sadness,sadness,sadness
+AMB0060,I trained for months and twisted my ankle walking to the race,sadness,neutral,sadness
+AMB0061,The fire alarm went off during the fire safety talk,surprise,neutral,anger
+AMB0062,Our pilot just announced he's afraid of flying,fear,fear,fear
+AMB0063,The weather app said sunny right as hail hit my car,anger,neutral,joy
+AMB0064,I won free coffee for a year right after I quit coffee,sadness,neutral,joy
+AMB0065,My password manager forgot my password,anger,neutral,sadness
+AMB0066,The road to the safe driving conference was closed for repairs,surprise,sadness,sadness
+AMB0067,I finally learned to cook and then my stove broke,sadness,sadness,sadness
+AMB0068,I left my phone at home on the one day I actually needed it,anger,neutral,sadness
+AMB0069,My therapist cancelled and now I'm anxious about it,fear,fear,fear
+AMB0072,We drove two hours for a beach day and it snowed,sadness,neutral,sadness
+AMB0073,The library is too noisy to study in,anger,anger,anger
+AMB0074,My new unbreakable phone case broke in a week,anger,sadness,sadness
+AMB0075,I got a raise the same day my rent doubled,sadness,neutral,joy
+AMB0076,Spent all day baking for the party and everyone wanted pizza,sadness,neutral,joy
+AMB0077,The diet app sent me a pizza coupon,joy,neutral,joy
+AMB0078,I swore I'd never sound like my parents and today I said because I said so,joy,anger,anger
+AMB0079,My lucky socks are the reason I slipped,anger,sadness,sadness
+AMB0080,Saved my battery all day and the phone died anyway,anger,sadness,sadness
+AMB0081,I absolutely love being left on read,sadness,love,love
+AMB0082,It's great being the last one picked every single time,sadness,love,love
+AMB0083,Fantastic! My laptop froze right before I hit submit,anger,love,love
+AMB0084,I couldn't be happier with how badly that went,sadness,sadness,sadness
+AMB0085,"What a wonderful way to start the week, my car won't start",anger,love,love
+AMB0086,I'm so blessed to have a manager who never listens,anger,joy,joy
+AMB0087,"Lovely, the train is cancelled again",anger,love,love
+AMB0088,So excited to pay another hospital bill,sadness,joy,joy
+AMB0089,It's amazing how I can fail at everything I try,sadness,love,love
+AMB0090,"Best friends don't forget your birthday, but apparently mine do",sadness,neutral,love
+AMB0091,Nice to know my opinion means nothing,sadness,love,love
+AMB0092,Happy to report I failed again,sadness,joy,joy
+AMB0093,I just adore people who chew loudly,anger,love,love
+AMB0094,Perfect weather for my car to break down,anger,love,love
+AMB0095,I'm totally fine with everyone forgetting about me,sadness,neutral,joy
+AMB0096,How sweet of them not to invite me,sadness,love,love
+AMB0097,Congratulations to me for locking myself out again,anger,love,love
+AMB0098,Glad to see my hard work went straight in the bin,sadness,joy,joy
+AMB0099,"Yay, another rejection email",sadness,neutral,anger
+AMB0100,My favourite thing is being ignored in meetings,sadness,anger,anger
+AMB0101,"What a brilliant performance, everyone left halfway through",sadness,love,love
+AMB0102,Love how my plans always fall apart,sadness,love,love
+AMB0103,"Wonderful news, the landlord is selling the flat",fear,love,love
+AMB0104,I'm so proud of myself for oversleeping again,anger,joy,joy
+AMB0105,Super fun spending my birthday alone,sadness,joy,joy
+AMB0106,The best part of my day was the 2 hour traffic jam,anger,joy,joy
+AMB0107,"Excellent, my ex is at the same party",fear,love,love
+AMB0108,Great to be reminded I'm replaceable,sadness,love,love
+AMB0109,It's a beautiful day to be stuck inside studying,sadness,love,love
+AMB0110,"Thanks for the amazing advice, it ruined everything",anger,love,love
+AMB0111,I'm thrilled my phone screen cracked again,anger,joy,joy
+AMB0112,So nice of my body to get sick on vacation,sadness,love,love
+AMB0113,Living the dream: cold noodles and overdue bills,sadness,neutral,sadness
+AMB0114,"I enjoy crying in the shower, it's my favourite hobby",sadness,joy,joy
+AMB0115,Can't wait to hear more of your excuses,anger,joy,joy
+AMB0116,"What a gift, a surprise extra shift",anger,surprise,surprise
+AMB0117,Delighted to learn my exam results were lost,anger,sadness,sadness
+AMB0118,"Lucky me, the only seat left is next to the crying baby",anger,joy,joy
+AMB0119,So cool how nobody noticed my haircut,sadness,joy,joy
+AMB0120,"Love that for me, another 8am lecture",sadness,love,love
+AMB0121,This song is so sick,joy,sadness,sadness
+AMB0122,"I'm dying, this video is too funny",joy,joy,joy
+AMB0123,"That concert was insane, best night ever",joy,love,love
+AMB0124,You killed it on stage tonight,joy,anger,anger
+AMB0125,Her new album is ridiculously good,joy,love,love
+AMB0126,"I'm obsessed with this recipe, it's dangerously good",joy,love,love
+AMB0127,This cake is criminally delicious,joy,love,love
+AMB0128,"Damn, you look good",love,love,love
+AMB0129,The ending of that movie destroyed me in the best way,joy,sadness,sadness
+AMB0130,"I'm crying, my little brother just said his first full sentence",joy,sadness,sadness
+AMB0131,That goal was absolutely filthy,joy,anger,anger
+AMB0132,This game is so addictive I hate it,joy,anger,anger
+AMB0133,That workout murdered me but I feel amazing,joy,joy,joy
+AMB0134,I can't stand how cute my puppy is,love,love,love
+AMB0135,"My heart hurts, this proposal video is so beautiful",love,love,love
+AMB0136,"Those fries were evil, I ate the whole bag",joy,anger,anger
+AMB0137,"The plot twist was brutal, I loved it",surprise,love,love
+AMB0138,He's terrifyingly talented,surprise,love,love
+AMB0139,"I'm screaming, we won the finals",joy,joy,joy
+AMB0140,That was wicked fun,joy,joy,joy
+AMB0141,I hate how much I love this show,love,love,love
+AMB0142,The view from the summit was stupidly beautiful,joy,love,love
+AMB0143,That joke was so bad it was good,joy,joy,joy
+AMB0144,"I'm dead, my cat just fell off the sofa again",joy,sadness,sadness
+AMB0145,"My sister is a beast at chess, she crushed everyone",joy,neutral,sadness
+AMB0146,This coffee is dangerously strong and I love it,joy,love,love
+AMB0147,"You're the worst, you remembered my favourite snack",love,anger,anger
+AMB0148,I'm so mad at how good this pizza is,joy,joy,joy
+AMB0149,"The new update is a monster, everything is so much faster",joy,love,love
+AMB0150,"Ugh, you're too nice to me",love,love,love
+AMB0151,"That card trick was nasty, how did you do that",surprise,anger,anger
+AMB0152,This puzzle is torture and I can't stop playing,joy,anger,anger
+AMB0153,"My jaw dropped, the drawing is unreal",surprise,surprise,surprise
+AMB0154,"Stop it, I'm blushing",joy,anger,anger
+AMB0155,"Shut up, you got tickets?!",surprise,anger,anger
+AMB0156,"I'm going to cry, this is the nicest gift ever",joy,sadness,sadness
+AMB0157,"The heat in this curry is violent, so good",joy,love,love
+AMB0158,Her voice gives me chills every time,joy,joy,joy
+AMB0159,"You're a menace, that prank was hilarious",joy,joy,joy
+AMB0160,This drama is so toxic and I'm hooked,joy,anger,anger
+AMB0161,The doctor called and asked me to come in tomorrow,fear,neutral,love
+AMB0162,He left his keys on the table and walked out without a word,sadness,neutral,anger
+AMB0163,I opened the envelope and saw my name on the list,joy,neutral,surprise
+AMB0164,They played our song at the wedding,love,neutral,joy
+AMB0165,Her side of the bed is still empty,sadness,neutral,sadness
+AMB0166,The police are at my door,fear,neutral,fear
+AMB0167,My manager just booked a quick chat for Friday at 5pm,fear,neutral,joy
+AMB0168,The house is so quiet now that the kids moved out,sadness,neutral,sadness
+AMB0169,I checked my bank account after the weekend,fear,neutral,joy
+AMB0170,He remembered exactly how I take my coffee,love,neutral,joy
+AMB0171,The results show my name in first place,joy,neutral,joy
+AMB0172,My phone has 47 missed calls from my mom,fear,sadness,sadness
+AMB0174,Found an old voicemail from my grandpa today,sadness,neutral,sadness
+AMB0175,"The dog still waits at the door, two years after she left",sadness,neutral,sadness
+AMB0176,They changed the locks while I was away,anger,neutral,anger
+AMB0177,The plane started shaking and the seatbelt sign came on,fear,fear,fear
+AMB0178,Everyone stood up and clapped when I walked in,joy,neutral,joy
+AMB0179,My best friend moved across the world today,sadness,neutral,sadness
+AMB0180,He finally said the three words,love,neutral,joy
+AMB0181,They gave my promotion to the new guy,anger,neutral,joy
+AMB0182,A strange car has been parked outside my house for three days,fear,surprise,surprise
+AMB0183,The biopsy came back negative,joy,neutral,sadness
+AMB0185,She returned the ring,sadness,neutral,anger
+AMB0186,I saw my ex holding hands with my best friend,anger,neutral,sadness
+AMB0187,They called my ticket number at the raffle,surprise,neutral,anger
+AMB0188,My hands won't stop shaking before the interview,fear,neutral,anger
+AMB0189,We're having a baby,joy,neutral,joy
+AMB0190,He didn't show up to my graduation,sadness,sadness,sadness
+AMB0191,The kids made me breakfast in bed today,love,neutral,joy
+AMB0192,The hospital hallway smells the same as when my dad was here,sadness,neutral,anger
+AMB0193,I heard footsteps upstairs and I live alone,fear,sadness,sadness
+AMB0194,Somebody scratched my car and drove off,anger,anger,anger
+AMB0195,My grandma still keeps every letter I ever sent her,love,neutral,love
+AMB0196,Five years sober today,joy,neutral,anger
+AMB0197,The ice under my feet just cracked,fear,sadness,sadness
+AMB0198,They spelled my name wrong on my own birthday cake,anger,neutral,sadness
+AMB0199,Packing my childhood bedroom into boxes,sadness,neutral,anger
+AMB0200,I woke up and the whole street was covered in snow,surprise,neutral,surprise
+AMB0201,I got everything I prayed for and I still feel empty,sadness,sadness,sadness
+AMB0202,I'm laughing so I don't start crying,sadness,joy,joy
+AMB0203,Proud of my sister for moving abroad but I miss her already,sadness,sadness,sadness
+AMB0204,"Graduating today, excited and terrified at the same time",joy,fear,fear
+AMB0205,The joke was funny until I realised it was about me,sadness,joy,joy
+AMB0206,"Happy for them, sad for me",sadness,sadness,sadness
+AMB0208,I love my job but it's slowly draining me,sadness,love,love
+AMB0209,"Relieved it's over, but I wish it had ended differently",sadness,sadness,sadness
+AMB0210,My dog is old and slow now and I treasure every walk,love,love,love
+AMB0211,I hate how much I miss you,sadness,anger,anger
+AMB0212,Nervous and excited for my first day,joy,joy,joy
+AMB0213,"Finally quit that job, scared but free",joy,fear,fear
+AMB0214,Watching old videos of us makes me smile and hurt,sadness,joy,joy
+AMB0215,Won the award on the day my grandma passed away,sadness,sadness,sadness
+AMB0216,Can't decide if I'm angry or just disappointed,anger,sadness,sadness
+AMB0217,Bittersweet last day of school,sadness,neutral,sadness
+AMB0218,"I'm glad he's happy, even if it's not with me",sadness,joy,joy
+AMB0219,Our team lost but I've never been prouder,joy,sadness,sadness
+AMB0220,I'm angry at him and worried about him at the same time,anger,fear,fear
+AMB0221,This movie made me laugh and cry,joy,joy,joy
+AMB0223,"Half of me wants to go, half of me is terrified",fear,fear,fear
+AMB0224,"Selling my first car, so many memories",sadness,sadness,sadness
+AMB0225,Surprised and a little hurt that nobody told me,sadness,surprise,surprise
+AMB0226,"I'm happy, I think, mostly",joy,joy,joy
+AMB0227,It's a relief and a heartbreak to finally let go,sadness,joy,joy
+AMB0228,I love this city but it's too expensive to stay,sadness,love,love
+AMB0229,"Thrilled about the new baby, dreading the sleepless nights",joy,fear,fear
+AMB0230,I miss the old me but I like who I'm becoming,joy,love,love
+AMB0231,The surgery went well but the recovery is scary,fear,fear,fear
+AMB0232,"Angry at myself, grateful to my friends for helping",anger,sadness,sadness
+AMB0234,"Got promoted, but my best friend didn't",joy,sadness,sadness
+AMB0235,"Excited to travel, sad to leave my cat",joy,sadness,sadness
+AMB0236,"Scared of the result, hopeful anyway",fear,fear,fear
+AMB0238,I'm smiling but my heart is breaking,sadness,sadness,sadness
+AMB0239,"Loved every second, hate that it's over",sadness,love,love
+AMB0240,Finally home after a year abroad and it feels strange,surprise,surprise,surprise
+AMB0241,ngl this song slaps,joy,neutral,anger
+AMB0242,lowkey sad that the series ended,sadness,sadness,sadness
+AMB0243,bruh why is the wifi down again,anger,surprise,surprise
+AMB0244,no cap best burger in town,joy,neutral,anger
+AMB0245,im deceased 😂😂,joy,sadness,sadness
+AMB0246,smh people really don't read anymore,anger,anger,anger
+AMB0247,fr fr this exam was brutal,sadness,anger,anger
+AMB0248,its giving main character energy,joy,neutral,love
+AMB0249,lmaooo my mom just discovered memes,joy,joy,joy
+AMB0250,tbh i'm kinda over it,sadness,neutral,joy
+AMB0251,ong that ending had me shook,surprise,sadness,sadness
+AMB0252,this ain't it chief,anger,neutral,anger
+AMB0254,the vibes are immaculate,joy,love,love
+AMB0255,idk man im just tired,sadness,sadness,sadness
+AMB0256,she ate and left no crumbs,joy,neutral,anger
+AMB0257,rip my sleep schedule,sadness,neutral,anger
+AMB0258,im so done with this semester,anger,neutral,joy
+AMB0259,"W outfit, W energy",joy,neutral,anger
+AMB0260,that's an L for sure,sadness,neutral,joy
+AMB0261,he's so mid honestly,anger,neutral,love
+AMB0262,omg omg omg TICKETS ARE OUT,joy,surprise,surprise
+AMB0263,ugh mondays fr,anger,neutral,anger
+AMB0264,not me crying over a dog food commercial,sadness,sadness,sadness
+AMB0265,"wym the shop closed early, im fuming",anger,neutral,sadness
+AMB0266,this is lowkey terrifying ngl,fear,fear,fear
+AMB0267,yall im so proud of us,joy,joy,joy
+AMB0269,"periodt, nobody does it better",joy,anger,anger
+AMB0270,ok but why is this so relatable 💀,joy,neutral,surprise
+AMB0271,i cant with this guy,joy,anger,anger
+AMB0272,"brb crying, they got engaged",joy,sadness,sadness
+AMB0273,hbd bestie love u sm,love,love,love
+AMB0274,lol i failed again,sadness,joy,joy
+AMB0275,the audacity of this man,anger,love,love
+AMB0276,"gonna be real, i'm scared for tomorrow",fear,fear,fear
+AMB0277,he really said k and left,anger,neutral,anger
+AMB0278,this hits different at 3am,sadness,neutral,anger
+AMB0279,we're so back,joy,neutral,joy
+AMB0280,it's so over,sadness,neutral,sadness
+AMB0287,It is what it is,sadness,neutral,love
+AMB0301,Didn't expect that,surprise,surprise,surprise
+AMB0302,It's been a long week,sadness,joy,joy
+AMB0307,Not bad,joy,anger,anger
+AMB0316,So we meet again,surprise,neutral,joy
+AMB0317,I have no words,surprise,sadness,sadness
+AMB0320,I'm so happy today 😭,joy,joy,joy
+AMB0321,Worst day of my life 😂,sadness,anger,anger
+AMB0322,I hate you 😘,love,anger,anger
+AMB0323,Best birthday ever 😢,sadness,love,love
+AMB0324,I'm totally calm 😱,fear,joy,joy
+AMB0326,I failed my driving test 🥳,sadness,sadness,sadness
+AMB0327,Everything is perfect 🙃,sadness,love,love
+AMB0328,My dog died 😂,sadness,sadness,sadness
+AMB0329,I passed all my exams 😭,joy,joy,joy
+AMB0331,I'm not mad 😡,anger,anger,anger
+AMB0332,Thanks for coming to my party 🙄,anger,love,love
+AMB0333,I miss you so much 😂,sadness,sadness,sadness
+AMB0334,Lovely day at the beach ⛈️,sadness,love,love
+AMB0335,I'm scared of spiders 😂,fear,fear,fear
+AMB0336,We broke up 🎉,joy,sadness,sadness
+AMB0338,This is fine 🔥,fear,love,love
+AMB0339,He cheated on me 🙂,anger,neutral,sadness
+AMB0341,I'm fine 😊,joy,joy,joy
+AMB0343,I'm fine 🙂🔪,anger,joy,joy
+AMB0344,I'm fine 😭,sadness,joy,joy
+AMB0345,I'm fine 😤,anger,joy,joy
+AMB0346,That's hilarious,joy,joy,joy
+AMB0347,That's hilarious 😂,joy,joy,joy
+AMB0348,That's hilarious 💀,joy,joy,joy
+AMB0349,That's hilarious 🙄,anger,joy,joy
+AMB0350,That's hilarious 😐,anger,joy,joy
+AMB0351,I got the job,joy,joy,joy
+AMB0352,I got the job 🎉,joy,joy,joy
+AMB0353,I got the job 😭,joy,joy,joy
+AMB0354,I got the job 😱,surprise,joy,joy
+AMB0356,I lost everything,sadness,sadness,sadness
+AMB0357,I lost everything 😭,sadness,sadness,sadness
+AMB0358,I lost everything 😂,sadness,sadness,sadness
+AMB0359,I lost everything 💀,sadness,sadness,sadness
+AMB0360,I lost everything 😡,anger,sadness,sadness
+AMB0361,Great job,joy,love,love
+AMB0362,Great job 👍,joy,love,love
+AMB0363,Great job 👍🙄,anger,love,love
+AMB0364,Great job 🙄,anger,love,love
+AMB0365,Great job 👏👏,joy,love,love
+AMB0366,Great job 😒,anger,love,love
+AMB0367,Thanks a lot,joy,love,love
+AMB0368,Thanks a lot 😊,joy,love,love
+AMB0369,Thanks a lot ❤️,love,love,love
+AMB0370,Thanks a lot 🙄,anger,love,love
+AMB0371,Thanks a lot 🙃,anger,love,love
+AMB0372,Monday again,sadness,neutral,joy
+AMB0373,Monday again 😩,sadness,neutral,joy
+AMB0374,Monday again 😡,anger,neutral,joy
+AMB0375,Monday again 🥳,joy,neutral,joy
+AMB0377,He texted me back,joy,neutral,joy
+AMB0378,He texted me back 😍,love,neutral,joy
+AMB0379,He texted me back 🥰,love,neutral,joy
+AMB0380,He texted me back 🙄,anger,neutral,joy
+AMB0381,He texted me back 😱,surprise,neutral,joy
+AMB0382,He texted me back 😭,joy,neutral,joy
+AMB0384,Exam results are out 🎉,joy,neutral,joy
+AMB0385,Exam results are out 😰,fear,neutral,joy
+AMB0386,Exam results are out 😭,sadness,neutral,joy
+AMB0387,Exam results are out 😲,surprise,neutral,joy
+AMB0388,Exam results are out 💀,sadness,neutral,joy
+AMB0389,Can't wait for tomorrow,joy,joy,joy
+AMB0390,Can't wait for tomorrow 🥳,joy,joy,joy
+AMB0391,Can't wait for tomorrow 😬,fear,joy,joy
+AMB0392,Can't wait for tomorrow 😰,fear,joy,joy
+AMB0393,Can't wait for tomorrow 🙄,anger,joy,joy
+AMB0394,My flight got cancelled,anger,sadness,sadness
+AMB0395,My flight got cancelled 😡,anger,sadness,sadness
+AMB0396,My flight got cancelled 😭,sadness,sadness,sadness
+AMB0397,My flight got cancelled 🙃,anger,sadness,sadness
+AMB0398,My flight got cancelled 🥳,joy,sadness,sadness
+AMB0400,We need to talk,fear,neutral,anger
+AMB0401,We need to talk 😨,fear,neutral,anger
+AMB0402,We need to talk 😡,anger,neutral,anger
+AMB0403,We need to talk ❤️,love,neutral,love
+AMB0404,We need to talk 😊,joy,neutral,joy
+AMB0405,She said yes,joy,neutral,anger
+AMB0406,She said yes 🥰,love,neutral,anger
+AMB0407,She said yes 😭,joy,neutral,joy
+AMB0408,She said yes 😱,surprise,neutral,joy
+AMB0409,She said yes 🎉,joy,neutral,anger
+AMB0412,"Sure, I'll do it 😊",joy,neutral,joy
+AMB0413,"Sure, I'll do it 🙄",anger,neutral,joy
+AMB0414,"Sure, I'll do it 😩",sadness,neutral,joy
+AMB0416,Just me and my cat tonight 🥰,love,neutral,joy
+AMB0417,Just me and my cat tonight 😌,joy,neutral,joy
+AMB0418,Just me and my cat tonight 😢,sadness,neutral,joy
+AMB0419,Just me and my cat tonight 🙃,sadness,neutral,joy
+AMB0420,Nice weather today,joy,love,love
+AMB0421,Nice weather today ☀️,joy,love,love
+AMB0422,Nice weather today 😊,joy,love,love
+AMB0423,Nice weather today 🙄,anger,love,love
+AMB0425,Another all-nighter,sadness,neutral,joy
+AMB0426,Another all-nighter 😭,sadness,neutral,joy
+AMB0427,Another all-nighter 💀,sadness,neutral,joy
+AMB0428,Another all-nighter 😎,joy,neutral,joy
+AMB0429,Another all-nighter 🔥,joy,neutral,joy
+AMB0430,My code finally works,joy,joy,joy
+AMB0431,My code finally works 🎉,joy,joy,joy
+AMB0432,My code finally works 😭,joy,joy,joy
+AMB0433,My code finally works 🤯,surprise,joy,joy
+AMB0436,Love that for me 😊,joy,love,love
+AMB0437,Love that for me 🥰,love,love,love
+AMB0438,Love that for me 🙃,anger,love,love
+AMB0439,Love that for me 💀,sadness,love,love
+AMB0441,We're moving to a new city 🥳,joy,neutral,joy
+AMB0442,We're moving to a new city 😢,sadness,neutral,joy
+AMB0443,We're moving to a new city 😨,fear,neutral,joy
+AMB0444,We're moving to a new city 😬,fear,neutral,joy
+AMB0446,My mom is coming to visit 🥰,love,neutral,love
+AMB0447,My mom is coming to visit 🎉,joy,neutral,love
+AMB0448,My mom is coming to visit 😬,fear,neutral,sadness
+AMB0449,My mom is coming to visit 😩,sadness,neutral,joy
+AMB0450,I saw a spider in my room,fear,neutral,surprise
+AMB0451,I saw a spider in my room 😱,fear,surprise,surprise
+AMB0452,I saw a spider in my room 😂,joy,surprise,surprise
+AMB0453,I saw a spider in my room 🥰,love,neutral,surprise
+AMB0454,I saw a spider in my room 😡,anger,surprise,surprise
+AMB0456,Guess who's back 😎,joy,surprise,surprise
+AMB0457,Guess who's back 😱,surprise,surprise,surprise
+AMB0458,Guess who's back 🙄,anger,surprise,surprise
+AMB0459,Guess who's back 🥰,love,surprise,surprise
+AMB0460,The test is tomorrow,fear,neutral,joy
+AMB0461,The test is tomorrow 😰,fear,neutral,joy
+AMB0462,The test is tomorrow 😎,joy,neutral,joy
+AMB0463,The test is tomorrow 💀,fear,neutral,joy
+AMB0465,He proposed,joy,neutral,anger
+AMB0466,He proposed 💍,joy,neutral,love
+AMB0467,He proposed 😭,joy,neutral,anger
+AMB0468,He proposed 😲,surprise,neutral,anger
+AMB0469,He proposed 😬,fear,neutral,anger
+AMB0470,My dog passed away 😭,sadness,sadness,sadness
+AMB0471,This puppy video is too cute 😭,love,love,love
+AMB0472,This song is too good 😭,joy,love,love
+AMB0473,Laughing so hard right now 😭,joy,joy,joy
+AMB0474,Missed the bus again 😭,sadness,sadness,sadness
+AMB0475,That meme 💀,joy,neutral,joy
+AMB0476,I have three exams tomorrow 💀,fear,neutral,joy
+AMB0477,Failed my driving test again 💀,sadness,sadness,sadness
+AMB0478,He tripped in front of the whole class 💀,joy,neutral,sadness
+AMB0479,I'm so tired I could sleep for a week 💀,sadness,sadness,sadness
+AMB0480,Have a nice day 🙂,joy,joy,joy
+AMB0481,As I said in my previous email 🙂,anger,neutral,joy
+AMB0482,Totally okay with being left out 🙂,sadness,neutral,anger
+AMB0483,Coffee and a good book this morning 🙂,joy,love,love
+AMB0484,My brother's prank on our dad 😂,joy,neutral,joy
+AMB0485,My life is falling apart 😂,sadness,sadness,sadness
+AMB0486,Got rejected again 😂,sadness,sadness,sadness
+AMB0487,Did you really think you'd win 😂,joy,surprise,surprise
+AMB0488,Love waking up to 30 unread emails 🙃,anger,love,love
+AMB0489,Everything is fine 🙃,sadness,neutral,love
+AMB0490,"Upside down day at school, we wore our shirts backwards 🙃",joy,neutral,anger
+AMB0491,This beat is 🔥,joy,neutral,love
+AMB0492,My kitchen is literally on fire 🔥,fear,fear,fear
+AMB0493,Her outfit is 🔥🔥,joy,neutral,love
+AMB0494,The servers are 🔥 and everything is down,fear,neutral,sadness
+AMB0495,I love you ❤️,love,love,love
+AMB0496,Rest in peace grandma ❤️,sadness,love,love
+AMB0497,Thanks for nothing ❤️,anger,love,love
+AMB0499,"Great, now I have to redo everything 👍",anger,love,love
+AMB0500,Well done team 👍,joy,love,love

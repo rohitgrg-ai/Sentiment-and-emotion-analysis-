@@ -1,0 +1,581 @@
+test,text,base_text,emoji,expected_emotion,predicted_emotion,expected_sentiment,predicted_sentiment,emotion_from_text_only,emotion_ok,sentiment_ok
+0_no_emoji,my brother came over today,my brother came over today,,,anger,,neutral,anger,,
+1_emoji_at_end,my brother came over today 😁,my brother came over today,😁,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,😁 my brother came over today,my brother came over today,😁,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,my brother came over today 🤣,my brother came over today,🤣,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🤣 my brother came over today,my brother came over today,🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,my brother came over today 🎉,my brother came over today,🎉,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🎉 my brother came over today,my brother came over today,🎉,joy,joy,positive,positive,anger,True,True
+3_repeated_emoji,my brother came over today 😁😁😁,my brother came over today,😁😁😁,joy,joy,positive,positive,anger,True,True
+4_two_same_emotion_emojis,my brother came over today 😁🤣,my brother came over today,😁🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,my brother came over today 😍,my brother came over today,😍,love,love,positive,positive,anger,True,True
+2_emoji_at_start,😍 my brother came over today,my brother came over today,😍,love,love,positive,positive,anger,True,True
+1_emoji_at_end,my brother came over today 🥰,my brother came over today,🥰,love,love,positive,positive,anger,True,True
+2_emoji_at_start,🥰 my brother came over today,my brother came over today,🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,my brother came over today 💕,my brother came over today,💕,love,love,positive,positive,anger,True,True
+2_emoji_at_start,💕 my brother came over today,my brother came over today,💕,love,love,positive,positive,anger,True,True
+3_repeated_emoji,my brother came over today 😍😍😍,my brother came over today,😍😍😍,love,love,positive,positive,anger,True,True
+4_two_same_emotion_emojis,my brother came over today 😍🥰,my brother came over today,😍🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,my brother came over today 😠,my brother came over today,😠,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😠 my brother came over today,my brother came over today,😠,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 🤬,my brother came over today,🤬,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,🤬 my brother came over today,my brother came over today,🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😤,my brother came over today,😤,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😤 my brother came over today,my brother came over today,😤,anger,anger,negative,negative,anger,True,True
+3_repeated_emoji,my brother came over today 😠😠😠,my brother came over today,😠😠😠,anger,anger,negative,negative,anger,True,True
+4_two_same_emotion_emojis,my brother came over today 😠🤬,my brother came over today,😠🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😱,my brother came over today,😱,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😱 my brother came over today,my brother came over today,😱,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😰,my brother came over today,😰,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😰 my brother came over today,my brother came over today,😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😧,my brother came over today,😧,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😧 my brother came over today,my brother came over today,😧,fear,fear,negative,negative,anger,True,True
+3_repeated_emoji,my brother came over today 😱😱😱,my brother came over today,😱😱😱,fear,fear,negative,negative,anger,True,True
+4_two_same_emotion_emojis,my brother came over today 😱😰,my brother came over today,😱😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😭,my brother came over today,😭,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😭 my brother came over today,my brother came over today,😭,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😞,my brother came over today,😞,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😞 my brother came over today,my brother came over today,😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 💔,my brother came over today,💔,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,💔 my brother came over today,my brother came over today,💔,sadness,sadness,negative,negative,anger,True,True
+3_repeated_emoji,my brother came over today 😭😭😭,my brother came over today,😭😭😭,sadness,sadness,negative,negative,anger,True,True
+4_two_same_emotion_emojis,my brother came over today 😭😞,my brother came over today,😭😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,my brother came over today 😮,my brother came over today,😮,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😮 my brother came over today,my brother came over today,😮,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,my brother came over today 🤯,my brother came over today,🤯,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,🤯 my brother came over today,my brother came over today,🤯,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,my brother came over today 😳,my brother came over today,😳,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😳 my brother came over today,my brother came over today,😳,surprise,surprise,neutral,neutral,anger,True,True
+3_repeated_emoji,my brother came over today 😮😮😮,my brother came over today,😮😮😮,surprise,surprise,neutral,neutral,anger,True,True
+4_two_same_emotion_emojis,my brother came over today 😮🤯,my brother came over today,😮🤯,surprise,surprise,neutral,neutral,anger,True,True
+0_no_emoji,the bus was late again,the bus was late again,,,anger,,neutral,anger,,
+1_emoji_at_end,the bus was late again 😁,the bus was late again,😁,joy,joy,positive,neutral,anger,True,False
+2_emoji_at_start,😁 the bus was late again,the bus was late again,😁,joy,joy,positive,neutral,anger,True,False
+1_emoji_at_end,the bus was late again 🤣,the bus was late again,🤣,joy,joy,positive,neutral,anger,True,False
+2_emoji_at_start,🤣 the bus was late again,the bus was late again,🤣,joy,joy,positive,neutral,anger,True,False
+1_emoji_at_end,the bus was late again 🎉,the bus was late again,🎉,joy,joy,positive,neutral,anger,True,False
+2_emoji_at_start,🎉 the bus was late again,the bus was late again,🎉,joy,joy,positive,neutral,anger,True,False
+3_repeated_emoji,the bus was late again 😁😁😁,the bus was late again,😁😁😁,joy,joy,positive,neutral,anger,True,False
+4_two_same_emotion_emojis,the bus was late again 😁🤣,the bus was late again,😁🤣,joy,joy,positive,neutral,anger,True,False
+1_emoji_at_end,the bus was late again 😍,the bus was late again,😍,love,love,positive,neutral,anger,True,False
+2_emoji_at_start,😍 the bus was late again,the bus was late again,😍,love,love,positive,neutral,anger,True,False
+1_emoji_at_end,the bus was late again 🥰,the bus was late again,🥰,love,love,positive,neutral,anger,True,False
+2_emoji_at_start,🥰 the bus was late again,the bus was late again,🥰,love,love,positive,neutral,anger,True,False
+1_emoji_at_end,the bus was late again 💕,the bus was late again,💕,love,love,positive,neutral,anger,True,False
+2_emoji_at_start,💕 the bus was late again,the bus was late again,💕,love,love,positive,neutral,anger,True,False
+3_repeated_emoji,the bus was late again 😍😍😍,the bus was late again,😍😍😍,love,love,positive,neutral,anger,True,False
+4_two_same_emotion_emojis,the bus was late again 😍🥰,the bus was late again,😍🥰,love,love,positive,neutral,anger,True,False
+1_emoji_at_end,the bus was late again 😠,the bus was late again,😠,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😠 the bus was late again,the bus was late again,😠,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 🤬,the bus was late again,🤬,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,🤬 the bus was late again,the bus was late again,🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😤,the bus was late again,😤,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😤 the bus was late again,the bus was late again,😤,anger,anger,negative,negative,anger,True,True
+3_repeated_emoji,the bus was late again 😠😠😠,the bus was late again,😠😠😠,anger,anger,negative,negative,anger,True,True
+4_two_same_emotion_emojis,the bus was late again 😠🤬,the bus was late again,😠🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😱,the bus was late again,😱,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😱 the bus was late again,the bus was late again,😱,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😰,the bus was late again,😰,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😰 the bus was late again,the bus was late again,😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😧,the bus was late again,😧,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😧 the bus was late again,the bus was late again,😧,fear,fear,negative,negative,anger,True,True
+3_repeated_emoji,the bus was late again 😱😱😱,the bus was late again,😱😱😱,fear,fear,negative,negative,anger,True,True
+4_two_same_emotion_emojis,the bus was late again 😱😰,the bus was late again,😱😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😭,the bus was late again,😭,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😭 the bus was late again,the bus was late again,😭,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😞,the bus was late again,😞,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😞 the bus was late again,the bus was late again,😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 💔,the bus was late again,💔,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,💔 the bus was late again,the bus was late again,💔,sadness,sadness,negative,negative,anger,True,True
+3_repeated_emoji,the bus was late again 😭😭😭,the bus was late again,😭😭😭,sadness,sadness,negative,negative,anger,True,True
+4_two_same_emotion_emojis,the bus was late again 😭😞,the bus was late again,😭😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,the bus was late again 😮,the bus was late again,😮,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😮 the bus was late again,the bus was late again,😮,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,the bus was late again 🤯,the bus was late again,🤯,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,🤯 the bus was late again,the bus was late again,🤯,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,the bus was late again 😳,the bus was late again,😳,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😳 the bus was late again,the bus was late again,😳,surprise,surprise,neutral,neutral,anger,True,True
+3_repeated_emoji,the bus was late again 😮😮😮,the bus was late again,😮😮😮,surprise,surprise,neutral,neutral,anger,True,True
+4_two_same_emotion_emojis,the bus was late again 😮🤯,the bus was late again,😮🤯,surprise,surprise,neutral,neutral,anger,True,True
+0_no_emoji,we are going to the beach on sunday,we are going to the beach on sunday,,,joy,,neutral,joy,,
+1_emoji_at_end,we are going to the beach on sunday 😁,we are going to the beach on sunday,😁,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,😁 we are going to the beach on sunday,we are going to the beach on sunday,😁,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 🤣,we are going to the beach on sunday,🤣,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🤣 we are going to the beach on sunday,we are going to the beach on sunday,🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 🎉,we are going to the beach on sunday,🎉,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🎉 we are going to the beach on sunday,we are going to the beach on sunday,🎉,joy,joy,positive,positive,joy,True,True
+3_repeated_emoji,we are going to the beach on sunday 😁😁😁,we are going to the beach on sunday,😁😁😁,joy,joy,positive,positive,joy,True,True
+4_two_same_emotion_emojis,we are going to the beach on sunday 😁🤣,we are going to the beach on sunday,😁🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😍,we are going to the beach on sunday,😍,love,love,positive,positive,joy,True,True
+2_emoji_at_start,😍 we are going to the beach on sunday,we are going to the beach on sunday,😍,love,love,positive,positive,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 🥰,we are going to the beach on sunday,🥰,love,love,positive,positive,joy,True,True
+2_emoji_at_start,🥰 we are going to the beach on sunday,we are going to the beach on sunday,🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 💕,we are going to the beach on sunday,💕,love,love,positive,positive,joy,True,True
+2_emoji_at_start,💕 we are going to the beach on sunday,we are going to the beach on sunday,💕,love,love,positive,positive,joy,True,True
+3_repeated_emoji,we are going to the beach on sunday 😍😍😍,we are going to the beach on sunday,😍😍😍,love,love,positive,positive,joy,True,True
+4_two_same_emotion_emojis,we are going to the beach on sunday 😍🥰,we are going to the beach on sunday,😍🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😠,we are going to the beach on sunday,😠,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😠 we are going to the beach on sunday,we are going to the beach on sunday,😠,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 🤬,we are going to the beach on sunday,🤬,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,🤬 we are going to the beach on sunday,we are going to the beach on sunday,🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😤,we are going to the beach on sunday,😤,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😤 we are going to the beach on sunday,we are going to the beach on sunday,😤,anger,anger,negative,negative,joy,True,True
+3_repeated_emoji,we are going to the beach on sunday 😠😠😠,we are going to the beach on sunday,😠😠😠,anger,anger,negative,negative,joy,True,True
+4_two_same_emotion_emojis,we are going to the beach on sunday 😠🤬,we are going to the beach on sunday,😠🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😱,we are going to the beach on sunday,😱,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😱 we are going to the beach on sunday,we are going to the beach on sunday,😱,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😰,we are going to the beach on sunday,😰,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😰 we are going to the beach on sunday,we are going to the beach on sunday,😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😧,we are going to the beach on sunday,😧,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😧 we are going to the beach on sunday,we are going to the beach on sunday,😧,fear,fear,negative,negative,joy,True,True
+3_repeated_emoji,we are going to the beach on sunday 😱😱😱,we are going to the beach on sunday,😱😱😱,fear,fear,negative,negative,joy,True,True
+4_two_same_emotion_emojis,we are going to the beach on sunday 😱😰,we are going to the beach on sunday,😱😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😭,we are going to the beach on sunday,😭,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😭 we are going to the beach on sunday,we are going to the beach on sunday,😭,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😞,we are going to the beach on sunday,😞,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😞 we are going to the beach on sunday,we are going to the beach on sunday,😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 💔,we are going to the beach on sunday,💔,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,💔 we are going to the beach on sunday,we are going to the beach on sunday,💔,sadness,sadness,negative,negative,joy,True,True
+3_repeated_emoji,we are going to the beach on sunday 😭😭😭,we are going to the beach on sunday,😭😭😭,sadness,sadness,negative,negative,joy,True,True
+4_two_same_emotion_emojis,we are going to the beach on sunday 😭😞,we are going to the beach on sunday,😭😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😮,we are going to the beach on sunday,😮,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😮 we are going to the beach on sunday,we are going to the beach on sunday,😮,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 🤯,we are going to the beach on sunday,🤯,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,🤯 we are going to the beach on sunday,we are going to the beach on sunday,🤯,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,we are going to the beach on sunday 😳,we are going to the beach on sunday,😳,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😳 we are going to the beach on sunday,we are going to the beach on sunday,😳,surprise,surprise,neutral,neutral,joy,True,True
+3_repeated_emoji,we are going to the beach on sunday 😮😮😮,we are going to the beach on sunday,😮😮😮,surprise,surprise,neutral,neutral,joy,True,True
+4_two_same_emotion_emojis,we are going to the beach on sunday 😮🤯,we are going to the beach on sunday,😮🤯,surprise,surprise,neutral,neutral,joy,True,True
+0_no_emoji,she replied to my message,she replied to my message,,,anger,,positive,anger,,
+1_emoji_at_end,she replied to my message 😁,she replied to my message,😁,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,😁 she replied to my message,she replied to my message,😁,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,she replied to my message 🤣,she replied to my message,🤣,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🤣 she replied to my message,she replied to my message,🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,she replied to my message 🎉,she replied to my message,🎉,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🎉 she replied to my message,she replied to my message,🎉,joy,joy,positive,positive,anger,True,True
+3_repeated_emoji,she replied to my message 😁😁😁,she replied to my message,😁😁😁,joy,joy,positive,positive,anger,True,True
+4_two_same_emotion_emojis,she replied to my message 😁🤣,she replied to my message,😁🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,she replied to my message 😍,she replied to my message,😍,love,love,positive,positive,anger,True,True
+2_emoji_at_start,😍 she replied to my message,she replied to my message,😍,love,love,positive,positive,anger,True,True
+1_emoji_at_end,she replied to my message 🥰,she replied to my message,🥰,love,love,positive,positive,anger,True,True
+2_emoji_at_start,🥰 she replied to my message,she replied to my message,🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,she replied to my message 💕,she replied to my message,💕,love,love,positive,positive,anger,True,True
+2_emoji_at_start,💕 she replied to my message,she replied to my message,💕,love,love,positive,positive,anger,True,True
+3_repeated_emoji,she replied to my message 😍😍😍,she replied to my message,😍😍😍,love,love,positive,positive,anger,True,True
+4_two_same_emotion_emojis,she replied to my message 😍🥰,she replied to my message,😍🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,she replied to my message 😠,she replied to my message,😠,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😠 she replied to my message,she replied to my message,😠,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 🤬,she replied to my message,🤬,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,🤬 she replied to my message,she replied to my message,🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😤,she replied to my message,😤,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😤 she replied to my message,she replied to my message,😤,anger,anger,negative,negative,anger,True,True
+3_repeated_emoji,she replied to my message 😠😠😠,she replied to my message,😠😠😠,anger,anger,negative,negative,anger,True,True
+4_two_same_emotion_emojis,she replied to my message 😠🤬,she replied to my message,😠🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😱,she replied to my message,😱,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😱 she replied to my message,she replied to my message,😱,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😰,she replied to my message,😰,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😰 she replied to my message,she replied to my message,😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😧,she replied to my message,😧,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😧 she replied to my message,she replied to my message,😧,fear,fear,negative,negative,anger,True,True
+3_repeated_emoji,she replied to my message 😱😱😱,she replied to my message,😱😱😱,fear,fear,negative,negative,anger,True,True
+4_two_same_emotion_emojis,she replied to my message 😱😰,she replied to my message,😱😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😭,she replied to my message,😭,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😭 she replied to my message,she replied to my message,😭,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😞,she replied to my message,😞,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😞 she replied to my message,she replied to my message,😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 💔,she replied to my message,💔,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,💔 she replied to my message,she replied to my message,💔,sadness,sadness,negative,negative,anger,True,True
+3_repeated_emoji,she replied to my message 😭😭😭,she replied to my message,😭😭😭,sadness,sadness,negative,negative,anger,True,True
+4_two_same_emotion_emojis,she replied to my message 😭😞,she replied to my message,😭😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,she replied to my message 😮,she replied to my message,😮,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😮 she replied to my message,she replied to my message,😮,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,she replied to my message 🤯,she replied to my message,🤯,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,🤯 she replied to my message,she replied to my message,🤯,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,she replied to my message 😳,she replied to my message,😳,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😳 she replied to my message,she replied to my message,😳,surprise,surprise,neutral,neutral,anger,True,True
+3_repeated_emoji,she replied to my message 😮😮😮,she replied to my message,😮😮😮,surprise,surprise,neutral,neutral,anger,True,True
+4_two_same_emotion_emojis,she replied to my message 😮🤯,she replied to my message,😮🤯,surprise,surprise,neutral,neutral,anger,True,True
+0_no_emoji,got my phone back from repair,got my phone back from repair,,,anger,,neutral,anger,,
+1_emoji_at_end,got my phone back from repair 😁,got my phone back from repair,😁,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,😁 got my phone back from repair,got my phone back from repair,😁,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,got my phone back from repair 🤣,got my phone back from repair,🤣,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🤣 got my phone back from repair,got my phone back from repair,🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,got my phone back from repair 🎉,got my phone back from repair,🎉,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🎉 got my phone back from repair,got my phone back from repair,🎉,joy,joy,positive,positive,anger,True,True
+3_repeated_emoji,got my phone back from repair 😁😁😁,got my phone back from repair,😁😁😁,joy,joy,positive,positive,anger,True,True
+4_two_same_emotion_emojis,got my phone back from repair 😁🤣,got my phone back from repair,😁🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,got my phone back from repair 😍,got my phone back from repair,😍,love,love,positive,positive,anger,True,True
+2_emoji_at_start,😍 got my phone back from repair,got my phone back from repair,😍,love,love,positive,positive,anger,True,True
+1_emoji_at_end,got my phone back from repair 🥰,got my phone back from repair,🥰,love,love,positive,positive,anger,True,True
+2_emoji_at_start,🥰 got my phone back from repair,got my phone back from repair,🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,got my phone back from repair 💕,got my phone back from repair,💕,love,love,positive,positive,anger,True,True
+2_emoji_at_start,💕 got my phone back from repair,got my phone back from repair,💕,love,love,positive,positive,anger,True,True
+3_repeated_emoji,got my phone back from repair 😍😍😍,got my phone back from repair,😍😍😍,love,love,positive,positive,anger,True,True
+4_two_same_emotion_emojis,got my phone back from repair 😍🥰,got my phone back from repair,😍🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,got my phone back from repair 😠,got my phone back from repair,😠,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😠 got my phone back from repair,got my phone back from repair,😠,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 🤬,got my phone back from repair,🤬,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,🤬 got my phone back from repair,got my phone back from repair,🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😤,got my phone back from repair,😤,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😤 got my phone back from repair,got my phone back from repair,😤,anger,anger,negative,negative,anger,True,True
+3_repeated_emoji,got my phone back from repair 😠😠😠,got my phone back from repair,😠😠😠,anger,anger,negative,negative,anger,True,True
+4_two_same_emotion_emojis,got my phone back from repair 😠🤬,got my phone back from repair,😠🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😱,got my phone back from repair,😱,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😱 got my phone back from repair,got my phone back from repair,😱,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😰,got my phone back from repair,😰,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😰 got my phone back from repair,got my phone back from repair,😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😧,got my phone back from repair,😧,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😧 got my phone back from repair,got my phone back from repair,😧,fear,fear,negative,negative,anger,True,True
+3_repeated_emoji,got my phone back from repair 😱😱😱,got my phone back from repair,😱😱😱,fear,fear,negative,negative,anger,True,True
+4_two_same_emotion_emojis,got my phone back from repair 😱😰,got my phone back from repair,😱😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😭,got my phone back from repair,😭,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😭 got my phone back from repair,got my phone back from repair,😭,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😞,got my phone back from repair,😞,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😞 got my phone back from repair,got my phone back from repair,😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 💔,got my phone back from repair,💔,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,💔 got my phone back from repair,got my phone back from repair,💔,sadness,sadness,negative,negative,anger,True,True
+3_repeated_emoji,got my phone back from repair 😭😭😭,got my phone back from repair,😭😭😭,sadness,sadness,negative,negative,anger,True,True
+4_two_same_emotion_emojis,got my phone back from repair 😭😞,got my phone back from repair,😭😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,got my phone back from repair 😮,got my phone back from repair,😮,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😮 got my phone back from repair,got my phone back from repair,😮,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,got my phone back from repair 🤯,got my phone back from repair,🤯,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,🤯 got my phone back from repair,got my phone back from repair,🤯,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,got my phone back from repair 😳,got my phone back from repair,😳,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😳 got my phone back from repair,got my phone back from repair,😳,surprise,surprise,neutral,neutral,anger,True,True
+3_repeated_emoji,got my phone back from repair 😮😮😮,got my phone back from repair,😮😮😮,surprise,surprise,neutral,neutral,anger,True,True
+4_two_same_emotion_emojis,got my phone back from repair 😮🤯,got my phone back from repair,😮🤯,surprise,surprise,neutral,neutral,anger,True,True
+0_no_emoji,the teacher announced the results,the teacher announced the results,,,anger,,neutral,anger,,
+1_emoji_at_end,the teacher announced the results 😁,the teacher announced the results,😁,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,😁 the teacher announced the results,the teacher announced the results,😁,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,the teacher announced the results 🤣,the teacher announced the results,🤣,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🤣 the teacher announced the results,the teacher announced the results,🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,the teacher announced the results 🎉,the teacher announced the results,🎉,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🎉 the teacher announced the results,the teacher announced the results,🎉,joy,joy,positive,positive,anger,True,True
+3_repeated_emoji,the teacher announced the results 😁😁😁,the teacher announced the results,😁😁😁,joy,joy,positive,positive,anger,True,True
+4_two_same_emotion_emojis,the teacher announced the results 😁🤣,the teacher announced the results,😁🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,the teacher announced the results 😍,the teacher announced the results,😍,love,love,positive,positive,anger,True,True
+2_emoji_at_start,😍 the teacher announced the results,the teacher announced the results,😍,love,love,positive,positive,anger,True,True
+1_emoji_at_end,the teacher announced the results 🥰,the teacher announced the results,🥰,love,love,positive,positive,anger,True,True
+2_emoji_at_start,🥰 the teacher announced the results,the teacher announced the results,🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,the teacher announced the results 💕,the teacher announced the results,💕,love,love,positive,positive,anger,True,True
+2_emoji_at_start,💕 the teacher announced the results,the teacher announced the results,💕,love,love,positive,positive,anger,True,True
+3_repeated_emoji,the teacher announced the results 😍😍😍,the teacher announced the results,😍😍😍,love,love,positive,positive,anger,True,True
+4_two_same_emotion_emojis,the teacher announced the results 😍🥰,the teacher announced the results,😍🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,the teacher announced the results 😠,the teacher announced the results,😠,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😠 the teacher announced the results,the teacher announced the results,😠,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 🤬,the teacher announced the results,🤬,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,🤬 the teacher announced the results,the teacher announced the results,🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😤,the teacher announced the results,😤,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😤 the teacher announced the results,the teacher announced the results,😤,anger,anger,negative,negative,anger,True,True
+3_repeated_emoji,the teacher announced the results 😠😠😠,the teacher announced the results,😠😠😠,anger,anger,negative,negative,anger,True,True
+4_two_same_emotion_emojis,the teacher announced the results 😠🤬,the teacher announced the results,😠🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😱,the teacher announced the results,😱,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😱 the teacher announced the results,the teacher announced the results,😱,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😰,the teacher announced the results,😰,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😰 the teacher announced the results,the teacher announced the results,😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😧,the teacher announced the results,😧,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😧 the teacher announced the results,the teacher announced the results,😧,fear,fear,negative,negative,anger,True,True
+3_repeated_emoji,the teacher announced the results 😱😱😱,the teacher announced the results,😱😱😱,fear,fear,negative,negative,anger,True,True
+4_two_same_emotion_emojis,the teacher announced the results 😱😰,the teacher announced the results,😱😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😭,the teacher announced the results,😭,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😭 the teacher announced the results,the teacher announced the results,😭,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😞,the teacher announced the results,😞,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😞 the teacher announced the results,the teacher announced the results,😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 💔,the teacher announced the results,💔,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,💔 the teacher announced the results,the teacher announced the results,💔,sadness,sadness,negative,negative,anger,True,True
+3_repeated_emoji,the teacher announced the results 😭😭😭,the teacher announced the results,😭😭😭,sadness,sadness,negative,negative,anger,True,True
+4_two_same_emotion_emojis,the teacher announced the results 😭😞,the teacher announced the results,😭😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,the teacher announced the results 😮,the teacher announced the results,😮,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😮 the teacher announced the results,the teacher announced the results,😮,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,the teacher announced the results 🤯,the teacher announced the results,🤯,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,🤯 the teacher announced the results,the teacher announced the results,🤯,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,the teacher announced the results 😳,the teacher announced the results,😳,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😳 the teacher announced the results,the teacher announced the results,😳,surprise,surprise,neutral,neutral,anger,True,True
+3_repeated_emoji,the teacher announced the results 😮😮😮,the teacher announced the results,😮😮😮,surprise,surprise,neutral,neutral,anger,True,True
+4_two_same_emotion_emojis,the teacher announced the results 😮🤯,the teacher announced the results,😮🤯,surprise,surprise,neutral,neutral,anger,True,True
+0_no_emoji,dinner is ready,dinner is ready,,,joy,,positive,joy,,
+1_emoji_at_end,dinner is ready 😁,dinner is ready,😁,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,😁 dinner is ready,dinner is ready,😁,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,dinner is ready 🤣,dinner is ready,🤣,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🤣 dinner is ready,dinner is ready,🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,dinner is ready 🎉,dinner is ready,🎉,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🎉 dinner is ready,dinner is ready,🎉,joy,joy,positive,positive,joy,True,True
+3_repeated_emoji,dinner is ready 😁😁😁,dinner is ready,😁😁😁,joy,joy,positive,positive,joy,True,True
+4_two_same_emotion_emojis,dinner is ready 😁🤣,dinner is ready,😁🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,dinner is ready 😍,dinner is ready,😍,love,love,positive,positive,joy,True,True
+2_emoji_at_start,😍 dinner is ready,dinner is ready,😍,love,love,positive,positive,joy,True,True
+1_emoji_at_end,dinner is ready 🥰,dinner is ready,🥰,love,love,positive,positive,joy,True,True
+2_emoji_at_start,🥰 dinner is ready,dinner is ready,🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,dinner is ready 💕,dinner is ready,💕,love,love,positive,positive,joy,True,True
+2_emoji_at_start,💕 dinner is ready,dinner is ready,💕,love,love,positive,positive,joy,True,True
+3_repeated_emoji,dinner is ready 😍😍😍,dinner is ready,😍😍😍,love,love,positive,positive,joy,True,True
+4_two_same_emotion_emojis,dinner is ready 😍🥰,dinner is ready,😍🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,dinner is ready 😠,dinner is ready,😠,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😠 dinner is ready,dinner is ready,😠,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 🤬,dinner is ready,🤬,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,🤬 dinner is ready,dinner is ready,🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😤,dinner is ready,😤,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😤 dinner is ready,dinner is ready,😤,anger,anger,negative,negative,joy,True,True
+3_repeated_emoji,dinner is ready 😠😠😠,dinner is ready,😠😠😠,anger,anger,negative,negative,joy,True,True
+4_two_same_emotion_emojis,dinner is ready 😠🤬,dinner is ready,😠🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😱,dinner is ready,😱,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😱 dinner is ready,dinner is ready,😱,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😰,dinner is ready,😰,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😰 dinner is ready,dinner is ready,😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😧,dinner is ready,😧,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😧 dinner is ready,dinner is ready,😧,fear,fear,negative,negative,joy,True,True
+3_repeated_emoji,dinner is ready 😱😱😱,dinner is ready,😱😱😱,fear,fear,negative,negative,joy,True,True
+4_two_same_emotion_emojis,dinner is ready 😱😰,dinner is ready,😱😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😭,dinner is ready,😭,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😭 dinner is ready,dinner is ready,😭,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😞,dinner is ready,😞,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😞 dinner is ready,dinner is ready,😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 💔,dinner is ready,💔,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,💔 dinner is ready,dinner is ready,💔,sadness,sadness,negative,negative,joy,True,True
+3_repeated_emoji,dinner is ready 😭😭😭,dinner is ready,😭😭😭,sadness,sadness,negative,negative,joy,True,True
+4_two_same_emotion_emojis,dinner is ready 😭😞,dinner is ready,😭😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,dinner is ready 😮,dinner is ready,😮,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😮 dinner is ready,dinner is ready,😮,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,dinner is ready 🤯,dinner is ready,🤯,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,🤯 dinner is ready,dinner is ready,🤯,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,dinner is ready 😳,dinner is ready,😳,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😳 dinner is ready,dinner is ready,😳,surprise,surprise,neutral,neutral,joy,True,True
+3_repeated_emoji,dinner is ready 😮😮😮,dinner is ready,😮😮😮,surprise,surprise,neutral,neutral,joy,True,True
+4_two_same_emotion_emojis,dinner is ready 😮🤯,dinner is ready,😮🤯,surprise,surprise,neutral,neutral,joy,True,True
+0_no_emoji,that is what he said,that is what he said,,,joy,,neutral,joy,,
+1_emoji_at_end,that is what he said 😁,that is what he said,😁,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,😁 that is what he said,that is what he said,😁,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,that is what he said 🤣,that is what he said,🤣,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🤣 that is what he said,that is what he said,🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,that is what he said 🎉,that is what he said,🎉,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🎉 that is what he said,that is what he said,🎉,joy,joy,positive,positive,joy,True,True
+3_repeated_emoji,that is what he said 😁😁😁,that is what he said,😁😁😁,joy,joy,positive,positive,joy,True,True
+4_two_same_emotion_emojis,that is what he said 😁🤣,that is what he said,😁🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,that is what he said 😍,that is what he said,😍,love,love,positive,positive,joy,True,True
+2_emoji_at_start,😍 that is what he said,that is what he said,😍,love,love,positive,positive,joy,True,True
+1_emoji_at_end,that is what he said 🥰,that is what he said,🥰,love,love,positive,positive,joy,True,True
+2_emoji_at_start,🥰 that is what he said,that is what he said,🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,that is what he said 💕,that is what he said,💕,love,love,positive,positive,joy,True,True
+2_emoji_at_start,💕 that is what he said,that is what he said,💕,love,love,positive,positive,joy,True,True
+3_repeated_emoji,that is what he said 😍😍😍,that is what he said,😍😍😍,love,love,positive,positive,joy,True,True
+4_two_same_emotion_emojis,that is what he said 😍🥰,that is what he said,😍🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,that is what he said 😠,that is what he said,😠,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😠 that is what he said,that is what he said,😠,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 🤬,that is what he said,🤬,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,🤬 that is what he said,that is what he said,🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😤,that is what he said,😤,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😤 that is what he said,that is what he said,😤,anger,anger,negative,negative,joy,True,True
+3_repeated_emoji,that is what he said 😠😠😠,that is what he said,😠😠😠,anger,anger,negative,negative,joy,True,True
+4_two_same_emotion_emojis,that is what he said 😠🤬,that is what he said,😠🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😱,that is what he said,😱,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😱 that is what he said,that is what he said,😱,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😰,that is what he said,😰,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😰 that is what he said,that is what he said,😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😧,that is what he said,😧,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😧 that is what he said,that is what he said,😧,fear,fear,negative,negative,joy,True,True
+3_repeated_emoji,that is what he said 😱😱😱,that is what he said,😱😱😱,fear,fear,negative,negative,joy,True,True
+4_two_same_emotion_emojis,that is what he said 😱😰,that is what he said,😱😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😭,that is what he said,😭,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😭 that is what he said,that is what he said,😭,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😞,that is what he said,😞,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😞 that is what he said,that is what he said,😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 💔,that is what he said,💔,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,💔 that is what he said,that is what he said,💔,sadness,sadness,negative,negative,joy,True,True
+3_repeated_emoji,that is what he said 😭😭😭,that is what he said,😭😭😭,sadness,sadness,negative,negative,joy,True,True
+4_two_same_emotion_emojis,that is what he said 😭😞,that is what he said,😭😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,that is what he said 😮,that is what he said,😮,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😮 that is what he said,that is what he said,😮,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,that is what he said 🤯,that is what he said,🤯,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,🤯 that is what he said,that is what he said,🤯,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,that is what he said 😳,that is what he said,😳,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😳 that is what he said,that is what he said,😳,surprise,surprise,neutral,neutral,joy,True,True
+3_repeated_emoji,that is what he said 😮😮😮,that is what he said,😮😮😮,surprise,surprise,neutral,neutral,joy,True,True
+4_two_same_emotion_emojis,that is what he said 😮🤯,that is what he said,😮🤯,surprise,surprise,neutral,neutral,joy,True,True
+0_no_emoji,first day at the new office,first day at the new office,,,joy,,neutral,joy,,
+1_emoji_at_end,first day at the new office 😁,first day at the new office,😁,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,😁 first day at the new office,first day at the new office,😁,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,first day at the new office 🤣,first day at the new office,🤣,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🤣 first day at the new office,first day at the new office,🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,first day at the new office 🎉,first day at the new office,🎉,joy,joy,positive,positive,joy,True,True
+2_emoji_at_start,🎉 first day at the new office,first day at the new office,🎉,joy,joy,positive,positive,joy,True,True
+3_repeated_emoji,first day at the new office 😁😁😁,first day at the new office,😁😁😁,joy,joy,positive,positive,joy,True,True
+4_two_same_emotion_emojis,first day at the new office 😁🤣,first day at the new office,😁🤣,joy,joy,positive,positive,joy,True,True
+1_emoji_at_end,first day at the new office 😍,first day at the new office,😍,love,love,positive,positive,joy,True,True
+2_emoji_at_start,😍 first day at the new office,first day at the new office,😍,love,love,positive,positive,joy,True,True
+1_emoji_at_end,first day at the new office 🥰,first day at the new office,🥰,love,love,positive,positive,joy,True,True
+2_emoji_at_start,🥰 first day at the new office,first day at the new office,🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,first day at the new office 💕,first day at the new office,💕,love,love,positive,positive,joy,True,True
+2_emoji_at_start,💕 first day at the new office,first day at the new office,💕,love,love,positive,positive,joy,True,True
+3_repeated_emoji,first day at the new office 😍😍😍,first day at the new office,😍😍😍,love,love,positive,positive,joy,True,True
+4_two_same_emotion_emojis,first day at the new office 😍🥰,first day at the new office,😍🥰,love,love,positive,positive,joy,True,True
+1_emoji_at_end,first day at the new office 😠,first day at the new office,😠,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😠 first day at the new office,first day at the new office,😠,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 🤬,first day at the new office,🤬,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,🤬 first day at the new office,first day at the new office,🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😤,first day at the new office,😤,anger,anger,negative,negative,joy,True,True
+2_emoji_at_start,😤 first day at the new office,first day at the new office,😤,anger,anger,negative,negative,joy,True,True
+3_repeated_emoji,first day at the new office 😠😠😠,first day at the new office,😠😠😠,anger,anger,negative,negative,joy,True,True
+4_two_same_emotion_emojis,first day at the new office 😠🤬,first day at the new office,😠🤬,anger,anger,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😱,first day at the new office,😱,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😱 first day at the new office,first day at the new office,😱,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😰,first day at the new office,😰,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😰 first day at the new office,first day at the new office,😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😧,first day at the new office,😧,fear,fear,negative,negative,joy,True,True
+2_emoji_at_start,😧 first day at the new office,first day at the new office,😧,fear,fear,negative,negative,joy,True,True
+3_repeated_emoji,first day at the new office 😱😱😱,first day at the new office,😱😱😱,fear,fear,negative,negative,joy,True,True
+4_two_same_emotion_emojis,first day at the new office 😱😰,first day at the new office,😱😰,fear,fear,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😭,first day at the new office,😭,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😭 first day at the new office,first day at the new office,😭,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😞,first day at the new office,😞,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,😞 first day at the new office,first day at the new office,😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 💔,first day at the new office,💔,sadness,sadness,negative,negative,joy,True,True
+2_emoji_at_start,💔 first day at the new office,first day at the new office,💔,sadness,sadness,negative,negative,joy,True,True
+3_repeated_emoji,first day at the new office 😭😭😭,first day at the new office,😭😭😭,sadness,sadness,negative,negative,joy,True,True
+4_two_same_emotion_emojis,first day at the new office 😭😞,first day at the new office,😭😞,sadness,sadness,negative,negative,joy,True,True
+1_emoji_at_end,first day at the new office 😮,first day at the new office,😮,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😮 first day at the new office,first day at the new office,😮,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,first day at the new office 🤯,first day at the new office,🤯,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,🤯 first day at the new office,first day at the new office,🤯,surprise,surprise,neutral,neutral,joy,True,True
+1_emoji_at_end,first day at the new office 😳,first day at the new office,😳,surprise,surprise,neutral,neutral,joy,True,True
+2_emoji_at_start,😳 first day at the new office,first day at the new office,😳,surprise,surprise,neutral,neutral,joy,True,True
+3_repeated_emoji,first day at the new office 😮😮😮,first day at the new office,😮😮😮,surprise,surprise,neutral,neutral,joy,True,True
+4_two_same_emotion_emojis,first day at the new office 😮🤯,first day at the new office,😮🤯,surprise,surprise,neutral,neutral,joy,True,True
+0_no_emoji,watched the match last night,watched the match last night,,,anger,,neutral,anger,,
+1_emoji_at_end,watched the match last night 😁,watched the match last night,😁,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,😁 watched the match last night,watched the match last night,😁,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,watched the match last night 🤣,watched the match last night,🤣,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🤣 watched the match last night,watched the match last night,🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,watched the match last night 🎉,watched the match last night,🎉,joy,joy,positive,positive,anger,True,True
+2_emoji_at_start,🎉 watched the match last night,watched the match last night,🎉,joy,joy,positive,positive,anger,True,True
+3_repeated_emoji,watched the match last night 😁😁😁,watched the match last night,😁😁😁,joy,joy,positive,positive,anger,True,True
+4_two_same_emotion_emojis,watched the match last night 😁🤣,watched the match last night,😁🤣,joy,joy,positive,positive,anger,True,True
+1_emoji_at_end,watched the match last night 😍,watched the match last night,😍,love,love,positive,positive,anger,True,True
+2_emoji_at_start,😍 watched the match last night,watched the match last night,😍,love,love,positive,positive,anger,True,True
+1_emoji_at_end,watched the match last night 🥰,watched the match last night,🥰,love,love,positive,positive,anger,True,True
+2_emoji_at_start,🥰 watched the match last night,watched the match last night,🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,watched the match last night 💕,watched the match last night,💕,love,love,positive,positive,anger,True,True
+2_emoji_at_start,💕 watched the match last night,watched the match last night,💕,love,love,positive,positive,anger,True,True
+3_repeated_emoji,watched the match last night 😍😍😍,watched the match last night,😍😍😍,love,love,positive,positive,anger,True,True
+4_two_same_emotion_emojis,watched the match last night 😍🥰,watched the match last night,😍🥰,love,love,positive,positive,anger,True,True
+1_emoji_at_end,watched the match last night 😠,watched the match last night,😠,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😠 watched the match last night,watched the match last night,😠,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 🤬,watched the match last night,🤬,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,🤬 watched the match last night,watched the match last night,🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😤,watched the match last night,😤,anger,anger,negative,negative,anger,True,True
+2_emoji_at_start,😤 watched the match last night,watched the match last night,😤,anger,anger,negative,negative,anger,True,True
+3_repeated_emoji,watched the match last night 😠😠😠,watched the match last night,😠😠😠,anger,anger,negative,negative,anger,True,True
+4_two_same_emotion_emojis,watched the match last night 😠🤬,watched the match last night,😠🤬,anger,anger,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😱,watched the match last night,😱,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😱 watched the match last night,watched the match last night,😱,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😰,watched the match last night,😰,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😰 watched the match last night,watched the match last night,😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😧,watched the match last night,😧,fear,fear,negative,negative,anger,True,True
+2_emoji_at_start,😧 watched the match last night,watched the match last night,😧,fear,fear,negative,negative,anger,True,True
+3_repeated_emoji,watched the match last night 😱😱😱,watched the match last night,😱😱😱,fear,fear,negative,negative,anger,True,True
+4_two_same_emotion_emojis,watched the match last night 😱😰,watched the match last night,😱😰,fear,fear,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😭,watched the match last night,😭,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😭 watched the match last night,watched the match last night,😭,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😞,watched the match last night,😞,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,😞 watched the match last night,watched the match last night,😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 💔,watched the match last night,💔,sadness,sadness,negative,negative,anger,True,True
+2_emoji_at_start,💔 watched the match last night,watched the match last night,💔,sadness,sadness,negative,negative,anger,True,True
+3_repeated_emoji,watched the match last night 😭😭😭,watched the match last night,😭😭😭,sadness,sadness,negative,negative,anger,True,True
+4_two_same_emotion_emojis,watched the match last night 😭😞,watched the match last night,😭😞,sadness,sadness,negative,negative,anger,True,True
+1_emoji_at_end,watched the match last night 😮,watched the match last night,😮,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😮 watched the match last night,watched the match last night,😮,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,watched the match last night 🤯,watched the match last night,🤯,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,🤯 watched the match last night,watched the match last night,🤯,surprise,surprise,neutral,neutral,anger,True,True
+1_emoji_at_end,watched the match last night 😳,watched the match last night,😳,surprise,surprise,neutral,neutral,anger,True,True
+2_emoji_at_start,😳 watched the match last night,watched the match last night,😳,surprise,surprise,neutral,neutral,anger,True,True
+3_repeated_emoji,watched the match last night 😮😮😮,watched the match last night,😮😮😮,surprise,surprise,neutral,neutral,anger,True,True
+4_two_same_emotion_emojis,watched the match last night 😮🤯,watched the match last night,😮🤯,surprise,surprise,neutral,neutral,anger,True,True
+5_emoji_only,😁,,😁,joy,joy,positive,positive,anger,True,True
+5_emoji_only,🤣,,🤣,joy,joy,positive,positive,anger,True,True
+5_emoji_only,🎉,,🎉,joy,joy,positive,positive,anger,True,True
+5_emoji_only,😍,,😍,love,love,positive,positive,anger,True,True
+5_emoji_only,🥰,,🥰,love,love,positive,positive,anger,True,True
+5_emoji_only,💕,,💕,love,love,positive,positive,anger,True,True
+5_emoji_only,😠,,😠,anger,anger,negative,negative,anger,True,True
+5_emoji_only,🤬,,🤬,anger,anger,negative,negative,anger,True,True
+5_emoji_only,😤,,😤,anger,anger,negative,negative,anger,True,True
+5_emoji_only,😱,,😱,fear,fear,negative,negative,anger,True,True
+5_emoji_only,😰,,😰,fear,fear,negative,negative,anger,True,True
+5_emoji_only,😧,,😧,fear,fear,negative,negative,anger,True,True
+5_emoji_only,😭,,😭,sadness,sadness,negative,negative,anger,True,True
+5_emoji_only,😞,,😞,sadness,sadness,negative,negative,anger,True,True
+5_emoji_only,💔,,💔,sadness,sadness,negative,negative,anger,True,True
+5_emoji_only,😮,,😮,surprise,surprise,neutral,neutral,anger,True,True
+5_emoji_only,🤯,,🤯,surprise,surprise,neutral,neutral,anger,True,True
+5_emoji_only,😳,,😳,surprise,surprise,neutral,neutral,anger,True,True
+6_emotional_text_no_emoji,i am so delighted and grateful for everything,i am so delighted and grateful for everything,,joy,joy,positive,positive,joy,True,True
+7_text_and_emoji_agree,i am so delighted and grateful for everything 😁,i am so delighted and grateful for everything,😁,joy,joy,positive,positive,joy,True,True
+8_text_and_emoji_conflict,i am so delighted and grateful for everything 😍,i am so delighted and grateful for everything,😍,joy,love,positive,positive,joy,False,True
+8_text_and_emoji_conflict,i am so delighted and grateful for everything 😠,i am so delighted and grateful for everything,😠,joy,joy,positive,positive,joy,True,True
+8_text_and_emoji_conflict,i am so delighted and grateful for everything 😱,i am so delighted and grateful for everything,😱,joy,fear,positive,positive,joy,False,True
+8_text_and_emoji_conflict,i am so delighted and grateful for everything 😭,i am so delighted and grateful for everything,😭,joy,sadness,positive,positive,joy,False,True
+8_text_and_emoji_conflict,i am so delighted and grateful for everything 😮,i am so delighted and grateful for everything,😮,joy,joy,positive,positive,joy,True,True
+6_emotional_text_no_emoji,i feel heartbroken and alone tonight,i feel heartbroken and alone tonight,,sadness,sadness,negative,positive,sadness,True,False
+8_text_and_emoji_conflict,i feel heartbroken and alone tonight 😁,i feel heartbroken and alone tonight,😁,sadness,sadness,negative,positive,sadness,True,False
+8_text_and_emoji_conflict,i feel heartbroken and alone tonight 😍,i feel heartbroken and alone tonight,😍,sadness,sadness,negative,positive,sadness,True,False
+8_text_and_emoji_conflict,i feel heartbroken and alone tonight 😠,i feel heartbroken and alone tonight,😠,sadness,sadness,negative,negative,sadness,True,True
+8_text_and_emoji_conflict,i feel heartbroken and alone tonight 😱,i feel heartbroken and alone tonight,😱,sadness,sadness,negative,negative,sadness,True,True
+7_text_and_emoji_agree,i feel heartbroken and alone tonight 😭,i feel heartbroken and alone tonight,😭,sadness,sadness,negative,negative,sadness,True,True
+8_text_and_emoji_conflict,i feel heartbroken and alone tonight 😮,i feel heartbroken and alone tonight,😮,sadness,sadness,negative,neutral,sadness,True,False
+6_emotional_text_no_emoji,i am so angry and annoyed with my roommate,i am so angry and annoyed with my roommate,,anger,anger,negative,negative,anger,True,True
+8_text_and_emoji_conflict,i am so angry and annoyed with my roommate 😁,i am so angry and annoyed with my roommate,😁,anger,anger,negative,negative,anger,True,True
+8_text_and_emoji_conflict,i am so angry and annoyed with my roommate 😍,i am so angry and annoyed with my roommate,😍,anger,anger,negative,negative,anger,True,True
+7_text_and_emoji_agree,i am so angry and annoyed with my roommate 😠,i am so angry and annoyed with my roommate,😠,anger,anger,negative,negative,anger,True,True
+8_text_and_emoji_conflict,i am so angry and annoyed with my roommate 😱,i am so angry and annoyed with my roommate,😱,anger,anger,negative,negative,anger,True,True
+8_text_and_emoji_conflict,i am so angry and annoyed with my roommate 😭,i am so angry and annoyed with my roommate,😭,anger,anger,negative,negative,anger,True,True
+8_text_and_emoji_conflict,i am so angry and annoyed with my roommate 😮,i am so angry and annoyed with my roommate,😮,anger,anger,negative,negative,anger,True,True
+6_emotional_text_no_emoji,i feel scared and nervous about the interview,i feel scared and nervous about the interview,,fear,fear,negative,negative,fear,True,True
+8_text_and_emoji_conflict,i feel scared and nervous about the interview 😁,i feel scared and nervous about the interview,😁,fear,fear,negative,negative,fear,True,True
+8_text_and_emoji_conflict,i feel scared and nervous about the interview 😍,i feel scared and nervous about the interview,😍,fear,fear,negative,negative,fear,True,True
+8_text_and_emoji_conflict,i feel scared and nervous about the interview 😠,i feel scared and nervous about the interview,😠,fear,fear,negative,negative,fear,True,True
+7_text_and_emoji_agree,i feel scared and nervous about the interview 😱,i feel scared and nervous about the interview,😱,fear,fear,negative,negative,fear,True,True
+8_text_and_emoji_conflict,i feel scared and nervous about the interview 😭,i feel scared and nervous about the interview,😭,fear,fear,negative,negative,fear,True,True
+8_text_and_emoji_conflict,i feel scared and nervous about the interview 😮,i feel scared and nervous about the interview,😮,fear,fear,negative,negative,fear,True,True
+6_emotional_text_no_emoji,i adore my little sister she is so sweet and caring,i adore my little sister she is so sweet and caring,,love,love,positive,positive,love,True,True
+8_text_and_emoji_conflict,i adore my little sister she is so sweet and caring 😁,i adore my little sister she is so sweet and caring,😁,love,love,positive,positive,love,True,True
+7_text_and_emoji_agree,i adore my little sister she is so sweet and caring 😍,i adore my little sister she is so sweet and caring,😍,love,love,positive,positive,love,True,True
+8_text_and_emoji_conflict,i adore my little sister she is so sweet and caring 😠,i adore my little sister she is so sweet and caring,😠,love,love,positive,positive,love,True,True
+8_text_and_emoji_conflict,i adore my little sister she is so sweet and caring 😱,i adore my little sister she is so sweet and caring,😱,love,love,positive,positive,love,True,True
+8_text_and_emoji_conflict,i adore my little sister she is so sweet and caring 😭,i adore my little sister she is so sweet and caring,😭,love,love,positive,positive,love,True,True
+8_text_and_emoji_conflict,i adore my little sister she is so sweet and caring 😮,i adore my little sister she is so sweet and caring,😮,love,love,positive,neutral,love,True,False
+6_emotional_text_no_emoji,i was stunned and surprised by the plot twist,i was stunned and surprised by the plot twist,,surprise,surprise,neutral,neutral,surprise,True,True
+8_text_and_emoji_conflict,i was stunned and surprised by the plot twist 😁,i was stunned and surprised by the plot twist,😁,surprise,surprise,neutral,neutral,surprise,True,True
+8_text_and_emoji_conflict,i was stunned and surprised by the plot twist 😍,i was stunned and surprised by the plot twist,😍,surprise,surprise,neutral,neutral,surprise,True,True
+8_text_and_emoji_conflict,i was stunned and surprised by the plot twist 😠,i was stunned and surprised by the plot twist,😠,surprise,surprise,neutral,neutral,surprise,True,True
+8_text_and_emoji_conflict,i was stunned and surprised by the plot twist 😱,i was stunned and surprised by the plot twist,😱,surprise,surprise,neutral,neutral,surprise,True,True
+8_text_and_emoji_conflict,i was stunned and surprised by the plot twist 😭,i was stunned and surprised by the plot twist,😭,surprise,surprise,neutral,neutral,surprise,True,True
+7_text_and_emoji_agree,i was stunned and surprised by the plot twist 😮,i was stunned and surprised by the plot twist,😮,surprise,surprise,neutral,neutral,surprise,True,True
+9_unmapped_emoji,my brother came over today 🥲,my brother came over today,🥲,,anger,,neutral,anger,,
+9_unmapped_emoji,my brother came over today 🙃,my brother came over today,🙃,,anger,,neutral,anger,,
+9_unmapped_emoji,my brother came over today 😅,my brother came over today,😅,,anger,,neutral,anger,,
+9_unmapped_emoji,my brother came over today 🤔,my brother came over today,🤔,,anger,,neutral,anger,,
+9_unmapped_emoji,my brother came over today 😐,my brother came over today,😐,,anger,,neutral,anger,,
+9_unmapped_emoji,my brother came over today 💀,my brother came over today,💀,,anger,,neutral,anger,,
+9_unmapped_emoji,the bus was late again 🥲,the bus was late again,🥲,,anger,,neutral,anger,,
+9_unmapped_emoji,the bus was late again 🙃,the bus was late again,🙃,,anger,,neutral,anger,,
+9_unmapped_emoji,the bus was late again 😅,the bus was late again,😅,,anger,,neutral,anger,,
+9_unmapped_emoji,the bus was late again 🤔,the bus was late again,🤔,,anger,,neutral,anger,,
+9_unmapped_emoji,the bus was late again 😐,the bus was late again,😐,,anger,,neutral,anger,,
+9_unmapped_emoji,the bus was late again 💀,the bus was late again,💀,,anger,,neutral,anger,,
+9_unmapped_emoji,we are going to the beach on sunday 🥲,we are going to the beach on sunday,🥲,,joy,,neutral,joy,,
+9_unmapped_emoji,we are going to the beach on sunday 🙃,we are going to the beach on sunday,🙃,,joy,,neutral,joy,,
+9_unmapped_emoji,we are going to the beach on sunday 😅,we are going to the beach on sunday,😅,,joy,,neutral,joy,,
+9_unmapped_emoji,we are going to the beach on sunday 🤔,we are going to the beach on sunday,🤔,,joy,,neutral,joy,,
+9_unmapped_emoji,we are going to the beach on sunday 😐,we are going to the beach on sunday,😐,,joy,,neutral,joy,,
+9_unmapped_emoji,we are going to the beach on sunday 💀,we are going to the beach on sunday,💀,,joy,,neutral,joy,,
+9_unmapped_emoji,she replied to my message 🥲,she replied to my message,🥲,,anger,,positive,anger,,
+9_unmapped_emoji,she replied to my message 🙃,she replied to my message,🙃,,anger,,positive,anger,,
+9_unmapped_emoji,she replied to my message 😅,she replied to my message,😅,,anger,,positive,anger,,
+9_unmapped_emoji,she replied to my message 🤔,she replied to my message,🤔,,anger,,positive,anger,,
+9_unmapped_emoji,she replied to my message 😐,she replied to my message,😐,,anger,,positive,anger,,
+9_unmapped_emoji,she replied to my message 💀,she replied to my message,💀,,anger,,positive,anger,,
+9_unmapped_emoji,got my phone back from repair 🥲,got my phone back from repair,🥲,,anger,,neutral,anger,,
+9_unmapped_emoji,got my phone back from repair 🙃,got my phone back from repair,🙃,,anger,,neutral,anger,,
+9_unmapped_emoji,got my phone back from repair 😅,got my phone back from repair,😅,,anger,,neutral,anger,,
+9_unmapped_emoji,got my phone back from repair 🤔,got my phone back from repair,🤔,,anger,,neutral,anger,,
+9_unmapped_emoji,got my phone back from repair 😐,got my phone back from repair,😐,,anger,,neutral,anger,,
+9_unmapped_emoji,got my phone back from repair 💀,got my phone back from repair,💀,,anger,,neutral,anger,,

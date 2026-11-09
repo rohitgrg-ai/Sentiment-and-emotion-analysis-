@@ -1,0 +1,14 @@
+Best model: linear_svm
+
+              precision    recall  f1-score   support
+
+       anger      0.972     0.972     0.972      1966
+        fear      0.965     0.972     0.968      1966
+         joy      0.951     0.913     0.931      1966
+        love      0.968     0.990     0.979      1966
+     sadness      0.946     0.937     0.941      1966
+    surprise      0.978     0.996     0.987      1966
+
+    accuracy                          0.963     11796
+   macro avg      0.963     0.963     0.963     11796
+weighted avg      0.963     0.963     0.963     11796
