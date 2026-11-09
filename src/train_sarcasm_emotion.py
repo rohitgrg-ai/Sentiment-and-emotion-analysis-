@@ -8,6 +8,8 @@ Training data: natural_emotion_train + tweet_emotion_train (emotion head), sarca
 Each row trains only the head it has a label for. With --sincere-negatives, GoEmotions rows
 also train the sarcasm head as not sarcastic, so it learns what ordinary comments look like.
 A few of those comments are really sarcastic, so this adds a small amount of label noise.
+With --extra-emotion, sarcastic tweets labelled by label_sarcasm_emotions.py also train the
+emotion head, each counted --extra-repeat times.
 
 Fair-test rules
     * Settings match finetune_emotion.py: lr 2e-5, 3 epochs, batch 32, 64 tokens, seed 42, sqrt class weights.
@@ -89,6 +91,9 @@ def load_splits(args):
     def emotion(split):
         frames = [pd.read_csv(args.data / f"natural_emotion_{split}.csv")[["text", "emotion"]].assign(origin="natural"),
                   pd.read_csv(args.new_data / f"tweet_emotion_{split}.csv")[["text", "emotion"]].assign(origin="tweet")]
+        if split == "train" and args.extra_emotion:
+            extra = pd.read_csv(args.extra_emotion)[["text", "emotion"]].assign(origin="sarcasm_pseudo")
+            frames += [extra] * args.extra_repeat
         return pd.concat(frames, ignore_index=True)
 
     sarcasm = {s: pd.read_csv(args.new_data / f"sarcasm_{s}.csv") for s in ("train", "val")}
@@ -282,6 +287,8 @@ def main():
     parser.add_argument("--limit", type=int, default=None, help="smoke test: use only this many rows per file")
     parser.add_argument("--eval-only", action="store_true", help="score the saved model without training")
     parser.add_argument("--sincere-negatives", action="store_true", help="use GoEmotions rows as not-sarcastic examples")
+    parser.add_argument("--extra-emotion", type=Path, default=None, help="CSV of extra emotion training rows")
+    parser.add_argument("--extra-repeat", type=int, default=3, help="how many times each extra row counts")
     args = parser.parse_args()
 
     random.seed(args.seed); np.random.seed(args.seed); torch.manual_seed(args.seed)

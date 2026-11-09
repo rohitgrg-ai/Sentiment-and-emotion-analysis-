@@ -13,7 +13,7 @@ Two honest findings you should be ready to state:
 1. The original data contained **label leakage** (emoji suffixes that encoded the labels). We detected and removed it.
 2. The **sentiment labels were produced by a lexicon heuristic**, not by humans, so the sentiment score shows we can reproduce that heuristic, not that we understand true sentiment.
 
-**Update, 9 Nov 2026:** the SVM's 0.963 only holds on data like its training set. On human-labelled GoEmotions text its accuracy is 0.303. The app now predicts emotion (7 classes including neutral) and sarcasm with a Twitter-based transformer, which scores 0.684 macro-F1 on that natural test. Sentiment still comes from the SVM. See section 7A.
+**Update, 9 Nov 2026:** the SVM's 0.963 only holds on data like its training set. On human-labelled GoEmotions text its accuracy is 0.303. The app now predicts emotion (7 classes including neutral) and sarcasm with a Twitter-based transformer, which scores 0.688 macro-F1 on that natural test. Sentiment still comes from the SVM. See section 7A.
 
 ---
 
@@ -41,8 +41,7 @@ Two honest findings you should be ready to state:
 | Manual check of sentiment labels | Not started (future work) |
 | Cross-validation | Not done (single 80/20 split) |
 
-Housekeeping done: removed unneeded `data/balanced_train.csv` and `data/processed_dataset.csv` (the latter still contained the leaked emoji text); `requirements.txt` now includes scikit-learn, matplotlib, joblib. `src/tfidf_features.py` is an older script superseded by `train_baselines.py`.
-
+Housekeeping done: removed unneeded `data/balanced_train.csv` and `data/processed_dataset.csv` (the latter still contained the leaked emoji text); `requirements.txt` now includes scikit-learn, matplotlib, joblib.
 ---
 
 ## 2. Folder structure
@@ -58,13 +57,13 @@ Housekeeping done: removed unneeded `data/balanced_train.csv` and `data/processe
 | `src/preprocessing.py` | Text cleaning + stratified split |
 | `src/train_baselines.py` | TF-IDF + classifiers, metrics, confusion matrices, error samples |
 | `src/final_nlp_data_exploration.ipynb` | Checks the balanced dataset |
-| `src/tfidf_features.py` | Early TF-IDF script (superseded by train_baselines.py) |
 | `src/app.py` | **Streamlit web app**: enter a text, get predicted emotion, sentiment and a sarcasm note |
 | `src/predictor.py` | SVM prediction, emoji table and emoji fusion |
 | `src/transformer_predictor.py` | Prediction used by the app: transformer emotion and sarcasm + SVM sentiment |
 | `src/build_natural_dataset.py`, `src/finetune_emotion.py` | Human-labelled GoEmotions/TweetEval data; first emotion transformer |
 | `src/transformer_zero_shot.py`, `src/transformer_emoji_fusion.py` | Zero-shot experiment; transformer + emoji fusion evaluation |
 | `src/build_sarcasm_emoji_dataset.py` | Builds `data/sarcasm_*.csv` and `data/tweet_emotion_*.csv` |
+| `src/label_sarcasm_emotions.py` | Labels sarcastic training tweets using their authors' rephrases |
 | `src/train_sarcasm_emotion.py` | Trains and scores the emotion + sarcasm model |
 | `src/test_emoji_robustness.py` | Tests the same sentences with different emojis (results in `results/emoji_robustness_report.txt`) |
 | `src/emoji_features.py` | Emoji → words (standard library), repeat collapsing, numeric emoji features |
@@ -226,7 +225,7 @@ We inspected the highest-weighted features of the SVM:
 
 **Q: Limitations?** Emoji handling is a hand-made table (ambiguous emojis ignored, sarcasm not handled); no neutral emotion class; heuristic sentiment labels, label noise, bag-of-words ignores context and sarcasm, undersampling loses data, English only, a single split (no cross-validation).
 
-**Q: Future work?** Hand-review the 500 ambiguous labels; give sarcastic tweets real emotion labels using the iSarcasm rephrases; train a Twitter-based sentiment model; cross-validation; deploy the app online.
+**Q: Future work?** Hand-review the 500 ambiguous labels; improve emoji handling; train a Twitter-based sentiment model; cross-validation; deploy the app online.
 
 ---
 
@@ -337,10 +336,10 @@ The SVM scored 0.963 on its own test split but only 0.303 accuracy (0.284 macro-
 ### What the app uses now
 | Part | Method |
 |---|---|
-| Emotion (7 classes) | `cardiffnlp/twitter-roberta-base-2022-154m`, fine-tuned on GoEmotions + SemEval-2018 Affect in Tweets |
-| Sarcasm | A second output on the same model, trained on iSarcasmEval + SemEval-2018 irony |
+| Emotion (7 classes) | `cardiffnlp/twitter-roberta-base-2022-154m`, fine-tuned on GoEmotions + SemEval-2018 Affect in Tweets + 462 sarcastic tweets labelled from their authors' rephrases |
+| Sarcasm | A second output on the same model, trained on iSarcasmEval + SemEval-2018 irony, with GoEmotions comments as not-sarcastic examples |
 | Emojis | Fusion with the rule table: weight 0.25, or 1.0 when there are no words |
-| Sarcasm rule | If P(sarcastic) >= 0.998 and the top emotion is joy or love, take the best emotion other than joy, love or neutral |
+| Sarcasm rule | If P(sarcastic) >= 0.90 and the top emotion is joy or love, take the best emotion other than joy, love or neutral |
 | Sentiment | Existing TF-IDF + Linear SVM. It ignores sarcasm, and the app says so |
 
 ### Sarcasm and tweet data
@@ -355,28 +354,32 @@ Ambiguous-set figures hide neutral, as in section 7, and use AI-suggested labels
 
 | Measure | Previous best | App now |
 |---|---|---|
-| Natural test macro-F1 (7 classes) | 0.670 | 0.684 |
-| Ambiguous set, overall | 40.1% | 41.3% |
-| Ambiguous set, sarcasm rows (n=40) | 22.5% | 32.5% |
-| Ambiguous set, all emoji rows | 63.0% | 54.8% |
-| Positive words, negative meaning | 35.0% | 15.0% |
+| Natural test macro-F1 (7 classes) | 0.670 | 0.688 |
+| Ambiguous set, overall | 40.1% | 42.4% |
+| Ambiguous set, sarcasm rows (n=40) | 22.5% | 27.5% |
+| Ambiguous set, all emoji rows | 63.0% | 50.0% |
+| Positive words, negative meaning | 35.0% | 32.5% |
 
-The sarcasm flag is precise but misses most sarcasm: precision 85.5% and recall 23.5% on iSarcasm, precision 98.6% and recall 22.2% on SemEval irony.
+Sarcasm flag on held-out tweets: precision 70.5%, recall 33.5%, F1 0.454 on iSarcasm; precision 78.3%, recall 51.1%, F1 0.619 on SemEval irony. A TF-IDF baseline scored F1 0.339 and 0.540.
 
-`results/sarcasm_emotion/metrics.json` records the rule at the original 0.5 threshold, which is not the shipped setup.
+`results/sarcasm_emotion_v3/metrics.json` records the rule at the original 0.5 threshold, which is not the shipped setup. The shipped numbers above come from the 0.90 threshold.
 
 ### Mistake found while connecting the model
-With the pre-declared threshold of 0.5, ambiguous accuracy looked strong (45.0%, sarcasm rows 50%). But running the whole pipeline on ordinary text showed natural-test macro-F1 falling from 0.687 to 0.569, and "I love my mom so much" became anger. The sarcasm output had only ever seen tweets, so it flagged about a quarter of ordinary comments. The 0.998 threshold is the lowest that costs at most 0.005 macro-F1 on validation data.
+With the pre-declared threshold of 0.5, ambiguous accuracy looked strong (45.0%, sarcasm rows 50%). But running the whole pipeline on ordinary text showed natural-test macro-F1 falling from 0.687 to 0.569, and "I love my mom so much" became anger. The sarcasm output had only ever seen tweets, so it flagged about a quarter of ordinary comments. The fix was a threshold chosen on validation data: the lowest that costs at most 0.005 macro-F1. For that first model it was 0.998, with natural macro-F1 0.684, sarcasm rows 32.5%, and iSarcasm recall 23.5%.
 
-### Retraining experiment (not used)
-A second version also taught the sarcasm output that GoEmotions comments are not sarcastic. At its validation-chosen threshold of 0.98, natural macro-F1 rose to 0.695 and the ambiguous set to 43.6%, but sarcasm rows fell to 20.0% and iSarcasm recall to 19.5%. It missed the sarcasm target, so the app kept the first model.
+### Retraining experiments
+**Version 2 (not used):** also taught the sarcasm output that GoEmotions comments are not sarcastic. At its validation-chosen threshold of 0.98, natural macro-F1 rose to 0.695 and the ambiguous set to 43.6%, but sarcasm rows fell to 20.0% and iSarcasm recall to 19.5%.
+
+**Version 3 (used by the app):** kept that change and added emotion labels for sarcastic training tweets. `label_sarcasm_emotions.py` scores each author's plain rephrase and gives its emotion to the sarcastic tweet, keeping non-neutral rephrases at 60% confidence or higher (462 tweets, each counted 3 times). These are machine-made labels, so some are wrong. Without any sarcasm rule, sarcasm rows rose from 0% in the first model to 25%, showing the emotion output itself learned from them. The chosen threshold is 0.90.
+
+Version 3 met 3 of 5 pre-set targets against the first model. It missed sarcasm rows (27.5% against 32.5%, 2 rows of 40) and emoji rows (50.0% against 54.8%). It was chosen because sarcasm is the main goal and its sarcasm F1 was higher on both larger held-out sets. The cost is more false alarms: precision on iSarcasm fell from 85.5% to 70.5%.
 
 ### Viva questions for this phase
 **Q: Why not just report 0.963?** It only shows the model can reproduce a dataset built around emotion keywords. It does not transfer to natural text.
 
-**Q: How does the model handle sarcasm?** One output detects it. A fixed rule then removes joy and love when the model is very sure. The emotion output itself still reads text literally, because sarcasm rows have no emotion labels.
+**Q: How does the model handle sarcasm?** One output detects it, and a fixed rule removes joy and love when the model is very sure. The emotion output also learned from sarcastic tweets labelled through their authors' rephrases, so it reads some sarcasm without the rule.
 
-**Q: What is the biggest remaining weakness?** It misses most sarcasm, and emoji rows score below the older SVM setup. Sentiment is also weak (0.510 accuracy on TweetEval).
+**Q: What is the biggest remaining weakness?** It misses about two-thirds of sarcasm on iSarcasm, about 3 in 10 flags there are wrong, and emoji rows score below the older SVM setup. Sentiment is also weak (0.510 accuracy on TweetEval).
 
 **Q: Are the ambiguous results final?** No. All 500 labels are AI-suggested until reviewed by a human, and some subsets are small (40 sarcasm rows, so one row is 2.5 points).
 

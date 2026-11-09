@@ -21,10 +21,9 @@ from predictor import EMOJI_WEIGHT, MODELS, Predictor
 from train_sarcasm_emotion import (EMOTION_ID, EMOTIONS, POSITIVE, EmotionSarcasmModel,
                                    predict as model_probabilities, with_emojis)
 
-TRANSFORMER_DIR = "sarcasm_emotion"
-# Lowest threshold costing at most 0.005 validation emotion macro-F1. The sarcasm head only saw
-# tweets in training, so at 0.5 it flags about a quarter of ordinary comments and hurts emotion.
-APP_SARCASM_THRESHOLD = 0.998
+TRANSFORMER_DIR = "sarcasm_emotion_v3"
+# Lowest threshold costing at most 0.005 validation emotion macro-F1 for this model.
+APP_SARCASM_THRESHOLD = 0.90
 DEVICE = torch.device("cpu")
 INFERENCE = SimpleNamespace(batch_size=32, max_len=64)  # max_len matches training
 EXCLUDED_WHEN_SARCASTIC = POSITIVE + [EMOTION_ID["neutral"]]
