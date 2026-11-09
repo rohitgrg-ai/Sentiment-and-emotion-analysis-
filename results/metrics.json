@@ -1,0 +1,24 @@
+{
+ "natural_emotion": {
+  "rows": 3799,
+  "accuracy": 0.7280863385101343,
+  "macro_f1": 0.6878455379753152
+ },
+ "tweet_emotion": {
+  "rows": 1606,
+  "accuracy": 0.7571606475716065,
+  "macro_f1": 0.5310169046849598
+ },
+ "sarcasm_isarcasm": {
+  "rows": 1394,
+  "precision": 0.7052631578947368,
+  "recall": 0.335,
+  "f1": 0.4542372881355932
+ },
+ "sarcasm_semeval2018_irony": {
+  "rows": 784,
+  "precision": 0.7832512315270936,
+  "recall": 0.5112540192926045,
+  "f1": 0.6186770428015564
+ }
+}

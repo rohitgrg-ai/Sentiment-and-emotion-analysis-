@@ -20,4 +20,5 @@ data/*.csv
 
 # macOS
 .DS_Store
-models/sarcasm_emotion*/
+models/
+.claude/
