@@ -4,6 +4,7 @@ from pathlib import Path
 
 import streamlit as st
 
+from baseline import load_keyword_model
 from model import Predictor
 
 INK, WHITE = "#15213b", "#ffffff"
@@ -35,8 +36,16 @@ def load_predictor():
     return Predictor()
 
 
+@st.cache_resource(show_spinner=False)
+def load_baseline():
+    return load_keyword_model()
+
+
 def read_post(text):
-    st.session_state.reading = (text, load_predictor().predict(text))
+    result = load_predictor().predict(text)
+    keyword_model = load_baseline()
+    result["baseline_emotion"] = keyword_model(text) if keyword_model else None
+    st.session_state.reading = (text, result)
 
 
 def read_typed_post():
@@ -99,6 +108,8 @@ def show_reading(text, result):
             st.write(f"**Emojis recognised:** {found}")
             st.write(f"**Words only:** {result['emotion_from_text']} ({result['text_confidence']:.0%} confidence)")
             st.write(f"**Sarcasm:** {result['sarcasm_probability']:.0%} likely")
+            if result["baseline_emotion"]:
+                st.write(f"**Keyword baseline (TF-IDF + SVM), for comparison:** {result['baseline_emotion']}")
 
 
 st.set_page_config(page_title="What is this post really saying?", page_icon="💬", layout="wide")

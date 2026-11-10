@@ -1,0 +1,14 @@
+{
+ "emotion_own_test": {
+  "accuracy": 0.9627,
+  "macro_f1": 0.9625
+ },
+ "sentiment_own_test": {
+  "accuracy": 0.9456,
+  "macro_f1": 0.9455
+ },
+ "emotion_natural_text": {
+  "accuracy": 0.3048,
+  "macro_f1": 0.2863
+ }
+}

@@ -30,7 +30,19 @@ python -m streamlit run src/app.py
 | Irony, SemEval-2018 | 784 | Precision 0.783, recall 0.511, F1 0.619 |
 | Sentiment, TweetEval | 12,280 | Accuracy 0.543, macro-F1 0.543 |
 
-Full emotion and sarcasm scores are in `results/metrics.json`.
+Full emotion and sarcasm scores are in `results/metrics.json`. The numbers behind the report's graphs are in `results/report_numbers.json`.
+
+## Baseline model
+
+Before the transformer, the project trained a TF-IDF + Linear SVM on a cleaned, balanced dataset. It stays in the project as a baseline, and the app's "How this was decided" panel shows its answer for comparison. The transformer makes every final decision.
+
+| Baseline test | Accuracy | Macro-F1 |
+|---|---|---|
+| Emotion, its own test split | 0.9627 | 0.9625 |
+| Sentiment, its own test split | 0.9456 | 0.9455 |
+| Emotion, human-labelled GoEmotions text (six emotions) | 0.3048 | 0.2863 |
+
+The high scores did not transfer: most training sentences follow an "i feel X" pattern, so the SVM mainly learned emotion keywords. That result is why the project moved to a transformer trained on natural comments and tweets.
 
 ## Limitations
 
@@ -53,6 +65,13 @@ python src/train.py --base cardiffnlp/twitter-roberta-base-2022-154m --extra-emo
 
 The first training pass labels sarcastic tweets using their authors' plain rephrases. The second pass trains the final model on those labels too. A GPU is strongly recommended.
 
+To train the baseline, put the raw dataset at `data/text2.csv`, then run:
+
+```bash
+python src/balance_dataset.py
+python src/baseline.py
+```
+
 ## Project layout
 
 | Path | Purpose |
@@ -62,7 +81,8 @@ The first training pass labels sarcastic tweets using their authors' plain rephr
 | `src/train.py` | Training and evaluation |
 | `src/build_data.py` | Dataset preparation |
 | `src/label_sarcasm_emotions.py` | Emotion labels for sarcastic tweets |
-| `report/` | Project report and figures |
+| `src/balance_dataset.py`, `src/baseline.py` | Cleaned dataset and TF-IDF + SVM baseline |
+| `report/` | Project report (Word and PDF), figures, and `make_figures.py`, which redraws the graphs |
 
 ## Data sources
 

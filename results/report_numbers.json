@@ -1,0 +1,271 @@
+{
+ "emotion_share_percent": {
+  "Baseline, before balancing": {
+   "anger": 13.8,
+   "fear": 11.4,
+   "joy": 33.8,
+   "love": 8.3,
+   "neutral": 0.0,
+   "sadness": 29.1,
+   "surprise": 3.6
+  },
+  "Baseline, after balancing": {
+   "anger": 16.7,
+   "fear": 16.7,
+   "joy": 16.7,
+   "love": 16.7,
+   "neutral": 0.0,
+   "sadness": 16.7,
+   "surprise": 16.7
+  },
+  "GoEmotions comments": {
+   "anger": 14.7,
+   "fear": 1.7,
+   "joy": 10.3,
+   "love": 21.9,
+   "neutral": 42.6,
+   "sadness": 6.3,
+   "surprise": 2.4
+  },
+  "Tweets (SemEval)": {
+   "anger": 35.4,
+   "fear": 9.0,
+   "joy": 35.5,
+   "love": 0.6,
+   "neutral": 5.3,
+   "sadness": 12.9,
+   "surprise": 1.3
+  }
+ },
+ "median_words": {
+  "Baseline data": 19.0,
+  "GoEmotions comments": 12.0,
+  "Tweets (SemEval)": 16.0,
+  "Sarcasm and irony tweets": 14.0
+ },
+ "percent_with_word_feel": {
+  "Baseline data": 96.84638860630722,
+  "GoEmotions comments": 2.1113038836247164,
+  "Tweets (SemEval)": 2.5176598442311175,
+  "Sarcasm and irony tweets": 2.545525748971999
+ },
+ "percent_with_emoji": {
+  "Baseline data": 0.0,
+  "GoEmotions comments": 1.5374349392766582,
+  "Tweets (SemEval)": 14.798043832639015,
+  "Sarcasm and irony tweets": 14.372429998041902
+ },
+ "sarcasm_rows": {
+  "isarcasm": {
+   "rows": 4839,
+   "sarcastic": 1062
+  },
+  "isarcasm_rephrase": {
+   "rows": 776,
+   "sarcastic": 0
+  },
+  "semeval2018_irony": {
+   "rows": 4599,
+   "sarcastic": 2211
+  }
+ },
+ "baseline_emotion_by_sentiment": {
+  "anger": {
+   "negative": 3469,
+   "neutral": 6361,
+   "positive": 0
+  },
+  "fear": {
+   "negative": 6095,
+   "neutral": 0,
+   "positive": 3735
+  },
+  "joy": {
+   "negative": 5020,
+   "neutral": 0,
+   "positive": 4810
+  },
+  "love": {
+   "negative": 1341,
+   "neutral": 5493,
+   "positive": 2996
+  },
+  "sadness": {
+   "negative": 3126,
+   "neutral": 0,
+   "positive": 6704
+  },
+  "surprise": {
+   "negative": 609,
+   "neutral": 7806,
+   "positive": 1415
+  }
+ },
+ "nat_test": {
+  "rows": 3799,
+  "accuracy": 0.7280863385101343,
+  "macro_f1": 0.6878455379753152,
+  "per_class_f1": {
+   "anger": 0.606,
+   "fear": 0.685,
+   "joy": 0.741,
+   "love": 0.837,
+   "neutral": 0.747,
+   "sadness": 0.608,
+   "surprise": 0.592
+  },
+  "support": {
+   "anger": 596,
+   "fear": 77,
+   "joy": 348,
+   "love": 851,
+   "neutral": 1604,
+   "sadness": 236,
+   "surprise": 87
+  }
+ },
+ "tweet_test": {
+  "rows": 1606,
+  "accuracy": 0.7571606475716065,
+  "macro_f1": 0.5310169046849598,
+  "per_class_f1": {
+   "anger": 0.815,
+   "fear": 0.751,
+   "joy": 0.792,
+   "love": 0.129,
+   "neutral": 0.357,
+   "sadness": 0.771,
+   "surprise": 0.103
+  },
+  "support": {
+   "anger": 525,
+   "fear": 132,
+   "joy": 629,
+   "love": 10,
+   "neutral": 75,
+   "sadness": 218,
+   "surprise": 17
+  }
+ },
+ "same_rows_comparison": {
+  "rows": 2195,
+  "tfidf": {
+   "accuracy": 0.3047835990888383,
+   "macro_f1": 0.28625263453984484
+  },
+  "roberta": {
+   "accuracy": 0.7608200455580866,
+   "macro_f1": 0.7705113118727299
+  }
+ },
+ "sarcasm_isarcasm": {
+  "rows": 1394,
+  "precision": 0.7052631578947368,
+  "recall": 0.335,
+  "f1": 0.4542372881355932
+ },
+ "sarcasm_semeval2018_irony": {
+  "rows": 784,
+  "precision": 0.7832512315270936,
+  "recall": 0.5112540192926045,
+  "f1": 0.6186770428015564
+ },
+ "sentiment_test": {
+  "rows": 12280,
+  "accuracy": 0.5429967426710097,
+  "macro_f1": 0.5427232920059452
+ },
+ "baseline_top_words": {
+  "anger": [
+   "dangerous",
+   "wronged",
+   "distracted",
+   "stubborn",
+   "rushed",
+   "violent"
+  ],
+  "fear": [
+   "fearful",
+   "distressed",
+   "insecure",
+   "afraid",
+   "pressured",
+   "frantic"
+  ],
+  "joy": [
+   "innocent",
+   "sincere",
+   "resolved",
+   "trusting",
+   "satisfied",
+   "joyful"
+  ],
+  "love": [
+   "tender",
+   "gentle",
+   "caring",
+   "sympathetic",
+   "delicate",
+   "loving"
+  ],
+  "sadness": [
+   "fake",
+   "tragic",
+   "deprived",
+   "crappy",
+   "shitty",
+   "gloomy"
+  ],
+  "surprise": [
+   "impressed",
+   "funny",
+   "amazed",
+   "surprised",
+   "curious",
+   "shocked"
+  ]
+ },
+ "threshold_curve": {
+  "no_rule_macro_f1": 0.7172755022507821,
+  "thresholds": [
+   0.5,
+   0.6,
+   0.7,
+   0.8,
+   0.9,
+   0.95,
+   0.98,
+   0.99
+  ],
+  "emotion_macro_f1": [
+   0.6998121504792009,
+   0.7033065755837311,
+   0.7071366179908806,
+   0.710598042872331,
+   0.7142673849537617,
+   0.7166242454194249,
+   0.7175032377399306,
+   0.7172755022507821
+  ],
+  "precision": [
+   0.5959752321981424,
+   0.6226086956521739,
+   0.6539235412474849,
+   0.6924939467312349,
+   0.7524752475247525,
+   0.7777777777777778,
+   0.8503937007874016,
+   0.918918918918919
+  ],
+  "recall": [
+   0.7090239410681399,
+   0.6593001841620626,
+   0.5985267034990792,
+   0.5267034990791897,
+   0.4198895027624309,
+   0.32228360957642727,
+   0.19889502762430938,
+   0.1252302025782689
+  ]
+ }
+}
