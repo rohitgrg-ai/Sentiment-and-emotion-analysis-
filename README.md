@@ -82,6 +82,7 @@ python src/baseline.py
 | `src/build_data.py` | Dataset preparation |
 | `src/label_sarcasm_emotions.py` | Emotion labels for sarcastic tweets |
 | `src/balance_dataset.py`, `src/baseline.py` | Cleaned dataset and TF-IDF + SVM baseline |
+| `src/*.ipynb` | Early data exploration notebooks |
 | `report/` | Project report (Word and PDF), figures, and `make_figures.py`, which redraws the graphs |
 
 ## Data sources
